@@ -21,6 +21,7 @@ const styles = {
     alignItems: "center",
   },
   a: {
+    fontSize: "1rem",
     textDecoration: "none",
   },
   navBarItemIndex: {
@@ -40,7 +41,7 @@ const navBarItems = [
 function NavBarItem(props) {
   return (
     <li>
-      <span style={styles.navBarItemIndex}>{props.index}.</span>
+      <span style={styles.navBarItemIndex}>0{props.index + 1}.</span>
       <a style={styles.a} href={props.href}>
         {props.name}
       </a>

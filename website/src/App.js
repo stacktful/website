@@ -2,6 +2,23 @@ import "./App.css";
 
 import NavBar from "./components/NavBar";
 
+function Section({ children, ...props }) {
+  return (
+    <>
+      {props.title && (
+        <section>
+          <div className="section-header">
+            <div className="section-header-line"></div>
+            <h2 className="section-header-title">{props.title}</h2>
+            <div className="section-header-line"></div>
+          </div>
+          {children}
+        </section>
+      )}
+    </>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -9,8 +26,10 @@ function App() {
 
       <div className="content">
         <header>
-          <h1>Hi, my name is Thibaut van Bergen</h1>
-          <h2>
+          <p>Hi, my name is</p>
+          <h1>Thibaut van Bergen</h1>
+          <h1>I build SaaS applications.</h1>
+          {/* <h2>
             Your go-to Software Engineer for creating applications. You think
             it, I build it.
           </h2>
@@ -20,12 +39,11 @@ function App() {
             lives easier. Currently, I'm focused on building SaaS / Web
             applications for small businesses and startups in the FinTech and
             HealthTech space.
-          </p>
+          </p> */}
         </header>
 
-        <section>
-          <h2>About Me</h2>
-          <p>
+        <Section title={"About"}>
+          {/* <p>
             Hi, my name is Thibaut van Bergen and I enjoy building software that
             solves problems and makes people's lives easier. I've started in the
             software industry as a self-taught developer and have since then
@@ -41,51 +59,14 @@ function App() {
               Developing and bringing an automatic lecture registration system
               to market
             </li>
-          </ul>
-        </section>
+          </ul> */}
+        </Section>
 
-        <section>
-          <h2>Expertise</h2>
-          <div>
-            In my work I focus on the following areas:
-            <ul>
-              <li>Software Development</li>
-              <li>DevOps</li>
-              <li>Cloud Computing</li>
-              <li>Agile/Scrum Project Management</li>
-            </ul>
-            Technologies I've worked with:
-            <ul>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>Google Cloud Platform</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-        </section>
+        <Section title="Services"></Section>
 
-        <section>
-          <h2>Experience</h2>
-          <div>Some text about my experience</div>
-        </section>
+        <Section title="Experience"></Section>
 
-        <section>
-          <h2>Projects</h2>
-          <div>Some text about my past projects</div>
-        </section>
-
-        <section>
-          <h2>Contact</h2>
-          <div>
-            Some text about how to contact me
-            <ul>
-              <li>GitHub</li>
-              <li>LinkedIn</li>
-              <li>Instagram</li>
-            </ul>
-          </div>
-        </section>
+        <Section title="Contact"></Section>
       </div>
     </div>
   );

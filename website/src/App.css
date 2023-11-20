@@ -4,25 +4,48 @@
   --main-bg-color-2: #0E2F29;
   --primary-color: #00FFD1;
   --secondary-color: #FF8A00;
+  --third-color: #BED3D8;
 }
 
 .App {
   text-align: center;
   background-image: linear-gradient(to bottom right, var(--main-bg-color-1), var(--main-bg-color-2));
   min-height: 100vh;
-  color: #a2b2d3;
-  font-family: 'Inter';
+  color: var(--third-color);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--third-color);
+  padding: 20px 0;
+}
+
+.section-header-title {
+  margin: 0 10px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.section-header-line {
+  flex-grow: 1;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #00ffd023;
 }
 
 nav a {
   color: var(--primary-color);
 }
-
-/* header {
-  width: 80vh;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 div.content {
   width: 75%;
@@ -32,21 +55,10 @@ div.content {
 }
 
 section {
-  border-top: 1px solid #a2b2d3;
   width: 100%;
   margin-bottom: 25px;
-  /* text-align: left; */
 }
 
 ul {
   list-style-type: none; /* Remove bullets */
 }
-
-.App h1 {
-  color: var(--primary-color);
-}
-
-.App h2 {
-  color: #a2b2d3;
-}
-
