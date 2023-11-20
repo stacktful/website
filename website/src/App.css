@@ -1,37 +1,34 @@
 /* variables */
 :root {
-  --main-bg-color-1: #173230;
+  --main-bg-color-1: #204543;
   --main-bg-color-2: #0E2F29;
+  --primary-color: #00FFD1;
+  --secondary-color: #FF8A00;
 }
 
 .App {
   text-align: center;
-  /* background-color: var(--main-bg-color); */
   background-image: linear-gradient(to bottom right, var(--main-bg-color-1), var(--main-bg-color-2));
   min-height: 100vh;
   color: #a2b2d3;
-  /* display: flex;
-  justify-content: center; */
-}
-
-nav {
-  background-color: #282c34;
+  font-family: 'Inter';
 }
 
 nav a {
-  color: rgb(33, 211, 182);
+  color: var(--primary-color);
 }
 
-header {
-  width: 80vh;        /* Set the width of the body to 80% of the viewport width */
-  margin-left: auto; /* Center the body element by setting the left and right margins to auto */
+/* header {
+  width: 80vh;
+  margin-left: auto;
   margin-right: auto;
-}
+} */
 
 div.content {
-  width: 80vh;        /* Set the width of the body to 80% of the viewport width */
-  margin-left: auto; /* Center the body element by setting the left and right margins to auto */
+  width: 75%;
+  margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
 }
 
 section {
@@ -46,7 +43,7 @@ ul {
 }
 
 .App h1 {
-  color: rgb(33, 211, 182);
+  color: var(--primary-color);
 }
 
 .App h2 {
