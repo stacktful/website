@@ -19,7 +19,7 @@ function App() {
 
         <header>
           <h1>Hi, my name is Thibaut van Bergen</h1>
-          <h2>Your go-to Software Engineer for SaaS applications. You think it, I build it.</h2>
+          <h2>Your go-to Software Engineer for creating applications. You think it, I build it.</h2>
           <p>
             I'm a software engineer who brings ideas to life. I'm passionate about building software that
             solves problems and makes people's lives easier. Currently, I'm focused on building SaaS / Web applications
@@ -31,13 +31,15 @@ function App() {
           <h2>About Me</h2>
           <p>
             Hi, my name is Thibaut van Bergen and I enjoy building software that solves problems and makes people's lives easier.
-            I've started in the software industry as a self-taught developer and have since then worked on a variety of projects.
-            I'm awesome, simply hire me and you'll see.
+            I've started in the software industry as a self-taught developer and have since then worked for a variety of startups.
+            I love the process of bringing ideas to life and seeing them being used by people. I'm awesome, simply hire me and
+            you'll see.
 
             Here's what I've been up to lately:
           </p>
           <ul>
             <li>Building a SaaS application for a startup in the FinTech space</li>
+            <li>Developing and bringing an automatic lecture registration system to market</li>
           </ul>
         </section>
 

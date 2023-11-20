@@ -1,7 +1,15 @@
+/* variables */
+:root {
+  --main-bg-color-1: #173230;
+  --main-bg-color-2: #0E2F29;
+}
+
 .App {
   text-align: center;
-  background-color:#282c34;
+  /* background-color: var(--main-bg-color); */
+  background-image: linear-gradient(to bottom right, var(--main-bg-color-1), var(--main-bg-color-2));
   min-height: 100vh;
+  color: #a2b2d3;
   /* display: flex;
   justify-content: center; */
 }
