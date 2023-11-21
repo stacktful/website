@@ -25,7 +25,7 @@ const styles = {
     textDecoration: "none",
   },
   navBarItemIndex: {
-    color: "gray",
+    color: "#BED3D8",
     marginRight: "5px",
     fontFamily: "Fira Code",
   },

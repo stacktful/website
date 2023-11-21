@@ -5,7 +5,6 @@ function Hero() {
       <h1 className="hero-name">Thibaut van Bergen,</h1>
       <h1 className="hero-headline">I build SaaS applications.</h1>
       <p className="hero-description">
-        A freelance{" "}
         <span style={{ color: "var(--primary-color" }}>
           Full Stack Software Engineer
         </span>{" "}
