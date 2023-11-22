@@ -109,13 +109,11 @@ ul {
 }
 
 .job-tile {
-  width: 100%;
   margin-top: 1.0rem;
   padding: 1.5rem;
   background-color: #204543;
   border-radius: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  /* border: 1px solid #00ffd023; */
 }
 
 .job-title {
@@ -165,11 +163,24 @@ ul {
   color: #909090;
 }
 
-.job-contribution {
+.job-contributions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.job-contribution:not(:last-child) {
   margin-bottom: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .job-contribution-text {
   display: inline-block;
-  margin-left: 0.75rem;
+}
+
+.job-contribution-bullet-wrapper {
+  display: inline-block;
+  margin-right: 0.75rem;
 }
