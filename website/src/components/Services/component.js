@@ -7,7 +7,7 @@ function Service({ title, description, techStack }) {
   return (
     <div className="tile">
       <h2>{title}</h2>
-      <p>{description}</p>
+      <p className="service-description">{description}</p>
       <div className="tech-stack-container">
         {techStack.map((tech, index) => (
           <div key={index} className="tech-stack-item">
