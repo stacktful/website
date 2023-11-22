@@ -15,7 +15,7 @@ const styles = {
   },
   ul: {
     height: "7.5vh",
-    paddingLeft: "50%",
+    paddingLeft: "60%",
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
