@@ -6,7 +6,10 @@ import "./style.css";
 function Service({ title, description, techStack }) {
   return (
     <div className="tile">
-      <h2>{title}</h2>
+      <h2>
+        <div className="service-icon"></div>
+        {title}
+      </h2>
       <p className="service-description">{description}</p>
       <div className="tech-stack-container">
         {techStack.map((tech, index) => (

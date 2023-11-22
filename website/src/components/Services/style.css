@@ -56,3 +56,12 @@ p.service-description {
     color: var(--secondary-color);
     background-color: #1b3c39;
 }
+
+.service-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    border-radius: 25%;
+    background-color: lightgray;
+}
