@@ -132,6 +132,7 @@ ul {
   font-size: 1.5rem;
   color: var(--primary-color);
   display: inline-block;
+  user-select: none;
 }
 
 .job-role {
@@ -150,6 +151,7 @@ ul {
 .job-date {
   font-family: "Fira Code";
   color: #909090;
+  user-select: none;
 }
 
 .job-header {
@@ -181,7 +183,7 @@ ul {
   padding: 0;
 }
 
-.job-contribution:not(:last-child) {
+.job-contribution {
   margin-bottom: 0.3rem;
   display: flex;
   flex-direction: row;

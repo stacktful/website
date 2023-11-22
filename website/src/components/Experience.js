@@ -81,7 +81,7 @@ function Bullet() {
         <path
           d="M11.6117 7.27607C12.2763 7.66454 12.2711 8.62678 11.6024 9.00809L2.57462 14.1559C1.90589 14.5372 1.07515 14.0516 1.07928 13.2818L1.13506 2.88965C1.13919 2.11986 1.9751 1.64321 2.63969 2.03168L11.6117 7.27607Z"
           stroke="#00FFD1"
-          stroke-width="2"
+          strokeWidth="2"
           transform="scale(0.8), translate(0, 4.5)"
         />
       </svg>
@@ -90,9 +90,7 @@ function Bullet() {
 }
 
 function Job({ title, company, date, location, url, contributions }) {
-  // This is purely to make the first job expanded by default
   const [expanded, setExpanded] = React.useState(false);
-  // const expanded = company === "EBITWISE";
   return (
     <>
       <div className="job-header-tile" onClick={() => setExpanded(!expanded)}>
@@ -114,8 +112,8 @@ function Job({ title, company, date, location, url, contributions }) {
               <div className="job-url">{url}</div>
             </div>
             <ul className="job-contributions">
-              {contributions.map((contribution) => (
-                <li className="job-contribution">
+              {contributions.map((contribution, index) => (
+                <li key={index} className="job-contribution">
                   <Bullet />
                   <div className="job-contribution-text">{contribution}</div>
                 </li>
