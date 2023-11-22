@@ -5,6 +5,7 @@
   --primary-color: #00FFD1;
   --secondary-color: #FF8A00;
   --third-color: #BED3D8;
+  --hero-image-size: 180px;
 }
 
 .App {
@@ -28,18 +29,17 @@ p {
   align-items: center;
 }
 
-.hero-image {
-  width: 170px;
-  height: 170px;
-  border-radius: 85px;
+div.hero-image {
+  width: var(--hero-image-size);
+  height: var(--hero-image-size);
   margin: auto;
-  background-color: lightgray;
 }
 
 .hero-image>img {
-  width: 170px;
-  height: 170px;
-  border-radius: 85px;
+  width: var(--hero-image-size);
+  height: var(--hero-image-size);
+  border-radius: calc(var(--hero-image-size) / 2);
+  /* border: 5px solid darkslategrey; */
   object-fit: contain;
 }
 
