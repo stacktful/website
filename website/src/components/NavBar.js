@@ -56,7 +56,7 @@ function NavBar() {
       <div style={styles.logo}>Logo</div>
       <ul style={styles.ul}>
         {navBarItems.map((item, index) => (
-          <NavBarItem index={index} {...item} />
+          <NavBarItem key={index} index={index} {...item} />
         ))}
       </ul>
     </nav>

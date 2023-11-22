@@ -9,8 +9,10 @@ function Service({ title, description, techStack }) {
       <h2>{title}</h2>
       <p>{description}</p>
       <div className="tech-stack-container">
-        {techStack.map((tech) => (
-          <div className="tech-stack-item">{tech}</div>
+        {techStack.map((tech, index) => (
+          <div key={index} className="tech-stack-item">
+            {tech}
+          </div>
         ))}
       </div>
     </div>
@@ -23,8 +25,8 @@ function Services() {
       <div
         className={`tiles-grid ${services.length === 3 ? "three-tiles" : ""}`}
       >
-        {services.map((service) => (
-          <Service {...service} />
+        {services.map((service, index) => (
+          <Service key={index} {...service} />
         ))}
       </div>
     </Section>

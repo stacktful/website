@@ -132,8 +132,8 @@ function Experience() {
   return (
     <Section title="Experience">
       <div className="experience-list">
-        {jobs.map((job) => (
-          <Job {...job} />
+        {jobs.map((job, index) => (
+          <Job key={index} {...job} />
         ))}
       </div>
     </Section>
