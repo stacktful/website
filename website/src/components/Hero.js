@@ -14,8 +14,16 @@ function Hero() {
   return (
     <header>
       <p className="hero-greeting">Hi, my name is</p>
-      <h1 className="hero-name">Thibaut van Bergen,</h1>
-      <h1 className="hero-headline">I build SaaS applications.</h1>
+      <div className="hero-header">
+        <div className="hero-text">
+          <h1 className="hero-name">Thibaut van Bergen,</h1>
+          <h1 className="hero-headline">I build SaaS applications.</h1>
+        </div>
+        <div className="hero-image">
+          {/* <img src="../static/img/headshot.jpg"></img> */}
+          <img src={require("../static/img/headshot.png")}></img>
+        </div>
+      </div>
       <p className="hero-description">
         <span style={{ color: "var(--primary-color" }}>
           Full Stack Software Engineer
