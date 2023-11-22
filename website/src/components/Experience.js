@@ -1,5 +1,7 @@
 import Section from "./Section";
 
+import React from "react";
+
 const jobs = [
   {
     title: "Lead Engineer + Scrum Master",
@@ -89,10 +91,11 @@ function Bullet() {
 
 function Job({ title, company, date, location, url, contributions }) {
   // This is purely to make the first job expanded by default
-  const expanded = company === "EBITWISE";
+  const [expanded, setExpanded] = React.useState(false);
+  // const expanded = company === "EBITWISE";
   return (
     <>
-      <div className="job-header-tile">
+      <div className="job-header-tile" onClick={() => setExpanded(!expanded)}>
         {/* Job Header - always visible */}
         <div className="job-header">
           <div className="job-title">

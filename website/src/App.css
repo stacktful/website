@@ -116,10 +116,14 @@ ul {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.job-header-tile:hover {
+  background-color: #285554;
+}
+
 .job-content-tile {
   margin-top: 0.3rem;
   padding: 1.0rem;
-  background-color: #20454374;
+  background-color: #204543a4;
   border-radius: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
