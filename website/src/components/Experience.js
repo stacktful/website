@@ -91,33 +91,37 @@ function Job({ title, company, date, location, url, contributions }) {
   // This is purely to make the first job expanded by default
   const expanded = company === "EBITWISE";
   return (
-    <div className="job-tile">
-      {/* Job Header - always visible */}
-      <div className="job-header">
-        <div className="job-title">
-          <span className="job-role">{title}</span>{" "}
-          <span className="job-company">@ {company}</span>
+    <>
+      <div className="job-header-tile">
+        {/* Job Header - always visible */}
+        <div className="job-header">
+          <div className="job-title">
+            <span className="job-role">{title}</span>{" "}
+            <span className="job-company">@ {company}</span>
+          </div>
+          <div className="job-date">{date}</div>
         </div>
-        <div className="job-date">{date}</div>
       </div>
       {/* Job Description - dropdown */}
       {expanded && (
-        <div className="job-content">
-          <div className="job-details">
-            <div className="job-location">{location}</div>
-            <div className="job-url">{url}</div>
+        <div className="job-content-tile">
+          <div className="job-content">
+            <div className="job-details">
+              <div className="job-location">{location}</div>
+              <div className="job-url">{url}</div>
+            </div>
+            <ul className="job-contributions">
+              {contributions.map((contribution) => (
+                <li className="job-contribution">
+                  <Bullet />
+                  <div className="job-contribution-text">{contribution}</div>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="job-contributions">
-            {contributions.map((contribution) => (
-              <li className="job-contribution">
-                <Bullet />
-                <div className="job-contribution-text">{contribution}</div>
-              </li>
-            ))}
-          </ul>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

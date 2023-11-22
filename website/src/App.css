@@ -108,10 +108,18 @@ ul {
   list-style-type: none; /* Remove bullets */
 }
 
-.job-tile {
+.job-header-tile {
   margin-top: 1.0rem;
-  padding: 1.5rem;
+  padding: 1.0rem;
   background-color: #204543;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.job-content-tile {
+  margin-top: 0.3rem;
+  padding: 1.0rem;
+  background-color: #20454374;
   border-radius: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
