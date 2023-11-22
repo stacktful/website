@@ -1,4 +1,16 @@
+const startDate = new Date(2018, 5, 1);
+
+function monthDiff(startDate) {
+  const today = new Date();
+  return (
+    today.getMonth() -
+    startDate.getMonth() +
+    12 * (today.getFullYear() - startDate.getFullYear())
+  );
+}
+
 function Hero() {
+  const yearsOfExp = Math.floor(monthDiff(startDate) / 12);
   return (
     <header>
       <p className="hero-greeting">Hi, my name is</p>
@@ -8,9 +20,9 @@ function Hero() {
         <span style={{ color: "var(--primary-color" }}>
           Full Stack Software Engineer
         </span>{" "}
-        with over 5+ years of experience in the software engineering field,
-        helping start-ups bring their concept application to production, all
-        with clean and maintainable code adhering to the industry's best
+        with over {yearsOfExp}+ years of experience in the software engineering
+        field, helping start-ups bring their concept application to production,
+        all with clean and maintainable code adhering to the industry's best
         practices.
       </p>
     </header>

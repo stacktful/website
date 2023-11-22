@@ -1,9 +1,9 @@
 // list of services (title, description and tech-stack)
 export const services = [
   {
-    title: "Frontend Engineering",
+    title: "Frontend Development",
     description:
-      "I build web applications using the latest technologies and best practices.",
+      "I build responsive user interfaces using the latest technologies and best practices.",
     techStack: ["React", "Node.js", "JavaScript", "HTML", "CSS"],
   },
   {

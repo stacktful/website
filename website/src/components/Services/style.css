@@ -1,7 +1,8 @@
 .tile {
     height: 200px;
     position: relative;
-    background-color: rgba(30, 64, 61, 0.90); /* Background color for the tile */
+    /* background-color: rgba(30, 64, 61, 0.90); */
+    background-color: #204543; /* Background color for the tile */
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Padding inside the tile */
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for depth */
@@ -48,5 +49,5 @@
     border-radius: 1.5rem;
     border: 1px solid var(--primary-color);
     color: var(--secondary-color);
-    background-color: #173230;
+    background-color: #1b3c39;
 }
