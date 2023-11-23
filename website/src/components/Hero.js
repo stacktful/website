@@ -21,7 +21,7 @@ function Hero() {
         </div>
         <div className="hero-image">
           {/* <img src="../static/img/headshot.jpg"></img> */}
-          <img src={require("../static/img/headshot.png")}></img>
+          <img src={require("../static/img/headshot.jpg")}></img>
         </div>
       </div>
       <p className="hero-description">
