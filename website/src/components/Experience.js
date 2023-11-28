@@ -1,3 +1,6 @@
+import { IoLocationSharp } from "react-icons/io5";
+import { IoOpenOutline } from "react-icons/io5";
+
 import Section from "./Section";
 
 import React from "react";
@@ -111,8 +114,24 @@ function Job({ title, company, date, location, url, contributions }) {
         <div className="job-content-tile">
           <div className="job-content">
             <div className="job-details">
-              <div className="job-location">{location}</div>
-              <div className="job-url">{url}</div>
+              <div className="job-location">
+                <div className="job-location-icon">
+                  <IoLocationSharp />
+                </div>
+                {location}
+              </div>
+              {/* <div className="job-url">
+                <div className="job-url-icon">
+                  <IoOpenOutline />
+                </div>
+                {url}
+              </div> */}
+              <div className="job-url">
+                <div className="job-url-icon">
+                  <IoOpenOutline />
+                </div>
+                {url}
+              </div>
             </div>
             <ul className="job-contributions">
               {contributions.map((contribution, index) => (
