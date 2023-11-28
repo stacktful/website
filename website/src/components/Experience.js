@@ -10,10 +10,11 @@ const jobs = [
     location: "Remote (Lisbon, Portugal)",
     url: "ebitwise.nl",
     contributions: [
-      "Architected containerized app incl. frontend UI, backend API, database + ETL pipeline from scratch.",
+      "Deployed first iteration of 'Dashwise', a real-time financial dashboard SaaS for Ebtiwise's clients.",
+      "Designed & built containerized architecture incl. frontend UI, backend API, database and ETL pipeline from scratch.",
       "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
+      "Scrum Master, incl. creating Agile/Scrum project management workflows and managed communication channels.",
       "Mentored team for software engineering best practices (SOLID, Clean Code etc.).",
-      "Setting up and managing Scrum/Agile project management workflows and communication channels.",
     ],
   },
   {
@@ -24,10 +25,12 @@ const jobs = [
     url: "avonic.nl",
     contributions: [
       "Revamping user interface (UI) for user-friendliness along with development of MVP's main features.",
-      "Complete revision of software architecture for performance, cleanliness and maintainability.",
+      "Complete revision of backend software architecture for performance, cleanliness and maintainability.",
       "Algorithmic optimisation for improved tracking performance.",
+      "Revised fleet management pipeline for improved scalability and maintainability.",
+      "Scrum Master, incl. setting up project management workflows and automations.",
       "Code reviews and tutoring juniors on software engineering best practices.",
-      "Initiating team to Agile Scrum methodology, incl. setting up project management workflows and automations.",
+      "Initiated team to Agile/Scrum methodology, incl. setting up project management workflows and automations.",
     ],
   },
   {

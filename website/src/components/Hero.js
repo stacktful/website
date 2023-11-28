@@ -29,9 +29,9 @@ function Hero() {
           Full Stack Software Engineer
         </span>{" "}
         with over {yearsOfExp}+ years of experience in the software engineering
-        field, helping start-ups bring their concept application to production,
-        all with clean and maintainable code adhering to the industry's best
-        practices.
+        field, helping start-ups / scale-ups bring their concept product to an
+        application in production, all with clean and maintainable code adhering
+        to the industry's best practices.
       </p>
     </header>
   );
