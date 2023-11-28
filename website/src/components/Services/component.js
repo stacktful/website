@@ -1,13 +1,15 @@
+import { AiOutlineCode } from "react-icons/ai";
+
 import Section from "../Section";
 
 import { services } from "./constants";
 import "./style.css";
 
-function Service({ title, description, techStack }) {
+function Service({ icon, title, description, techStack }) {
   return (
     <div className="tile">
-      <h2>
-        <div className="service-icon"></div>
+      <h2 className="service-header">
+        <div className="service-icon">{icon}</div>
         {title}
       </h2>
       <p className="service-description">{description}</p>
