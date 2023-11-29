@@ -12,8 +12,10 @@ const jobs = [
     date: "Jun 2022 - Oct 2023",
     location: "Remote (Lisbon, Portugal)",
     url: "ebitwise.nl",
+    summary:
+      "Led the technical development of 'Dashwise', a real-time financial dashboard SaaS application \
+      for scale-ups, from early concept to product launch.",
     contributions: [
-      "Deployed first iteration of 'Dashwise', a real-time financial dashboard SaaS for Ebtiwise's clients.",
       "Designed & built containerized architecture incl. frontend UI, backend API, database and ETL pipeline from scratch.",
       "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
       "Scrum Master, incl. creating Agile/Scrum project management workflows and managed communication channels.",
@@ -26,12 +28,15 @@ const jobs = [
     date: "Feb 2021 - Oct 2022",
     location: "Remote (Amsterdam, Netherlands)",
     url: "avonic.nl",
+    summary:
+      "Developed CamDirector®, Avonic's innovative tracking solution for automatic \
+       multi-camera lecture registrations, from early prototype to first sale. ",
     contributions: [
       "Revamping user interface (UI) for user-friendliness along with development of MVP's main features.",
       "Complete revision of backend software architecture for performance, cleanliness and maintainability.",
       "Algorithmic optimisation for improved tracking performance.",
       "Revised fleet management pipeline for improved scalability and maintainability.",
-      "Scrum Master, incl. setting up project management workflows and automations.",
+      "Managed tasks incl. setting up project management workflows and automations for the team.",
       "Code reviews and tutoring juniors on software engineering best practices.",
       "Initiated team to Agile/Scrum methodology, incl. setting up project management workflows and automations.",
     ],
@@ -42,6 +47,9 @@ const jobs = [
     date: "Dec 2018 - Mar 2020",
     location: "Rotterdam, Netherlands",
     url: "fleetcleaner.com",
+    summary:
+      "Delivered proof of concept for the localization of the ship-hull-cleaning robot \
+      based on target tracking from sonar imagery.",
     contributions: [
       "Researched localization methods for underwater ship-hull-cleaning robots.",
       "Developed algorithms for image processing, target tracking and localization, based on sonar imagery.",
@@ -54,10 +62,13 @@ const jobs = [
     date: "May 2018 - Nov 2018",
     location: "Tokyo, Japan",
     url: "nec.com",
+    summary:
+      "Delivered proof of concept for the 'micro-Identifier Dot on Things' (mIDoT) \
+       technology in NEC's research for alternative asset tracking solutions.",
     contributions: [
-      "Delivered functional prototype for automated speech recordings, using NEC's mIDoT technology.",
-      "Involved 3D prototyping, programming embedded systems with sensors and data processing.",
-      "Presented results at IEEE 5th World Forum on Internet of Things 2019 (Limerick, Ireland).",
+      "Designed and built hardware for embedded system with 3D printed parts, circuitry, sensors etc.",
+      "Developed and tested software for automated object recognition and data processing.",
+      "Presented my results compiled in a conference paper at the IEEE 5th World Forum on IoT 2019.",
     ],
   },
   {
@@ -66,6 +77,7 @@ const jobs = [
     date: "Aug 2016 - Jan 2017",
     location: "Delft, Netherlands",
     url: "fsteamdelft.com",
+    summary: "",
     contributions: [
       "Created models (Matlab) to analyse the car’s performance w.r.t. its geometrical parameters",
       "Optimized geometry for highest performance in terms of vehicle dynamics",
@@ -95,7 +107,7 @@ function Bullet() {
   );
 }
 
-function Job({ title, company, date, location, url, contributions }) {
+function Job({ title, company, date, location, url, summary, contributions }) {
   const [expanded, setExpanded] = React.useState(false);
   return (
     <>
@@ -120,12 +132,6 @@ function Job({ title, company, date, location, url, contributions }) {
                 </div>
                 {location}
               </div>
-              {/* <div className="job-url">
-                <div className="job-url-icon">
-                  <IoOpenOutline />
-                </div>
-                {url}
-              </div> */}
               <div className="job-url">
                 <div className="job-url-icon">
                   <IoOpenOutline />
@@ -133,6 +139,7 @@ function Job({ title, company, date, location, url, contributions }) {
                 {url}
               </div>
             </div>
+            <p className="job-summary">{summary}</p>
             <ul className="job-contributions">
               {contributions.map((contribution, index) => (
                 <li key={index} className="job-contribution">

@@ -226,6 +226,7 @@ ul {
 
 .job-contribution-bullet-wrapper {
   display: inline-block;
+  margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
 
