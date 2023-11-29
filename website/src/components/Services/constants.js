@@ -13,7 +13,7 @@ export const services = [
   },
   {
     icon: <AiOutlineCode />,
-    title: "Backend Engineering",
+    title: "Backend Development",
     description:
       "I build web applications using the latest technologies and best practices.",
     techStack: ["Python", "JavaScript", "Flask", "SQL"],
