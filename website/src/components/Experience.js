@@ -111,7 +111,7 @@ function Bullet() {
 function Job({ title, company, date, location, url, summary, contributions }) {
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <>
+    <div className="job-container">
       <div className="job-header-tile" onClick={() => setExpanded(!expanded)}>
         {/* Job Header - always visible */}
         <div className="job-header">
@@ -141,6 +141,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
               </div>
             </div>
             <p className="job-summary">{summary}</p>
+            Main contributions:
             <ul className="job-contributions">
               {contributions.map((contribution, index) => (
                 <li key={index} className="job-contribution">
@@ -152,7 +153,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

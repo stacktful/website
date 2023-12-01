@@ -127,8 +127,15 @@ ul {
 
 /* ------------------------ EXPERIENCE ------------------------ */
 
+.job-container {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .job-header-tile {
-  margin-top: 1.0rem;
+  width: 80%;
   padding: 1.0rem;
   background-color: #20454382;
   border-radius: 15px;
@@ -140,6 +147,7 @@ ul {
 }
 
 .job-content-tile {
+  width: 80%;
   margin-top: 0.3rem;
   padding: 1.0rem;
   background-color: #204543a4;
