@@ -32,7 +32,7 @@ const jobs = [
       "Developed CamDirector®, Avonic's innovative tracking solution for automatic \
        multi-camera lecture registrations, from early prototype to first sale. ",
     contributions: [
-      "Revamping user interface (UI) for user-friendliness along with development of MVP's main features.",
+      "Revamped user interface (UI) for user-friendliness along with development of MVP's main features.",
       "Complete revision of backend software architecture for performance, cleanliness and maintainability.",
       "Algorithmic optimisation for improved tracking performance.",
       "Revised fleet management pipeline for improved scalability and maintainability.",
@@ -77,11 +77,12 @@ const jobs = [
     date: "Aug 2016 - Jan 2017",
     location: "Delft, Netherlands",
     url: "fsteamdelft.com",
-    summary: "",
+    summary:
+      "Created models to analyse car's performance as precursor to geometrical design \
+      choices for Formula Student Team Delfts award winning car.",
     contributions: [
-      "Created models (Matlab) to analyse the car’s performance w.r.t. its geometrical parameters",
+      "Created models (Matlab) to analyse the car's performance w.r.t. its geometrical parameters",
       "Optimized geometry for highest performance in terms of vehicle dynamics",
-      // "Our team went on to win all competitions we participated in",
     ],
   },
 ];
