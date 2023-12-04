@@ -1,5 +1,3 @@
-import { AiOutlineCode } from "react-icons/ai";
-
 import Section from "../Section";
 
 import { services } from "./constants";

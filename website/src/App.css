@@ -90,6 +90,7 @@ h2.section-header-title {
   justify-content: space-between;
   color: var(--third-color);
   padding: 20px 0;
+  margin-bottom: 3.0rem;
 }
 
 .section-header-title {
@@ -104,7 +105,7 @@ h2.section-header-title {
 .section-header-line {
   flex-grow: 1;
   border-radius: 2px;
-  height: 4px;
+  height: 2.5px;
   background-color: #00ffd023;
 }
 
@@ -300,10 +301,7 @@ blockquote {
 }
 
 .testimonial-item {
-  /* border: 1px solid #00ffd0; */
-  /* position: relative; */
   width: auto;
-  /* margin: 0 10px; */
   padding: 10px;
   padding-top: calc(10px + 100px / 2);
   background-color: #20454382;
@@ -319,15 +317,12 @@ blockquote {
 h4.testimonial-name {
   font-size: 1.0rem;
   font-weight: bold;
-  /* color: var(--primary-color); */
   margin: 0;
   margin-bottom: 0.5rem;
 }
 
 h5.testimonial-role {
   font-size: 0.8rem;
-  /* font-weight: bold; */
-  /* color: var(--primary-color); */
   margin: 0;
   margin-bottom: 1.5rem;
 }

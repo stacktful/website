@@ -141,7 +141,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
               </div>
             </div>
             <p className="job-summary">{summary}</p>
-            Main contributions:
+            {/* Main contributions:
             <ul className="job-contributions">
               {contributions.map((contribution, index) => (
                 <li key={index} className="job-contribution">
@@ -149,7 +149,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
                   <div className="job-contribution-text">{contribution}</div>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
       )}
