@@ -203,6 +203,17 @@ ul {
   color: #909090;
 }
 
+.job-url>a {
+  color: #909090;
+  text-decoration: none;
+  color: inherit;
+}
+
+.job-url>a:hover {
+  color: #909090;
+  text-decoration: underline;
+}
+
 .job-location-icon, .job-url-icon {
   width: auto;
   height: 100%;

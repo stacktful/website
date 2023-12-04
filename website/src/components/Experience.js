@@ -27,7 +27,7 @@ const jobs = [
     company: "Avonic",
     date: "Feb 2021 - Oct 2022",
     location: "Remote (Amsterdam, Netherlands)",
-    url: "avonic.nl",
+    url: "avonic.com",
     summary:
       "Developed CamDirector®, Avonic's innovative tracking solution for automatic \
        multi-camera lecture registrations, from early prototype to first sale. ",
@@ -76,7 +76,7 @@ const jobs = [
     company: "Formula Student Team Delft",
     date: "Aug 2016 - Jan 2017",
     location: "Delft, Netherlands",
-    url: "fsteamdelft.com",
+    url: "fsteamdelft.nl",
     summary:
       "Created models to analyse car's performance as precursor to geometrical design \
       choices for Formula Student Team Delfts award winning car.",
@@ -137,7 +137,9 @@ function Job({ title, company, date, location, url, summary, contributions }) {
                 <div className="job-url-icon">
                   <IoOpenOutline />
                 </div>
-                {url}
+                <a href={"https://www." + url} target="_blank">
+                  {url}
+                </a>
               </div>
             </div>
             <p className="job-summary">{summary}</p>
