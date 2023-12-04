@@ -337,3 +337,27 @@ h5.testimonial-role {
   margin: 0;
   margin-bottom: 1.5rem;
 }
+
+/* ------------------------ CONTACT ------------------------ */
+
+.contact-list {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item>svg {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
