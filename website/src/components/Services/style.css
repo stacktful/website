@@ -67,7 +67,7 @@ div.service-icon {
     margin: auto;
     margin-left: 0;
     margin-right: 0.5rem;
-    color: var(--third-color);
+    color: var(--tertiary-color);
 }
 
 .service-icon>svg {

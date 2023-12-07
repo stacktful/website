@@ -4,7 +4,7 @@
   --main-bg-color-2: #012725;
   --primary-color: #00FFD1;
   --secondary-color: #FF8A00;
-  --third-color: #BED3D8;
+  --tertiary-color: #BED3D8;
   --darkgray: #909090;
   --tile-color: #20454382;
   --tile-hover-color: #20454339;
@@ -20,7 +20,7 @@
 .App {
   text-align: left;
   min-height: 100vh;
-  color: var(--third-color);
+  color: var(--tertiary-color);
 }
 
 nav a {
@@ -55,7 +55,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--third-color);
+  color: var(--tertiary-color);
   padding: 20px 0;
   margin-bottom: 3.0rem;
 }
@@ -182,7 +182,7 @@ div.hero-image {
 
 .job-company {
   font-size: 1.5rem;
-  color: var(--third-color);
+  color: var(--tertiary-color);
   display: inline-block;
 }
 
