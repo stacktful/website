@@ -3,45 +3,39 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 
-// const contacts = [
-//   {
-//     icon: "IoMailOutline",
-//     text: "",
-//     link: "",
-//   },
-//   {
-//     icon: "IoLogoGithub",
-//     text: "",
-//     link: "",
-//   },
-//   {
-//     icon: "IoLogoLinkedin",
-//     text: "",
-//     link: "",
-//   },
-//   {
-//     icon: "IoLogoInstagram",
-//     text: "",
-//     link: "",
-//   },
-// ];
+const contacts = [
+  {
+    icon: <MdOutlineAlternateEmail />,
+    text: "Email",
+    link: "mailto:thibaut@stacktful.com",
+  },
+  {
+    icon: <FaLinkedin />,
+    text: "LinkedIn",
+    link: "https://www.linkedin.com/in/thibaut-van-bergen/",
+  },
+  {
+    icon: <IoLogoGithub />,
+    text: "GitHub",
+    link: "https://github.com/stacktful",
+  },
+];
 
 function Contact() {
   return (
     <Section title="Contact">
       <div className="contact-list">
-        <div className="contact-item">
-          <MdOutlineAlternateEmail />
-          Email
-        </div>
-        <div className="contact-item">
-          <FaLinkedin />
-          LinkedIn
-        </div>
-        <div className="contact-item">
-          <IoLogoGithub />
-          GitHub
-        </div>
+        {contacts.map((contact, index) => (
+          <a
+            key={index}
+            className="contact-item"
+            href={contact.link}
+            target="_blank"
+          >
+            {contact.icon}
+            {contact.text}
+          </a>
+        ))}
       </div>
     </Section>
   );

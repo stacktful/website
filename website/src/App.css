@@ -349,12 +349,29 @@ h5.testimonial-role {
   font-weight: bold;
 }
 
-.contact-item {
+/* .job-url>a {
+  color: #909090;
+  text-decoration: none;
+  color: inherit;
+}
+
+.job-url>a:hover {
+  color: #909090;
+  text-decoration: underline;
+} */
+
+a.contact-item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin-bottom: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.contact-item:hover {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .contact-item>svg {
