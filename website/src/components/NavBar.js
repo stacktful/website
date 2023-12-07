@@ -1,35 +1,4 @@
-// styles constants
-const styles = {
-  nav: {
-    height: "7.5vh",
-    width: "100%",
-    color: "var(--primary-color)",
-  },
-  logo: {
-    height: "7.5vh",
-    width: "7.5vh",
-    color: "white",
-    border: "1px solid red",
-    float: "left",
-    alignItems: "center",
-  },
-  ul: {
-    height: "7.5vh",
-    paddingLeft: "60%",
-    display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-  a: {
-    fontSize: "1rem",
-    textDecoration: "none",
-  },
-  navBarItemIndex: {
-    color: "#BED3D8",
-    marginRight: "5px",
-    fontFamily: "Fira Code",
-  },
-};
+import { PiStackFill } from "react-icons/pi";
 
 const navBarItems = [
   { name: "About", href: "#about" },
@@ -41,10 +10,8 @@ const navBarItems = [
 function NavBarItem(props) {
   return (
     <li>
-      <span style={styles.navBarItemIndex}>0{props.index + 1}.</span>
-      <a style={styles.a} href={props.href}>
-        {props.name}
-      </a>
+      <span className="nav-item-index">0{props.index + 1}.</span>
+      <a href={props.href}>{props.name}</a>
     </li>
   );
 }
@@ -52,9 +19,11 @@ function NavBarItem(props) {
 // component
 function NavBar() {
   return (
-    <nav style={styles.nav}>
-      <div style={styles.logo}>Logo</div>
-      <ul style={styles.ul}>
+    <nav>
+      <span className="nav-logo">
+        <PiStackFill />
+      </span>
+      <ul>
         {navBarItems.map((item, index) => (
           <NavBarItem key={index} index={index} {...item} />
         ))}

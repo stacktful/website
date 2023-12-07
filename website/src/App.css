@@ -23,13 +23,46 @@
   color: var(--tertiary-color);
 }
 
-nav a {
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 7.5vh;
+  width: 100%;
   color: var(--primary-color);
+  background-color: var(--main-bg-color-1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav > span.logo {
+  height: 7.5vh;
+  padding-left: 5%;
+}
+
+nav > ul {
+  height: auto;
+  width: 40%;
+  padding-left: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: var(--tertiary-color);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+span.nav-item-index {
+  color: var(--primary-color);
+  margin-right: 0.1rem;
+  font-family: "Fira Code";
 }
 
 ul {
   list-style-type: none;
-  /* Remove bullets */
 }
 
 div.content {
@@ -270,13 +303,11 @@ div.hero-image {
 }
 
 .testimonial-wrapper {
-  /* border: 1px solid white; */
   width: calc(33% - 10px);
   height: 270px;
   display: flex;
   flex-direction: row;
   position: relative;
-  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); */
 }
 
 img.testimonial-image {
