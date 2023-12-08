@@ -385,3 +385,30 @@ a.contact-item:hover {
   margin-right: 0.5rem;
   color: var(--primary-color);
 }
+
+/* ------------------------ FOOTER ------------------------ */
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "Fira Code";
+}
+
+footer a {
+  color: var(--darkgray);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
