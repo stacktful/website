@@ -7,7 +7,7 @@ import React from "react";
 
 const jobs = [
   {
-    title: "Lead Engineer + Scrum Master",
+    title: "Tech Lead + Scrum Master",
     company: "EBITWISE",
     date: "Jun 2022 - Oct 2023",
     location: "Remote (Lisbon, Portugal)",
