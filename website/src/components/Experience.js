@@ -79,7 +79,7 @@ const jobs = [
     url: "fsteamdelft.nl",
     summary:
       "Created models to analyse car's performance as precursor to geometrical design \
-      choices for Formula Student Team Delfts award winning car.",
+      choices for Formula Student Team Delft's award winning car.",
     contributions: [
       "Created models (Matlab) to analyse the car's performance w.r.t. its geometrical parameters",
       "Optimized geometry for highest performance in terms of vehicle dynamics",
