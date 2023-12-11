@@ -127,13 +127,17 @@ h1 {
 }
 
 h2.section-header-title {
-  font-size: 2.0rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.0rem;
   margin-bottom: 0.5rem;
 }
 
@@ -213,7 +217,7 @@ p.service-description {
   margin-bottom: 1.0rem;
 }
 
-.tile>h2 {
+h3.service-header {
   margin-top: 0;
   font-weight: bold;
 }
@@ -236,7 +240,7 @@ p.service-description {
   background-color: #1b3c39;
 }
 
-h2.service-header {
+.service-header {
   display: flex;
   align-items: center;
 }
@@ -256,10 +260,6 @@ div.service-icon {
   height: 100%;
   margin-top: 0.35rem;
 }
-
-/* border-radius: 25%; */
-/* display: inline-block; */
-/* background-color: lightgray; */
 
 /* ------------------------ EXPERIENCE ------------------------ */
 

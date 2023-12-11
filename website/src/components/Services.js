@@ -32,10 +32,10 @@ export const services = [
 function Service({ icon, title, description, techStack }) {
   return (
     <div className="tile">
-      <h2 className="service-header">
+      <h3 className="service-header">
         <div className="service-icon">{icon}</div>
         {title}
-      </h2>
+      </h3>
       <p className="service-description">{description}</p>
       <div className="tech-stack-container">
         {techStack.map((tech, index) => (
