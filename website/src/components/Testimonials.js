@@ -38,11 +38,13 @@ function Testimonial({ name, role, company, quote, img }) {
     <div className="testimonial-wrapper">
       <img className="testimonial-image" src={img} />
       <div className="testimonial-item">
-        <h4 className="testimonial-name">{name.toUpperCase()}</h4>
-        <h5 className="testimonial-role">
-          {role} @ {company}
-        </h5>
         <blockquote>"{quote}"</blockquote>
+        <div className="testimonial-reference">
+          <h4 className="testimonial-name">— {name.toUpperCase()}</h4>
+          <h5 className="testimonial-role">
+            {role} @ {company}
+          </h5>
+        </div>
       </div>
     </div>
   );
