@@ -2,6 +2,8 @@ import { AiOutlineCode } from "react-icons/ai";
 import { IoCodeSlash } from "react-icons/io5";
 import { GoGitCompare } from "react-icons/go";
 
+import Section from "./Section";
+
 // list of services (title, description and tech-stack)
 export const services = [
   {
@@ -26,3 +28,38 @@ export const services = [
     techStack: ["Bash", "Git", "GitHub Actions", "Docker", "Terraform", "GCP"],
   },
 ];
+
+function Service({ icon, title, description, techStack }) {
+  return (
+    <div className="tile">
+      <h2 className="service-header">
+        <div className="service-icon">{icon}</div>
+        {title}
+      </h2>
+      <p className="service-description">{description}</p>
+      <div className="tech-stack-container">
+        {techStack.map((tech, index) => (
+          <div key={index} className="tech-stack-item">
+            {tech}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <Section title="Services">
+      <div
+        className={`tiles-grid ${services.length === 3 ? "three-tiles" : ""}`}
+      >
+        {services.map((service, index) => (
+          <Service key={index} {...service} />
+        ))}
+      </div>
+    </Section>
+  );
+}
+
+export default Services;

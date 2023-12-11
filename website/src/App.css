@@ -175,6 +175,92 @@ div.hero-image {
   object-fit: contain;
 }
 
+/* ------------------------ SERVICES ------------------------ */
+
+.tile {
+  height: 180px;
+  position: relative;
+  /* background-color: rgba(30, 64, 61, 0.90); */
+  background-color: #20454382;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+  /* Ensures the content scales with the tile */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tiles-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiles-grid.three-tiles> :nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  max-width: calc(50% - 10px);
+  /* Assuming grid-gap is 10px, adjust if different */
+}
+
+p.service-description {
+  margin-top: 0.5rem;
+  margin-bottom: 1.0rem;
+}
+
+.tile>h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.tech-stack-container {
+  left: calc(20px - 0.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-stack-item {
+  display: inline-block;
+  font-family: "Fira Code";
+  height: auto;
+  padding: 0.25rem 1.0rem 0.25rem 1.0rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: #1b3c39;
+}
+
+h2.service-header {
+  display: flex;
+  align-items: center;
+}
+
+div.service-icon {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0.5rem;
+  color: var(--tertiary-color);
+}
+
+.service-icon>svg {
+  color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  margin-top: 0.35rem;
+}
+
+/* border-radius: 25%; */
+/* display: inline-block; */
+/* background-color: lightgray; */
+
 /* ------------------------ EXPERIENCE ------------------------ */
 
 .job-container {
