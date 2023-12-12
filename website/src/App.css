@@ -448,17 +448,14 @@ blockquote {
   margin-right: 0.8rem;
 }
 
-h4.testimonial-name {
-  font-size: 1.0rem;
+h5.testimonial-name {
   font-weight: bold;
   margin: 0;
   margin-bottom: 0.5rem;
 }
 
 h5.testimonial-role {
-  font-size: 0.8rem;
   margin: 0;
-  margin-bottom: 1.5rem;
 }
 
 /* ------------------------ CONTACT ------------------------ */
