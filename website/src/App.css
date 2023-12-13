@@ -9,12 +9,13 @@
   --tile-color: #194b4982;
   /* --tile-color: #1b524f82; */
   /* --tile-color: #20454382; */
-  --tile-hover-color: #20454339;
+  --tile-hover-color: #26535139;
   --header-line-color: #00FFD023;
   --content-width: 80%;
   --hero-image-size: 180px;
   --header-margin: 150px;
   --border-radius: 15px;
+  --code-font: "Fira Code";
 }
 
 /* ------------------------ LAYOUT ------------------------ */
@@ -54,7 +55,7 @@ nav > ul {
 nav a {
   color: var(--tertiary-color);
   font-size: 0.9rem;
-  font-family: "Fira Code";
+  font-family: var(--code-font);
   text-decoration: none;
 }
 
@@ -68,7 +69,7 @@ span.nav-item-index {
   color: var(--primary-color);
   margin-right: 0.1rem;
   font-size: 0.9rem;
-  font-family: "Fira Code";
+  font-family: var(--code-font);
 }
 
 ul {
@@ -131,7 +132,7 @@ h2.section-header-text {
 
 h2.section-header-text::before {
   content: counter(section, decimal-leading-zero) ".";
-  font-family: "Fira Code";
+  font-family: var(--code-font);
   /* font-size: 2.0rem; */
   color: var(--primary-color);
 }
@@ -237,7 +238,7 @@ h3.service-header {
 
 .tech-stack-item {
   display: inline-block;
-  font-family: "Fira Code";
+  font-family: var(--code-font);
   font-size: 0.8rem;
   height: auto;
   padding: 0.25rem 1.0rem 0.25rem 1.0rem;
@@ -291,7 +292,7 @@ div.service-icon {
 
 .job-content-tile {
   width: 80%;
-  margin-top: 0.3rem;
+  margin-top: 0.8rem;
   padding: 1.0rem;
   background-color: var(--tile-color);
   border-radius: var(--border-radius);
@@ -306,20 +307,19 @@ div.service-icon {
 }
 
 .job-role {
-  font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary-color);
   display: inline-block;
 }
 
 .job-company {
-  font-size: 1.5rem;
   color: var(--tertiary-color);
   display: inline-block;
 }
 
 .job-date {
-  font-family: "Fira Code";
+  font-size: 0.9rem;
+  font-family: var(--code-font);
   color: var(--darkgray);
   user-select: none;
 }
@@ -341,7 +341,7 @@ div.service-icon {
 .job-location, .job-url {
   display: flex;
   align-items: center;
-  font-family: "Fira Code";
+  font-family: var(--code-font);
   color: var(--darkgray);
 }
 
@@ -508,7 +508,7 @@ footer p {
   padding: 0;
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
-  font-family: "Fira Code";
+  font-family: var(--code-font);
 }
 
 footer a {
