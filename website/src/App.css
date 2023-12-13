@@ -473,6 +473,7 @@ h5.testimonial-role {
   flex-wrap: nowrap;
   justify-content: space-between;
   font-weight: bold;
+  margin: 0 10rem 0 10rem;
 }
 
 a.contact-item {
