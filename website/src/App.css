@@ -76,16 +76,16 @@ ul {
   list-style-type: none;
 }
 
-div.content {
+header {
+  margin-top: var(--header-margin);
+  margin-bottom: var(--header-margin);
+}
+
+main {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-}
-
-header {
-  margin-top: var(--header-margin);
-  margin-bottom: var(--header-margin);
 }
 
 /* Section components */

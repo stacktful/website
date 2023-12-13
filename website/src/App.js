@@ -9,19 +9,27 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+const Layout = ({ children }) => {
+  return (
+    <>
+      <NavBar />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
+
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <div className="content">
+      <Layout>
         <Hero />
         <Services />
         {/* <Projects /> */}
         <Experience />
         <Testimonials />
         <Contact />
-        <Footer />
-      </div>
+      </Layout>
     </div>
   );
 }
