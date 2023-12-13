@@ -94,7 +94,7 @@ section {
   margin-bottom: var(--header-margin);
 }
 
-.section-header {
+div.section-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,31 +103,12 @@ section {
   margin-bottom: 3.0rem;
 }
 
-.section-header-title {
-  margin: 0 10px;
-  flex-shrink: 0;
-  text-align: center;
-  font-size: 1.5rem;
-  white-space: nowrap;
-  /* text-transform: uppercase; */
-}
-
-.section-header-line {
+div.section-header-line {
   flex-grow: 1;
   border-radius: 2px;
   height: 2.5px;
   background-color: var(--header-line-color);
 }
-
-.section-header-title-index {
-  color: var(--primary-color);
-  margin-right: 0.1rem;
-  font-family: "Fira Code";
-}
-
-/* .section-header-title-text {
-  font-family: "Fira Code";
-} */
 
 /* ------------------------ TEXT STYLES ------------------------ */
 
@@ -138,8 +119,21 @@ h1 {
   margin-bottom: 0;
 }
 
-h2.section-header-title {
+h2.section-header-text {
   font-size: 2.5rem;
+  margin: 0 10px;
+  flex-shrink: 0;
+  text-align: center;
+  white-space: nowrap;
+  counter-increment: section;
+  text-transform: uppercase;
+}
+
+h2.section-header-text::before {
+  content: counter(section, decimal-leading-zero) ".";
+  font-family: "Fira Code";
+  /* font-size: 2.0rem; */
+  color: var(--primary-color);
 }
 
 h3 {
