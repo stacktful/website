@@ -502,8 +502,22 @@ a.contact-item {
 
 a.contact-item:hover {
   color: inherit;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
 }
+
+a.contact-item:not(:hover) {
+  /* color: inherit; */
+  /* text-decoration: underline; */
+  transform: scale(1.0);
+  transition: ease-in-out 0.2s;
+}
+
+/* a.contact-item:hover > svg {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+} */
 
 .contact-item>svg {
   margin-right: 0.5rem;
