@@ -534,7 +534,7 @@ a.contact-item:not(:hover) {
 .contact-cta {
   text-align: center;
   margin-top: 1.0rem;
-  margin-bottom: 3.0rem;
+  margin-bottom: 5.0rem;
   font-size: 1.5rem;
   /* font-weight: bold; */
 }
@@ -543,7 +543,6 @@ a.contact-item:not(:hover) {
   margin: 0;
   margin-bottom: 0.5rem;
 }
-
 
 /* ------------------------ FOOTER ------------------------ */
 
