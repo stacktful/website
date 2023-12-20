@@ -1,4 +1,4 @@
-import { PiStackFill } from "react-icons/pi";
+import Logo from "./Logo";
 
 const navBarItems = [
   { name: "About", href: "#about" },
@@ -21,7 +21,7 @@ function NavBar() {
   return (
     <nav>
       <span className="nav-logo">
-        <PiStackFill />
+        <Logo />
       </span>
       <ul>
         {navBarItems.map((item, index) => (
