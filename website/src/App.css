@@ -266,7 +266,7 @@ h3.service-header {
   align-items: center;
 }
 
-div.service-icon {
+.service-icon {
   width: auto;
   height: 100%;
   margin: auto;
@@ -279,7 +279,7 @@ div.service-icon {
   color: var(--primary-color);
   width: 100%;
   height: 100%;
-  margin-top: 0.35rem;
+  margin-top: 0.35rem;  /* TODO: quick & dirty fix */
 }
 
 /* ------------------------ EXPERIENCE ------------------------ */
@@ -314,15 +314,23 @@ div.service-icon {
 
 .job-title {
   font-size: 1.5rem;
-  color: var(--primary-color);
-  display: inline-block;
+  display: flex;
   user-select: none;
+}
+
+.job-dropdown-arrow {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-right: 0.5rem;
+  color: var(--primary-color);
 }
 
 .job-role {
   font-weight: bold;
   color: var(--primary-color);
   display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .job-company {
