@@ -24,6 +24,13 @@ const contacts = [
 function Contact() {
   return (
     <Section title="Contact">
+      <div className="contact-cta">
+        <h2>Let's get in touch!</h2>
+        <p>
+          Whether you have an exciting opportunity, a question, or just want to
+          connect, I'd love to hear from you.
+        </p>
+      </div>
       <div className="contact-list">
         {contacts.map((contact, index) => (
           <a

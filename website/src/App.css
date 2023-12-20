@@ -1,6 +1,6 @@
 /* variables */
 :root {
-  --main-bg-color-1: #204543;
+  --main-bg-color-1: #024a45;
   --main-bg-color-2: #012725;
   --primary-color: #00FFD1;
   --secondary-color: #FF8A00;
@@ -523,6 +523,20 @@ a.contact-item:not(:hover) {
   margin-right: 0.5rem;
   color: var(--primary-color);
 }
+
+.contact-cta {
+  text-align: center;
+  margin-top: 1.0rem;
+  margin-bottom: 3.0rem;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+.contact-cta h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
 
 /* ------------------------ FOOTER ------------------------ */
 
