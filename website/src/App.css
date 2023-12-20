@@ -6,10 +6,8 @@
   --secondary-color: #FF8A00;
   --tertiary-color: #BED3D8;
   --darkgray: #909090;
-  --tile-color: #194b4982;
-  /* --tile-color: #1b524f82; */
-  /* --tile-color: #20454382; */
-  --tile-hover-color: #26535139;
+  --tile-color: #024a45;
+  --tile-hover-color: #02433e;
   --header-line-color: #00FFD023;
   --content-width: 80%;
   --hero-image-size: 180px;
