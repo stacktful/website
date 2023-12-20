@@ -42,7 +42,8 @@ function Testimonial({ name, role, company, quote, img }) {
         <div className="testimonial-reference">
           <h5 className="testimonial-name">— {name.toUpperCase()}</h5>
           <h5 className="testimonial-role">
-            {role} @ {company}
+            <span className="testimonial-role-title">{role}</span>
+            <span className="testimonial-role-company"> @ {company}</span>
           </h5>
         </div>
       </div>
