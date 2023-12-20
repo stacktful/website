@@ -13,11 +13,15 @@ function Hero() {
   const yearsOfExp = Math.floor(monthDiff(startDate) / 12);
   return (
     <header>
-      <p className="hero-greeting">Hi, my name is</p>
+      {/* <p className="hero-greeting">Hi, my name is</p> */}
       <div className="hero-header">
         <div className="hero-text">
-          <h1 className="hero-name">Thibaut van Bergen,</h1>
-          <h1 className="hero-headline">I build SaaS applications.</h1>
+          <h1>
+            Hi, I'm<span className="hero-name"> Thibaut</span>.
+          </h1>
+          <h2 className="hero-headline">
+            Software Architect & DevOps Engineer
+          </h2>
         </div>
         <div className="hero-image">
           {/* <img src="../static/img/headshot.jpg"></img> */}
