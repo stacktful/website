@@ -1,9 +1,6 @@
 import { IoLocationSharp } from "react-icons/io5";
 import { IoOpenOutline } from "react-icons/io5";
-import {
-  MdOutlineKeyboardArrowDown,
-  MdOutlineKeyboardArrowUp,
-} from "react-icons/md";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 import Section from "./Section";
 
@@ -91,6 +88,14 @@ const jobs = [
   },
 ];
 
+const DropdownArrow = ({ angle }) => {
+  return (
+    <div className="job-dropdown-arrow">
+      <MdOutlineKeyboardArrowUp transform={`rotate(${angle})`} />
+    </div>
+  );
+};
+
 function Job({ title, company, date, location, url, summary, contributions }) {
   const [expanded, setExpanded] = React.useState(false);
   return (
@@ -99,13 +104,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
         {/* Job Header - always visible */}
         <div className="job-header">
           <div className="job-title">
-            <div className="job-dropdown-arrow">
-              {expanded ? (
-                <MdOutlineKeyboardArrowUp />
-              ) : (
-                <MdOutlineKeyboardArrowDown />
-              )}
-            </div>
+            <DropdownArrow angle={expanded ? 180 : 0} />
             <span className="job-role">{title}</span>
             <span className="job-company">@ {company}</span>
           </div>
