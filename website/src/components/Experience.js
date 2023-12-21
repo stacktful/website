@@ -14,7 +14,7 @@ const jobs = [
     location: "Remote (Lisbon, Portugal)",
     url: "ebitwise.nl",
     summary:
-      "Led the technical development of 'Dashwise', a real-time financial dashboard SaaS application \
+      "Led the technical development of Dashwise™, a real-time financial dashboard SaaS application \
       for scale-ups, from early concept to product launch.",
     contributions: [
       "Designed & built containerized architecture incl. frontend UI, backend API, database and ETL pipeline from scratch.",
@@ -30,7 +30,7 @@ const jobs = [
     location: "Remote (Amsterdam, Netherlands)",
     url: "avonic.com",
     summary:
-      "Developed CamDirector®, Avonic's innovative tracking solution for automatic \
+      "Developed CamDirector™, Avonic's innovative tracking solution for automatic \
        multi-camera lecture registrations, from early prototype to first sale. ",
     contributions: [
       "Revamped user interface (UI) for user-friendliness along with development of MVP's main features.",
