@@ -22,20 +22,20 @@ function Logo() {
       <path
         d="M330 77L330 31"
         stroke="black"
-        stroke-width="20"
-        stroke-linecap="round"
+        strokeWidth="20"
+        strokeLinecap="round"
       />
       <path
         d="M595 477L550 454"
         stroke="black"
-        stroke-width="20"
-        stroke-linecap="round"
+        strokeWidth="20"
+        strokeLinecap="round"
       />
       <path
         d="M111 455L64 477"
         stroke="black"
-        stroke-width="20"
-        stroke-linecap="round"
+        strokeWidth="20"
+        strokeLinecap="round"
       />
       <path
         d="M314.668 296.436C323.864 291.205 335.136 291.205 344.332 296.436L498.151 383.923C518.376 395.426 518.376 424.574 498.151 436.077L344.332 523.564C335.136 528.795 323.864 528.795 314.668 523.564L160.849 436.077C140.625 424.574 140.625 395.426 160.849 383.923L314.668 296.436Z"
@@ -62,16 +62,16 @@ function Logo() {
         <path
           d="M264 279L367 222"
           stroke="black"
-          stroke-width="30"
-          stroke-linecap="round"
+          strokeWidth="30"
+          strokeLinecap="round"
         />
       </g>
       <g filter="url(#filter1_d_215_13)">
         <path
           d="M315 188L423 250"
           stroke="black"
-          stroke-width="30"
-          stroke-linecap="round"
+          strokeWidth="30"
+          strokeLinecap="round"
         />
       </g>
       <defs>
@@ -82,9 +82,9 @@ function Logo() {
           width="141.005"
           height="101.006"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -117,9 +117,9 @@ function Logo() {
           width="146.005"
           height="106.005"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -153,8 +153,8 @@ function Logo() {
           y2="524.893"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFD1" />
-          <stop offset="1" stop-color="#00FFD1" stop-opacity="0.65" />
+          <stop stopColor="#00FFD1" />
+          <stop offset="1" stopColor="#00FFD1" stopOpacity="0.65" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_215_13"
@@ -164,8 +164,8 @@ function Logo() {
           y2="472"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFD1" />
-          <stop offset="1" stop-color="#00FFD1" stop-opacity="0.6" />
+          <stop stopColor="#00FFD1" />
+          <stop offset="1" stopColor="#00FFD1" stopOpacity="0.6" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_215_13"
@@ -175,8 +175,8 @@ function Logo() {
           y2="418"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFD1" />
-          <stop offset="1" stop-color="#00FFD1" stop-opacity="0.6" />
+          <stop stopColor="#00FFD1" />
+          <stop offset="1" stopColor="#00FFD1" stopOpacity="0.6" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_215_13"
@@ -186,8 +186,8 @@ function Logo() {
           y2="250"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFD1" />
-          <stop offset="1" stop-color="#00FFD1" stop-opacity="0.6" />
+          <stop stopColor="#00FFD1" />
+          <stop offset="1" stopColor="#00FFD1" stopOpacity="0.6" />
         </linearGradient>
       </defs>
     </svg>
