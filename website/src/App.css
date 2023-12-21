@@ -430,7 +430,27 @@ h3.service-header {
   position: relative;
 }
 
-img.testimonial-image {
+.testimonial-wrapper:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+}
+
+.testimonial-wrapper:not(:hover) {
+  transform: scale(1.00);
+  transition: ease-in-out 0.2s;
+}
+
+.testimonial-wrapper:hover > img {
+  filter: none;
+  transition: ease-in-out 0.2s;
+}
+
+.testimonial-wrapper:not(:hover) > img {
+  filter: grayscale(100%);
+  transition: ease-in-out 0.2s;
+}
+
+.testimonial-image {
   border: 3px solid var(--header-line-color);
   width: 100px;
   height: 100px;
