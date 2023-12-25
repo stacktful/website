@@ -1,3 +1,6 @@
+import { IoDownloadOutline } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa";
+
 const startDate = new Date(2018, 5, 1);
 
 function monthDiff(startDate) {
@@ -19,9 +22,7 @@ function Hero() {
           <h1>
             Hi, I'm<span className="hero-name"> Thibaut</span>.
           </h1>
-          <h2 className="hero-headline">
-            Software Architect & DevOps Engineer
-          </h2>
+          <h2 className="hero-headline">Fullstack Software Engineer</h2>
         </div>
         <div className="hero-image">
           {/* <img src="../static/img/headshot.jpg"></img> */}
@@ -37,6 +38,14 @@ function Hero() {
         application in production, all with clean and maintainable code adhering
         to the industry's best practices.
       </p>
+      <button>
+        <IoDownloadOutline />
+        {" Resume"}
+      </button>
+      <button className="btn-about">
+        {"About me "}
+        <FaArrowRight />
+      </button>
     </header>
   );
 }
