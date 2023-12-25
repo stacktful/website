@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   position: absolute;
+  width: 100%;
   top: 0;
   font-family: 'Inter';
   background-image: linear-gradient(to bottom right, var(--main-bg-color-1), var(--main-bg-color-2));

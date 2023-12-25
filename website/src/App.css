@@ -179,12 +179,13 @@ p {
 }
 
 .hero-headline {
-  margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.hero-description {
+/* .hero-description {
   width: 75%;
-}
+} */
 
 div.hero-image {
   width: var(--hero-image-size);
