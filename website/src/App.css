@@ -195,13 +195,13 @@ div.hero-image {
 .hero-image>img {
   width: var(--hero-image-size);
   height: var(--hero-image-size);
-  border-radius: calc(var(--hero-image-size) / 2);
+  border-radius: 100%;
   object-fit: contain;
 }
 
 button {
   font-family: var(--code-font);
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: var(--main-bg-color-2);
   background-color: var(--primary-color);
@@ -227,6 +227,27 @@ button:not(:hover) {
 button.btn-about {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+button.btn-audio {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid transparent;
+}
+
+button.btn-audio svg {
+  height: 32px;
+  width: 32px;
+}
+
+
+
+button.btn-audio:hover {
+  transform: scale(1.25);
+}
+
+button.btn-audio:not(:hover) {
+  transform: scale(1.0);
 }
 
 /* ------------------------ SERVICES ------------------------ */

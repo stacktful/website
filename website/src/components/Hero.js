@@ -1,3 +1,4 @@
+import { HiMiniSpeakerWave } from "react-icons/hi2";
 import { IoDownloadOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -12,20 +13,45 @@ function monthDiff(startDate) {
   );
 }
 
+function ResumeButton() {
+  return (
+    <button>
+      <IoDownloadOutline />
+      {" Resume"}
+    </button>
+  );
+}
+
+function AboutButton() {
+  return (
+    <button className="btn-about">
+      {"About me "}
+      <FaArrowRight />
+    </button>
+  );
+}
+
+function AudioButton() {
+  return (
+    <button className="btn-audio">
+      <HiMiniSpeakerWave />
+    </button>
+  );
+}
+
 function Hero() {
   const yearsOfExp = Math.floor(monthDiff(startDate) / 12);
   return (
     <header>
-      {/* <p className="hero-greeting">Hi, my name is</p> */}
       <div className="hero-header">
         <div className="hero-text">
           <h1>
             Hi, I'm<span className="hero-name"> Thibaut</span>.
+            <AudioButton />
           </h1>
           <h2 className="hero-headline">Fullstack Software Engineer</h2>
         </div>
         <div className="hero-image">
-          {/* <img src="../static/img/headshot.jpg"></img> */}
           <img src={require("../static/img/headshot.jpg")}></img>
         </div>
       </div>
@@ -38,14 +64,8 @@ function Hero() {
         application in production, all with clean and maintainable code adhering
         to the industry's best practices.
       </p>
-      <button>
-        <IoDownloadOutline />
-        {" Resume"}
-      </button>
-      <button className="btn-about">
-        {"About me "}
-        <FaArrowRight />
-      </button>
+      <ResumeButton />
+      <AboutButton />
     </header>
   );
 }
