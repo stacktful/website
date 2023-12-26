@@ -256,7 +256,6 @@ button.btn-audio:not(:hover) {
 .tile {
   height: 180px;
   position: relative;
-  /* background-color: rgba(30, 64, 61, 0.90); */
   background-color: var(--tile-color);
   border-radius: 15px;
   padding: 20px;
