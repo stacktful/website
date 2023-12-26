@@ -2,6 +2,8 @@ import { HiMiniSpeakerWave } from "react-icons/hi2";
 import { IoDownloadOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 
+import resumePDF from "../static/resume-thibaut.pdf";
+
 const startDate = new Date(2018, 5, 1);
 
 function monthDiff(startDate) {
@@ -15,9 +17,11 @@ function monthDiff(startDate) {
 
 function ResumeButton() {
   return (
-    <button>
-      <IoDownloadOutline />
-      {" Resume"}
+    <button className="btn-resume">
+      <a href={resumePDF} target="_blank">
+        <IoDownloadOutline />
+        {" Resume"}
+      </a>
     </button>
   );
 }

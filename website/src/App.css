@@ -251,6 +251,11 @@ button.btn-audio:not(:hover) {
   transform: scale(1.0);
 }
 
+button a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* ------------------------ SERVICES ------------------------ */
 
 .tile {
