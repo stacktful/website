@@ -196,7 +196,6 @@ div.hero-image {
 .hero-image>img {
   width: var(--hero-image-size);
   height: var(--hero-image-size);
-  border-radius: 100%;
   object-fit: contain;
 }
 

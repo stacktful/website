@@ -56,7 +56,7 @@ function Hero() {
           <h2 className="hero-headline">Fullstack Software Engineer</h2>
         </div>
         <div className="hero-image">
-          <img src={require("../static/img/headshot.jpg")}></img>
+          <img src={require("../static/img/portrait.png")}></img>
         </div>
       </div>
       <p className="hero-description">
