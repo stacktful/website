@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "./layout/Section";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";

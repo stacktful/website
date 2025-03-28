@@ -2,7 +2,7 @@ import { AiOutlineCode } from "react-icons/ai";
 import { IoCodeSlash } from "react-icons/io5";
 import { GoGitCompare } from "react-icons/go";
 
-import Section from "./Section";
+import Section from "./layout/Section";
 
 // list of services (title, description and tech-stack)
 export const services = [

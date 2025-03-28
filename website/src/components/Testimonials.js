@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "./layout/Section";
 
 import Me from "../static/img/headshot.png";
 import ConnoKuyt from "../static/img/conno-kuyt.jpg";

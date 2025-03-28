@@ -1,6 +1,6 @@
 import { IoOpenOutline } from "react-icons/io5";
 
-import Section from "./Section";
+import Section from "./layout/Section";
 
 import imgEbitwise from "../static/img/project-ebitwise-1.jpg";
 import imgAvonic from "../static/img/project-avonic.png";
