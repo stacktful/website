@@ -63,7 +63,7 @@ function Hero() {
       <p className="hero-description">
         <span style={{ color: "var(--primary-color" }}>{role}</span> with over{" "}
         {yearsOfExp}+ years of experience in the software engineering field,
-        helping start-ups / scale-ups bring their concept product to an
+        helping start-ups and scale-ups bring their concept product to an
         application in production, all with clean and maintainable code adhering
         to the industry's best practices.
       </p>
