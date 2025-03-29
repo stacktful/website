@@ -92,6 +92,7 @@ header {
 
 main {
   width: 60%;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -183,9 +184,9 @@ p {
   margin-bottom: 0;
 }
 
-/* .hero-description {
-  width: 75%;
-} */
+.hero-description {
+  text-align: justify;
+}
 
 div.hero-image {
   width: var(--hero-image-size);
