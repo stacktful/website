@@ -1,9 +1,10 @@
 import Logo from "./Logo";
 
 const navBarItems = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
+  { name: "Services", href: "#services" },
   { name: "Projects", href: "#projects" },
+  { name: "Experience", href: "#experience" },
+  { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
 
