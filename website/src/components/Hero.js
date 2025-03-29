@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import resumePDF from "../static/resume-thibaut.pdf";
 
 const startDate = new Date(2018, 5, 1);
+const role = "Fullstack Software Engineer";
 
 function monthDiff(startDate) {
   const today = new Date();
@@ -53,18 +54,16 @@ function Hero() {
             Hi, I'm<span className="hero-name"> Thibaut</span>.
             <AudioButton />
           </h1>
-          <h2 className="hero-headline">Fullstack Software Engineer</h2>
+          <h2 className="hero-headline">{role}</h2>
         </div>
         <div className="hero-image">
           <img src={require("../static/img/portrait.png")}></img>
         </div>
       </div>
       <p className="hero-description">
-        <span style={{ color: "var(--primary-color" }}>
-          Full Stack Software Engineer
-        </span>{" "}
-        with over {yearsOfExp}+ years of experience in the software engineering
-        field, helping start-ups / scale-ups bring their concept product to an
+        <span style={{ color: "var(--primary-color" }}>{role}</span> with over{" "}
+        {yearsOfExp}+ years of experience in the software engineering field,
+        helping start-ups / scale-ups bring their concept product to an
         application in production, all with clean and maintainable code adhering
         to the industry's best practices.
       </p>
