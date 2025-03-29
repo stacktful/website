@@ -1,22 +1,26 @@
 /* variables */
 :root {
-  --main-background-color: #01221f;
-  /* --main-bg-color-1: #024a45; */
-  /* --main-bg-color-2: #012725; */
-  /* --tile-color: #024a45; */
   --primary-color: #00FFD1;
   --secondary-color: #FF8A00;
   --tertiary-color: #BED3D8;
   --darkgray: #909090;
+  /* --color-mode: black;
+  --main-background-color: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode));
+  --tile-color-1: color-mix(in srgb, var(--primary-color) 18%, var(--color-mode));
+  --tile-color-2: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode)); */
+  --main-background-color: #01221f;
   --tile-color-1: #002f2d;
   --tile-color-2: var(--main-background-color);
   --tile-hover-color: #02433e;
-  --header-line-color: #00FFD023;
+  --header-line-color: #073029;
   --content-width: 80%;
   --hero-image-size: 180px;
   --header-margin: 150px;
   --border-radius: 15px;
   --code-font: "Fira Code";
+  /* --main-bg-color-1: #024a45; */
+  /* --main-bg-color-2: #012725; */
+  /* --tile-color: #024a45; */
 }
 
 /* ------------------------ LAYOUT ------------------------ */
@@ -311,12 +315,13 @@ h3.service-header {
   display: inline-block;
   font-family: var(--code-font);
   font-size: 0.8rem;
+  font-weight: bold;
   height: auto;
   padding: 0.25rem 1.0rem 0.25rem 1.0rem;
   border-radius: 1.5rem;
   border: 1px solid var(--primary-color);
   color: var(--secondary-color);
-  background-color: #1b3c39;
+  background-color: var(--tile-color-1);
 }
 
 .service-header {
@@ -363,7 +368,6 @@ h3.service-header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: none;
-  /* padding: 1.0rem; */
 }
 
 .project-content p {
@@ -371,7 +375,6 @@ h3.service-header {
   flex-direction: row;
   flex-wrap: nowrap;
   text-align: justify;
-  /* justify-content: none; */
   padding-left: 1.0rem;
 }
 
