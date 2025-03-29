@@ -91,8 +91,7 @@ header {
 }
 
 main {
-  width: 60%;
-  max-width: 960px;
+  width: 960px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -398,7 +397,7 @@ h3.service-header {
 }
 
 .job-header-tile {
-  width: 80%;
+  width: 100%;
   padding: 1.0rem;
   background-color: var(--tile-color);
   border-radius: var(--border-radius);
@@ -410,7 +409,7 @@ h3.service-header {
 }
 
 .job-content-tile {
-  width: 80%;
+  width: 100%;
   margin-top: 0.8rem;
   padding: 1.0rem;
   background-color: var(--tile-color);
@@ -422,6 +421,7 @@ h3.service-header {
   font-size: 1.5rem;
   display: flex;
   user-select: none;
+  /* color: white; */
 }
 
 .job-dropdown-arrow {
