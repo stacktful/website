@@ -37,7 +37,7 @@ function Testimonial({ name, role, company, quote, img }) {
   return (
     <div className="testimonial-wrapper">
       <img className="testimonial-image" src={img} />
-      <div className="testimonial-item">
+      <div className="tile testimonial-tile">
         <blockquote>"{quote}"</blockquote>
         <div className="testimonial-reference">
           <h5 className="testimonial-name">— {name.toUpperCase()}</h5>

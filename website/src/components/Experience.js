@@ -100,7 +100,10 @@ function Job({ title, company, date, location, url, summary, contributions }) {
   const [expanded, setExpanded] = React.useState(false);
   return (
     <div className="job-container">
-      <div className="job-header-tile" onClick={() => setExpanded(!expanded)}>
+      <div
+        className="tile job-header-tile"
+        onClick={() => setExpanded(!expanded)}
+      >
         {/* Job Header - always visible */}
         <div className="job-header">
           <div className="job-title">
@@ -113,7 +116,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
       </div>
       {/* Job Description - dropdown */}
       {expanded && (
-        <div className="job-content-tile">
+        <div className="tile job-content-tile">
           <div className="job-content">
             <div className="job-details">
               <div className="job-location">

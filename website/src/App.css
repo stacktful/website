@@ -260,16 +260,19 @@ button a {
   text-decoration: none;
 }
 
-/* ------------------------ SERVICES ------------------------ */
-
 .tile {
-  height: 180px;
-  position: relative;
   background-image: linear-gradient(to bottom right, var(--tile-color-1), var(--tile-color-2));
   border: 1px solid var(--header-line-color);
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: var(--border-radius);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------ SERVICES ------------------------ */
+
+.service-tile {
+  height: 180px;
+  position: relative;
+  padding: 20px;
 
   /* Ensures the content scales with the tile */
   overflow: hidden;
@@ -404,28 +407,18 @@ h3.service-header {
 .job-header-tile {
   width: 100%;
   padding: 1.0rem;
-  background-color: var(--tile-color);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(to bottom right, var(--tile-color-1), var(--tile-color-2));
-  border: 1px solid var(--header-line-color);
 }
 
 .job-content-tile {
   width: 100%;
   margin-top: 0.8rem;
   padding: 1.0rem;
-  background-image: linear-gradient(to bottom right, var(--tile-color-1), var(--tile-color-2));
-  border: 1px solid var(--header-line-color);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .job-title {
   font-size: 1.5rem;
   display: flex;
   user-select: none;
-  /* color: white; */
 }
 
 .job-dropdown-arrow {
@@ -574,26 +567,15 @@ h3.service-header {
 
 blockquote {
   font-size: 0.8rem;
-  /* font-style: italic; */
-  /* background-color: #20454382; */
-  /* border-radius: var(--border-radius); */
-  /* border-left: 2px solid var(--header-line-color); */
-  /* padding-left: 0.5rem; */
   text-align: left;
   margin: 0.8rem;
   margin-top: 0;
 }
 
-.testimonial-item {
+.testimonial-tile {
   width: auto;
   padding: 10px;
   padding-top: calc(10px + 100px / 2);
-  background-color: var(--tile-color);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(to bottom right, var(--tile-color-1), var(--tile-color-2));
-  border: 1px solid var(--header-line-color);
-  /* text-align: center; */
   position: absolute;
   top: 50px;
   bottom: 10px;
@@ -649,22 +631,14 @@ a.contact-item {
 
 a.contact-item:hover {
   color: inherit;
-  /* text-decoration: underline; */
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
 }
 
 a.contact-item:not(:hover) {
-  /* color: inherit; */
-  /* text-decoration: underline; */
   transform: scale(1.0);
   transition: ease-in-out 0.2s;
 }
-
-/* a.contact-item:hover > svg {
-  transform: scale(1.1);
-  transition: ease-in-out 0.2s;
-} */
 
 .contact-item>svg {
   margin-right: 0.5rem;
@@ -676,7 +650,6 @@ a.contact-item:not(:hover) {
   margin-top: 1.0rem;
   margin-bottom: 5.0rem;
   font-size: 1.5rem;
-  /* font-weight: bold; */
 }
 
 .contact-cta h2 {

@@ -47,7 +47,7 @@ export const services = [
 
 function Service({ icon, title, description, techStack }) {
   return (
-    <div className="tile">
+    <div className="tile service-tile">
       <h3 className="service-header">
         <div className="service-icon">{icon}</div>
         {title}
