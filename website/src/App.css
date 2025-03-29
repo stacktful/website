@@ -1,18 +1,17 @@
 /* variables */
 :root {
   --primary-color: #00FFD1;
-  --secondary-color: #FF8A00;
-  --tertiary-color: #BED3D8;
+  --secondary-color: #00FFD1;
+  --tertiary-color: #c9e2e8;
   --darkgray: #909090;
   /* --color-mode: black;
   --main-background-color: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode));
   --tile-color-1: color-mix(in srgb, var(--primary-color) 18%, var(--color-mode));
   --tile-color-2: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode)); */
-  --main-background-color: #01221f;
-  --tile-color-1: #002f2d;
+  --main-background-color: rgb(16, 16, 16);
+  --tile-color-1: rgb(25, 25, 25);
   --tile-color-2: var(--main-background-color);
-  --tile-hover-color: #02433e;
-  --header-line-color: #073029;
+  --header-line-color: #181818;
   --content-width: 80%;
   --hero-image-size: 180px;
   --header-margin: 150px;
@@ -242,8 +241,8 @@ button.btn-audio {
 }
 
 button.btn-audio svg {
-  height: 32px;
-  width: 32px;
+  height: 42px;
+  width: 42px;
 }
 
 
@@ -319,7 +318,7 @@ h3.service-header {
   height: auto;
   padding: 0.25rem 1.0rem 0.25rem 1.0rem;
   border-radius: 1.5rem;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--tertiary-color);
   color: var(--secondary-color);
   background-color: var(--tile-color-1);
 }
