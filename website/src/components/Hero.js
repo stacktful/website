@@ -61,11 +61,12 @@ function Hero() {
         </div>
       </div>
       <p className="hero-description">
-        <span style={{ color: "var(--primary-color" }}>{role}</span> with over{" "}
-        {yearsOfExp}+ years of experience in the software engineering field,
-        helping start-ups and scale-ups bring their concept product to an
-        application in production, all with clean and maintainable code adhering
-        to the industry's best practices.
+        {role} with over {yearsOfExp} years of experience in Python-based
+        greenfield projects, with MSc background in engineering, robotics & AI.
+        Specialised in end-to-end development of cloud-native web applications
+        (B2B, SaaS), in Agile/Scrum multidisciplinary teams within start-ups and
+        international corporations. Strong advocate of clean code, automated
+        workflows and clear communication for optimal collaboration.
       </p>
       <ResumeButton />
       <AboutButton />
