@@ -51,7 +51,7 @@ function Hero() {
       <div className="hero-header">
         <div className="hero-text">
           <h1>
-            Hi, I'm<span className="hero-name"> Thibaut</span>.
+            Hi, I'm<span className="hero-name"> Thibaut</span>
             <AudioButton />
           </h1>
           <h2 className="hero-headline">{role}</h2>
