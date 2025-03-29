@@ -18,14 +18,30 @@ export const services = [
     title: "Backend Development",
     description:
       "I build web applications using the latest technologies and best practices.",
-    techStack: ["Python", "JavaScript", "Flask", "SQL"],
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "Django",
+      "PostgreSQL",
+      "MongoDB",
+    ],
   },
   {
     icon: <GoGitCompare />,
     title: "DevOps",
     description:
       "I build web applications using the latest technologies and best practices.",
-    techStack: ["Bash", "Git", "GitHub Actions", "Docker", "Terraform", "GCP"],
+    techStack: [
+      "Bash",
+      "Git",
+      "GitHub Actions",
+      "Docker",
+      "Terraform",
+      "GCP",
+      "Azure",
+      "AWS",
+    ],
   },
 ];
 
