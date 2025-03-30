@@ -37,9 +37,8 @@ function AboutButton() {
   );
 }
 
-function AudioButton() {
+function AudioButton({ src }) {
   const audioRef = useRef(null);
-  const audioSrc = "/audio/name.m4a";
   const playAudio = () => {
     audioRef.current?.play();
   };
@@ -53,20 +52,20 @@ function AudioButton() {
       >
         <HiMiniSpeakerWave />
       </button>
-      <audio ref={audioRef} src={audioSrc} preload="auto" />
+      <audio ref={audioRef} src={src} preload="auto" />
     </>
   );
 }
 
-function Hero() {
+function Hero({ name, audioSrc, summary }) {
   const yearsOfExp = Math.floor(monthDiff(startDate) / 12);
   return (
     <header>
       <div className="hero-header">
         <div className="hero-text">
           <h1>
-            Hi, I'm<span className="hero-name"> Thibaut</span>
-            <AudioButton />
+            Hi, I'm<span className="hero-name"> {name}</span>
+            <AudioButton src={audioSrc} />
           </h1>
           <h2 className="hero-headline">{role}</h2>
         </div>
@@ -74,14 +73,7 @@ function Hero() {
           <img src={require("../static/img/portrait.png")}></img>
         </div>
       </div>
-      <p className="hero-description">
-        {role} with over {yearsOfExp} years of experience in Python-based
-        greenfield projects, with MSc background in engineering, robotics & AI.
-        Specialised in end-to-end development of cloud-native web applications
-        (B2B, SaaS), in Agile/Scrum multidisciplinary teams within start-ups and
-        international corporations. Strong advocate of clean code, automated
-        workflows and clear communication for optimal collaboration.
-      </p>
+      <p className="hero-description">{summary}</p>
       <ResumeButton />
       <AboutButton />
     </header>

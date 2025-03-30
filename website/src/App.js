@@ -9,6 +9,13 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/layout/Footer";
 
+import jobs from "./data/experience";
+import projects from "./data/projects";
+import services from "./data/services";
+import testimonials from "./data/testimonials";
+import hero from "./data/hero";
+import contacts from "./data/contacts";
+
 const Layout = ({ children }) => {
   return (
     <>
@@ -23,12 +30,12 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Hero />
-        <Services />
-        <Projects />
-        <Experience />
-        <Testimonials />
-        <Contact />
+        <Hero {...hero} />
+        <Services services={services} />
+        <Projects projects={projects} />
+        <Experience jobs={jobs} />
+        <Testimonials testimonials={testimonials} />
+        <Contact contacts={contacts} />
       </Layout>
     </div>
   );
