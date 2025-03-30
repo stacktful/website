@@ -35,7 +35,7 @@ function Job({
         {/* Job Header - always visible */}
         <div className="job-header">
           <div className="job-title">
-            <DropdownArrow angle={expanded ? 180 : 0} />
+            <DropdownArrow angle={expanded ? 180 : 90} />
             <span className="job-role">{title}</span>
             <span className="job-company">@ {company}</span>
           </div>
