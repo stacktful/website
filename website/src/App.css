@@ -11,7 +11,7 @@
   --main-background-color: rgb(16, 16, 16);
   --tile-color-1: rgb(25, 25, 25);
   --tile-color-2: var(--main-background-color);
-  --header-line-color: #181818;
+  --header-line-color: rgb(25, 25, 25);
   --content-width: 80%;
   --hero-image-size: 180px;
   --header-margin: 150px;
