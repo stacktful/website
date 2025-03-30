@@ -46,7 +46,7 @@ const jobs = [
       "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
     ],
     project: {
-      name: "Trimbel",
+      name: "Talos",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
@@ -76,7 +76,7 @@ const jobs = [
       "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
     ],
     project: {
-      name: "Trimbel",
+      name: "AIM™",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
@@ -108,7 +108,7 @@ const jobs = [
       "Mentored team for software engineering best practices (SOLID, Clean Code etc.).",
     ],
     project: {
-      name: "Trimbel",
+      name: "Dashwise™",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
@@ -143,7 +143,7 @@ const jobs = [
       "Initiated team to Agile/Scrum methodology, incl. setting up project management workflows and automations.",
     ],
     project: {
-      name: "Trimbel",
+      name: "CamDirector™",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
@@ -174,7 +174,7 @@ const jobs = [
       "Delivered software for largely improved localization accuracy.",
     ],
     project: {
-      name: "Trimbel",
+      name: "FLS Localization",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
@@ -205,7 +205,7 @@ const jobs = [
       "Presented my results compiled in a conference paper at the IEEE 5th World Forum on IoT 2019.",
     ],
     project: {
-      name: "Trimbel",
+      name: "MIDoT",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
@@ -235,7 +235,7 @@ const jobs = [
       "Optimized geometry for highest performance in terms of vehicle dynamics",
     ],
     project: {
-      name: "Trimbel",
+      name: "DUT16",
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
