@@ -493,6 +493,11 @@ h3.service-header {
   color: var(--primary-color)
 }
 
+.job-project-name {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 .job-contributions {
   list-style-type: none;
   margin: 0;

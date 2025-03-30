@@ -3,13 +3,71 @@ import { IoOpenOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 import Section from "./layout/Section";
+import Bullet from "./layout/Bullet";
 
 import React from "react";
 
 const jobs = [
   {
-    title: "Tech Lead + Scrum Master",
-    company: "EBITWISE",
+    title: "DevOps Engineer",
+    company: "Louwman Group",
+    date: "Jan 2025 - Present",
+    location: "Remote (Amsterdam, Netherlands)",
+    url: "louwman.nl",
+    summary:
+      "Led the technical development of Dashwise™, a real-time financial dashboard SaaS application \
+      for scale-ups, from early concept to product launch.",
+    contributions: [
+      "Designed & built containerized architecture incl. frontend UI, backend API, database and ETL pipeline from scratch.",
+      "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
+    ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
+  },
+  {
+    title: "Software Engineer",
+    company: "ACT Commodities",
+    date: "Jun 2024 - Oct 2024",
+    location: "Amsterdam, Netherlands",
+    url: "actcommodities.nl",
+    summary:
+      "Led the technical development of Dashwise™, a real-time financial dashboard SaaS application \
+      for scale-ups, from early concept to product launch.",
+    contributions: [
+      "Designed & built containerized architecture incl. frontend UI, backend API, database and ETL pipeline from scratch.",
+      "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
+    ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
+  },
+  {
+    title: "Backend Engineer",
+    company: "Whitespace Solutions",
+    date: "Jan 2024 - Apr 2024",
+    location: "Remote (Lisbon, Portugal)",
+    url: "whitespace.nl",
+    summary:
+      "Led the technical development of Dashwise™, a real-time financial dashboard SaaS application \
+      for scale-ups, from early concept to product launch.",
+    contributions: [
+      "Designed & built containerized architecture incl. frontend UI, backend API, database and ETL pipeline from scratch.",
+      "Built CI/CD pipeline incl. testing, building and cloud infrastructure as code.",
+    ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
+  },
+  {
+    title: "Lead Software Engineer",
+    company: "Ebitwise",
     date: "Jun 2022 - Oct 2023",
     location: "Remote (Lisbon, Portugal)",
     url: "ebitwise.nl",
@@ -22,9 +80,14 @@ const jobs = [
       "Scrum Master, incl. creating Agile/Scrum project management workflows and managed communication channels.",
       "Mentored team for software engineering best practices (SOLID, Clean Code etc.).",
     ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
   },
   {
-    title: "Software Engineer + Scrum Master",
+    title: "Software Engineer",
     company: "Avonic",
     date: "Feb 2021 - Oct 2022",
     location: "Remote (Amsterdam, Netherlands)",
@@ -41,6 +104,11 @@ const jobs = [
       "Code reviews and tutoring juniors on software engineering best practices.",
       "Initiated team to Agile/Scrum methodology, incl. setting up project management workflows and automations.",
     ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
   },
   {
     title: "Software Engineer",
@@ -56,6 +124,11 @@ const jobs = [
       "Developed algorithms for image processing, target tracking and localization, based on sonar imagery.",
       "Delivered software for largely improved localization accuracy.",
     ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
   },
   {
     title: "R&D Software Engineer",
@@ -71,6 +144,11 @@ const jobs = [
       "Developed and tested software for automated object recognition and data processing.",
       "Presented my results compiled in a conference paper at the IEEE 5th World Forum on IoT 2019.",
     ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
   },
   {
     title: "Simulation Engineer",
@@ -85,6 +163,11 @@ const jobs = [
       "Created models (Matlab) to analyse the car's performance w.r.t. its geometrical parameters",
       "Optimized geometry for highest performance in terms of vehicle dynamics",
     ],
+    project: {
+      name: "Trimbel",
+      description:
+        "cloud-native platform for car dealerships to manage their inventory and sales.",
+    },
   },
 ];
 
@@ -96,7 +179,16 @@ const DropdownArrow = ({ angle }) => {
   );
 };
 
-function Job({ title, company, date, location, url, summary, contributions }) {
+function Job({
+  title,
+  company,
+  date,
+  location,
+  url,
+  summary,
+  project,
+  contributions,
+}) {
   const [expanded, setExpanded] = React.useState(false);
   return (
     <div className="job-container">
@@ -134,8 +226,12 @@ function Job({ title, company, date, location, url, summary, contributions }) {
                 </a>
               </div>
             </div>
-            <p className="job-summary">{summary}</p>
-            {/* Main contributions:
+            <p class="job-project">
+              <strong className="job-project-name">{project.name}</strong>
+              <strong> &mdash; {project.description}</strong>
+            </p>
+            {/* <p className="job-summary">{summary}</p> */}
+            {/* Main contributions: */}
             <ul className="job-contributions">
               {contributions.map((contribution, index) => (
                 <li key={index} className="job-contribution">
@@ -143,7 +239,7 @@ function Job({ title, company, date, location, url, summary, contributions }) {
                   <div className="job-contribution-text">{contribution}</div>
                 </li>
               ))}
-            </ul> */}
+            </ul>
           </div>
         </div>
       )}
