@@ -2,6 +2,7 @@ import Section from "./layout/Section";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import { IoLogoInstagram } from "react-icons/io5";
 
 const contacts = [
   {
@@ -18,6 +19,11 @@ const contacts = [
     icon: <IoLogoGithub />,
     text: "GitHub",
     link: "https://github.com/stacktful",
+  },
+  {
+    icon: <IoLogoInstagram />,
+    text: "Instagram",
+    link: "https://www.instagram.com/thibautvb/",
   },
 ];
 
