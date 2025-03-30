@@ -1,6 +1,7 @@
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 import { IoDownloadOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
+import { useRef } from "react";
 
 import resumePDF from "../static/resume-thibaut.pdf";
 
@@ -37,10 +38,23 @@ function AboutButton() {
 }
 
 function AudioButton() {
+  const audioRef = useRef(null);
+  const audioSrc = "/audio/name.m4a";
+  const playAudio = () => {
+    audioRef.current?.play();
+  };
+
   return (
-    <button className="btn-audio">
-      <HiMiniSpeakerWave />
-    </button>
+    <>
+      <button
+        className="btn-audio"
+        onClick={playAudio}
+        aria-label="Play name pronunciation"
+      >
+        <HiMiniSpeakerWave />
+      </button>
+      <audio ref={audioRef} src={audioSrc} preload="auto" />
+    </>
   );
 }
 
