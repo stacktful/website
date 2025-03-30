@@ -17,6 +17,20 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Django",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "GCP",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Software Engineer",
@@ -36,6 +50,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Backend Engineer",
@@ -55,6 +80,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Lead Software Engineer",
@@ -76,6 +112,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Software Engineer",
@@ -100,6 +147,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Software Engineer",
@@ -120,6 +178,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "R&D Software Engineer",
@@ -140,6 +209,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
   {
     title: "Simulation Engineer",
@@ -159,6 +239,17 @@ const jobs = [
       description:
         "cloud-native platform for car dealerships to manage their inventory and sales.",
     },
+    techStack: [
+      "Python",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "Agile/Scrum",
+    ],
   },
 ];
 

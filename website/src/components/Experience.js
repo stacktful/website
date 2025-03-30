@@ -21,6 +21,7 @@ function Job({
   date,
   location,
   url,
+  techStack,
   summary,
   project,
   contributions,
@@ -76,6 +77,13 @@ function Job({
                 </li>
               ))}
             </ul>
+            <div className="tech-stack-container">
+              {techStack.map((tech, index) => (
+                <div key={index} className="tech-stack-item">
+                  {tech}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}

@@ -504,6 +504,10 @@ h3.service-header {
   padding: 0;
 }
 
+.job-content .tech-stack-container {
+  margin-top: 1.0rem;
+}
+
 .job-contribution {
   margin-bottom: 0.3rem;
   display: flex;
