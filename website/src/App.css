@@ -502,6 +502,7 @@ h3.service-header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 .job-content .tech-stack-container {
