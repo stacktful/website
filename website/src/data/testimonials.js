@@ -1,6 +1,6 @@
 import Me from "../static/img/headshot.png";
 import ConnoKuyt from "../static/img/conno-kuyt.jpg";
-import ElonMusk from "../static/img/elon-musk.jpg";
+import Neo from "../static/img/neo.jpg";
 
 const testimonials = [
   {
@@ -22,12 +22,12 @@ const testimonials = [
     img: ConnoKuyt,
   },
   {
-    name: "Elon Musk",
-    role: "CEO",
-    company: "Tesla",
+    name: "Neo",
+    role: "The One",
+    company: "The Matrix",
     quote:
-      "I wish I was as smart as Thibaut. And he's good looking too. I'm jealous.",
-    img: ElonMusk,
+      "Thibaut dodges PRs like I dodge bullets, but faster. Morpheus was wrong all along, it's not me but Thibaut who is The One.",
+    img: Neo,
   },
 ];
 
