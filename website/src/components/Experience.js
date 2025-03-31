@@ -7,6 +7,16 @@ import Bullet from "./layout/Bullet";
 
 import React from "react";
 
+const ProjectTitle = ({ title }) => {
+  const [name, description] = title.split(" — ");
+  return (
+    <p class="job-project">
+      <strong className="job-project-name">{name}</strong>
+      <strong> &mdash; {description}</strong>
+    </p>
+  );
+};
+
 const DropdownArrow = ({ angle }) => {
   return (
     <div className="job-dropdown-arrow">
@@ -16,14 +26,14 @@ const DropdownArrow = ({ angle }) => {
 };
 
 function Job({
-  title,
+  role,
   company,
-  date,
+  start,
+  end,
   location,
   url,
-  techStack,
-  summary,
-  project,
+  stack,
+  title,
   contributions,
 }) {
   const [expanded, setExpanded] = React.useState(false);
@@ -37,10 +47,12 @@ function Job({
         <div className="job-header">
           <div className="job-title">
             <DropdownArrow angle={expanded ? 180 : 90} />
-            <span className="job-role">{title}</span>
+            <span className="job-role">{role}</span>
             <span className="job-company">@ {company}</span>
           </div>
-          <div className="job-date">{date}</div>
+          <div className="job-date">
+            {start} - {end}
+          </div>
         </div>
       </div>
       {/* Job Description - dropdown */}
@@ -63,10 +75,7 @@ function Job({
                 </a>
               </div>
             </div>
-            <p class="job-project">
-              <strong className="job-project-name">{project.name}</strong>
-              <strong> &mdash; {project.description}</strong>
-            </p>
+            <ProjectTitle title={title} />
             {/* <p className="job-summary">{summary}</p> */}
             {/* Main contributions: */}
             <ul className="job-contributions">
@@ -78,7 +87,7 @@ function Job({
               ))}
             </ul>
             <div className="tech-stack-container">
-              {techStack.map((tech, index) => (
+              {stack.map((tech, index) => (
                 <div key={index} className="tech-stack-item">
                   {tech}
                 </div>

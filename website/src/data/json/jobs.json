@@ -1,0 +1,181 @@
+[
+    {
+        "role": "Founder",
+        "info": "As a Freelancer, developed and/or launched various cloud-native web applications for different clients/projects",
+        "company": "Stacktful",
+        "location": "Amsterdam, NL",
+        "start": "Jun 2022",
+        "end": "Present",
+        "projects": [
+            {
+                "title": "Trimbel\u00AE — cloud-native platform for car dealerships to manage their inventory and sales",
+                "role": "DevOps Engineer",
+                "company": "Louwman Group",
+                "location": "Den Haag, NL (Remote)",
+                "url": "louwman.nl",
+                "start": "Feb 2025",
+                "end": "Present",
+                "contributions": [
+                    "Setting up the cloud infrastructure (Azure) and CI/CD pipeline (Azure DevOps) for the platform with Infrastructure-as-Code (Terraform)."
+                ],
+                "stack": [
+                    "Azure",
+                    "Terraform",
+                    "CI/CD",
+                    "Git",
+                    "Azure DevOps",
+                    "Agile",
+                    "Scrum"
+                ]
+            },
+            {
+                "title": "Talos — cloud-native ecosystem of distributed, event-driven apps handling regulatory reporting of ACT’s trading activities",
+                "role": "Software Engineer",
+                "company": "ACT Commodities",
+                "location": "Amsterdam, NL",
+                "url": "actcommodities.com",
+                "start": "Jun 2024",
+                "end": "Oct 2024",
+                "contributions": [
+                    "Monitored and optimized reporting functions ensuring accurate and compliant daily trade activity submissions.",
+                    "Added automations to reporting workflows, further reducing operational workload and manual intervention from engineers.",
+                    "Investigated and corrected inaccurate historical reports, enhancing data integrity and regulatory compliance."
+                ],
+                "stack": [
+                    "Python",
+                    "PostgreSQL",
+                    "Azure",
+                    "Pytest",
+                    "CI/CD",
+                    "Git",
+                    "GitHub",
+                    "Jira",
+                    "Agile",
+                    "Scrum"
+                ]
+            },
+            {
+                "title": "AIM\u00AE — cloud-native multi-tenant web application (SaaS) for AI-driven well trajectory optimization and planning",
+                "role": "Software Engineer",
+                "company": "WhiteSpace Solutions",
+                "location": "Den Haag, NL (Remote)",
+                "url": "whitespacesolutions.eu",
+                "start": "Jan 2024",
+                "end": "Apr 2024",
+                "contributions": [
+                    "Repaired REST API server’s long broken data import and export endpoints and improved data models.",
+                    "Decoupled backend optimization (micro)services from databases to ease workload of algorithm developers."
+                ],
+                "stack": [
+                    "Python",
+                    "FastAPI",
+                    "PostgreSQL",
+                    "Docker",
+                    "Google Cloud",
+                    "Pytest",
+                    "CI/CD",
+                    "Git",
+                    "GitHub",
+                    "OpenAPI",
+                    "Swagger",
+                    "Notion",
+                    "Agile",
+                    "Scrum"
+                ]
+            },
+            {
+                "title": "DashWise\u00AE — cloud-native multi-tenant web application (SaaS) presenting real-time financial dashboard for start-ups / scale-ups",
+                "role": "Lead Software Engineer & Scrum Master",
+                "company": "Ebitwise",
+                "location": "Amsterdam, NL (Remote)",
+                "url": "ebitwise.nl",
+                "start": "Jun 2022",
+                "end": "Oct 2023",
+                "contributions": [
+                    "Architected application's full stack i.e. frontend, backend (REST API), database, cloud infrastructure and launched MVP.",
+                    "Created CI/CD pipeline from ground up, including testing, automated workflows, infrastructure-as-code, and deployment.",
+                    "Built user authentication system using OpenID Connect, OAuth2.0, JWT and designed role-based access control (RBAC).",
+                    "Built automated ETL pipeline drawing client data (from Exact Online API to BigQuery) to create financial dashboard data.",
+                    "Set up and lead teams's Agile/Scrum ceremonies with automated workflows (ClickUp) and communication channels (Slack)."
+                ],
+                "stack": [
+                    "Python",
+                    "Flask",
+                    "ReactJS",
+                    "JavaScript",
+                    "Docker",
+                    "Google Cloud",
+                    "BigQuery",
+                    "Terraform",
+                    "Pytest",
+                    "CI/CD",
+                    "Git",
+                    "GitHub Actions",
+                    "ClickUp",
+                    "Agile",
+                    "Scrum"
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Software Engineer & Scrum Master",
+        "company": "Avonic",
+        "location": "Delfgauw, NL",
+        "start": "Feb 2021",
+        "end": "Oct 2022",
+        "projects": [
+            {
+                "title": "CamDirector\u00AE — AI-driven multiple camera system for automated lecture recordings with 'teacher tracking'",
+                "contributions": [
+                    "Developed CamDirector from early prototype to MVP launch through iterative field testing and user feedback.",
+                    "Refactored code extensively to create clean, modular and decoupled software architecture and optimized tracking algorithms.",
+                    "Completely revamped CamDirector’s server-side rendered (SSR) application and improved UX design for MVP launch.",
+                    "Performed code reviews and tutoring juniors on software engineering best practices (Clean Code, SOLID principles etc.).",
+                    "Improved team’s Agile / Scrum incl. setting up project management workflows and automations, and leading ceremonies."
+                ],
+                "stack": [
+                    "Python",
+                    "Flask",
+                    "ReactJS",
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "Docker",
+                    "OpenCV",
+                    "WebSockets",
+                    "Pytest",
+                    "CI/CD",
+                    "Git",
+                    "GitHub Actions",
+                    "Jira",
+                    "Agile",
+                    "Scrum"
+                ]
+            }
+        ]
+    },
+    {
+        "role": "Software Engineer",
+        "company": "Fleet Cleaner",
+        "location": "Delft, NL",
+        "start": "Dec 2018",
+        "end": "Mar 2020",
+        "projects": [
+            {
+                "title": "FLS Localization — Onboard localization system for ship-hull-cleaning robot based on Forward Looking Sonar (FLS) images",
+                "contributions": [
+                    "Delivered Proof-of-Concept for automated localization system enabling centimeter-level accuracy, including image filtering & processing, quay wall detection, target tracking and sensor data fusion (i.e. Extended Kalman Filter)."
+                ],
+                "stack": [
+                    "Python",
+                    "OpenCV",
+                    "NumPy",
+                    "Cython",
+                    "Git",
+                    "Jira"
+                ]
+            }
+        ]
+    }
+]

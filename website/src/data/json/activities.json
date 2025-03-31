@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Software Engineer (R&D)",
+        "institution": "Nippon Electric Company (NEC)",
+        "location": "Tokyo, JP",
+        "start": "May 2018",
+        "end": "Nov 2018",
+        "project": "Project MIDoT\u00AE — IoT device for topical audio indexing via Micro Identifier Dot-on-Things (MIDoT\u00AE) technology",
+        "contributions": [
+            "Prototyped device as proof-of-concept from scratch, covering hardware, electronics, embedded software and data processing.",
+            "Designed and 3D-printed MIDoT\u00AE application mechanism, developed circuitry, and integrated sensors, camera and microphone.",
+            "Created and tested control software integrating MIDoT\u00AE pattern recognition algorithm and real-time sensor data processing.",
+            "Presented prototype and research findings in a conference paper at the IEEE 5th World Forum on IoT 2019."
+        ],
+        "stack": [
+            "Python",
+            "OpenCV",
+            "NumPy",
+            "Arduino",
+            "C++",
+            "SolidWords",
+            "3D Printing",
+            "Circuit Design",
+            "Sensors",
+            "IoT"
+        ]
+    },
+    {
+        "title": "President of Executive Board",
+        "institution": "Study Association Antoni van Leeuwenhoek (AvL)",
+        "location": "Delft, NL",
+        "start": "Jan 2017",
+        "end": "Feb 2018",
+        "project": "Study association affiliated with the BioMedical/BioMechanical Engineering (BME/BMD) MSc programs at TU Delft",
+        "contributions": [
+            "Led board of 7 members and ±100 active members, managed association’s finances, events, marketing and communication.",
+            "Organised and hosted social events, guest presentations, excursions and career fairs.",
+            "Conducted market research for a prosthetics startup (Reboocon Dynamics), our study trip sponsor."
+        ],
+        "stack": [
+            "Team Management",
+            "Event Organisation",
+            "Financial Management",
+            "Marketing",
+            "Communication",
+            "Networking"
+        ]
+    },
+    {
+        "title": "Vehicle Dynamics Engineer",
+        "institution": "Formula Student Team Delft",
+        "location": "Delft, NL",
+        "start": "Aug 2015",
+        "end": "Jan 2016",
+        "project": "DUT16 — Battery-powered electric 4WD race car for Formula Student competition (2016 edition)",
+        "contributions": [
+            "Created dynamic models (Matlab) to analyse the car’s performance w.r.t. its geometrical parameters.",
+            "Used models to determine optimal geometry for highest performance in the vehicle dynamics perspective."
+        ],
+        "stack": [
+            "Matlab",
+            "Simulink"
+        ]
+    }
+]
