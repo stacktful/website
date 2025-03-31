@@ -3,7 +3,7 @@ import { IoDownloadOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
 
-import resumePDF from "../static/resume-thibaut.pdf";
+import resumePDF from "../../static/resume-thibaut.pdf";
 
 const startDate = new Date(2018, 5, 1);
 const role = "Fullstack Software Engineer";
@@ -70,7 +70,7 @@ function Hero({ name, audioSrc, summary }) {
           <h2 className="hero-headline">{role}</h2>
         </div>
         <div className="hero-image">
-          <img src={require("../static/img/portrait.png")}></img>
+          <img src={require("../../static/img/portrait.png")}></img>
         </div>
       </div>
       <p className="hero-description">{summary}</p>

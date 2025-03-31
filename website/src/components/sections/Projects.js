@@ -1,6 +1,6 @@
 import { IoOpenOutline } from "react-icons/io5";
 
-import Section from "./layout/Section";
+import Section from "../Section";
 
 const Project = ({ title, description, link, image }) => (
   <div className="project-container">

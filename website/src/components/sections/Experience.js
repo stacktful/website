@@ -2,8 +2,8 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoOpenOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
-import Section from "./layout/Section";
-import Bullet from "./layout/Bullet";
+import Section from "../Section";
+import Bullet from "../Bullet";
 
 import React from "react";
 

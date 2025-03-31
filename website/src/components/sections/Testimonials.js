@@ -1,4 +1,4 @@
-import Section from "./layout/Section";
+import Section from "../Section";
 
 function Testimonial({ name, role, company, quote, img }) {
   return (

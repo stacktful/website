@@ -1,4 +1,4 @@
-import Section from "./layout/Section";
+import Section from "../Section";
 
 function Contact({ contacts }) {
   return (
