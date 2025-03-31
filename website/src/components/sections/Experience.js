@@ -70,8 +70,8 @@ function Job({
                 <div className="job-url-icon">
                   <IoOpenOutline />
                 </div>
-                <a href={"https://www." + url} target="_blank">
-                  {url}
+                <a href={url} target="_blank">
+                  {url.replaceAll("https://www.", "")}
                 </a>
               </div>
             </div>

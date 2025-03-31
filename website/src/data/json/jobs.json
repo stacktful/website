@@ -12,7 +12,7 @@
                 "role": "DevOps Engineer",
                 "company": "Louwman Group",
                 "location": "Den Haag, NL (Remote)",
-                "url": "louwman.nl",
+                "url": "https://www.louwman.nl",
                 "start": "Feb 2025",
                 "end": "Present",
                 "contributions": [
@@ -33,7 +33,7 @@
                 "role": "Software Engineer",
                 "company": "ACT Commodities",
                 "location": "Amsterdam, NL",
-                "url": "actcommodities.com",
+                "url": "https://www.actcommodities.com",
                 "start": "Jun 2024",
                 "end": "Oct 2024",
                 "contributions": [
@@ -59,7 +59,7 @@
                 "role": "Software Engineer",
                 "company": "WhiteSpace Solutions",
                 "location": "Den Haag, NL (Remote)",
-                "url": "whitespacesolutions.eu",
+                "url": "https://www.whitespacesolutions.eu",
                 "start": "Jan 2024",
                 "end": "Apr 2024",
                 "contributions": [
@@ -88,7 +88,7 @@
                 "role": "Lead Software Engineer & Scrum Master",
                 "company": "Ebitwise",
                 "location": "Amsterdam, NL (Remote)",
-                "url": "ebitwise.nl",
+                "url": "https://www.ebitwise.nl",
                 "start": "Jun 2022",
                 "end": "Oct 2023",
                 "contributions": [
@@ -122,6 +122,7 @@
         "role": "Software Engineer & Scrum Master",
         "company": "Avonic",
         "location": "Delfgauw, NL",
+        "url": "https://www.avonic.com",
         "start": "Feb 2021",
         "end": "Oct 2022",
         "projects": [
@@ -159,6 +160,7 @@
         "role": "Software Engineer",
         "company": "Fleet Cleaner",
         "location": "Delft, NL",
+        "url": "https://www.fleetcleaner.com",
         "start": "Dec 2018",
         "end": "Mar 2020",
         "projects": [

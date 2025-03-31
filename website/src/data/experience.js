@@ -31,7 +31,10 @@ function parseActivities(data) {
   const parsedActivities = [];
   for (const activity of data) {
     // Check if the job has multiple projects
-    if (activity.title.includes("President")) {
+    if (
+      activity.title.includes("President") ||
+      activity.title.includes("Vehicle")
+    ) {
       continue;
     }
     var parsedActivity = parseActivity(activity);
@@ -50,5 +53,7 @@ function parseActivity(activity) {
 }
 
 const jobs = [...parseJobs(jobsData), ...parseActivities(activitiesData)];
+
+console.log("Jobs: ", jobs);
 
 export default jobs;
