@@ -16,7 +16,7 @@
                 "start": "Feb 2025",
                 "end": "Present",
                 "contributions": [
-                    "Setting up the cloud infrastructure (Azure) and CI/CD pipeline (Azure DevOps) for the platform with Infrastructure-as-Code (Terraform)."
+                    "Setting up platform's Infrastructure-as-Code (Terraform, Azure) and CI/CD pipeline (Azure DevOps)."
                 ],
                 "stack": [
                     "Azure",
@@ -38,7 +38,7 @@
                 "end": "Oct 2024",
                 "contributions": [
                     "Monitored and optimized reporting functions ensuring accurate and compliant daily trade activity submissions.",
-                    "Added automations to reporting workflows, further reducing operational workload and manual intervention from engineers.",
+                    "Added automations to reporting workflows, further reducing operational workload and manual intervention.",
                     "Investigated and corrected inaccurate historical reports, enhancing data integrity and regulatory compliance."
                 ],
                 "stack": [
