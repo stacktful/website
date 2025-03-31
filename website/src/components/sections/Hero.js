@@ -5,17 +5,7 @@ import { useRef } from "react";
 
 import resumePDF from "../../static/resume-thibaut.pdf";
 
-const startDate = new Date(2018, 5, 1);
 const role = "Fullstack Software Engineer";
-
-function monthDiff(startDate) {
-  const today = new Date();
-  return (
-    today.getMonth() -
-    startDate.getMonth() +
-    12 * (today.getFullYear() - startDate.getFullYear())
-  );
-}
 
 function ResumeButton() {
   return (
@@ -58,7 +48,6 @@ function AudioButton({ src }) {
 }
 
 function Hero({ name, audioSrc, summary }) {
-  const yearsOfExp = Math.floor(monthDiff(startDate) / 12);
   return (
     <header>
       <div className="hero-header">
