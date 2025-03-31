@@ -25,6 +25,7 @@ const summary = (
 
 const hero = {
   name: "Thibaut",
+  role: role,
   audioSrc: "/audio/name.m4a",
   summary: summary,
 };

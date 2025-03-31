@@ -5,8 +5,6 @@ import { useRef } from "react";
 
 import resumePDF from "../../static/resume-thibaut.pdf";
 
-const role = "Fullstack Software Engineer";
-
 function ResumeButton() {
   return (
     <button className="btn-resume">
@@ -47,7 +45,7 @@ function AudioButton({ src }) {
   );
 }
 
-function Hero({ name, audioSrc, summary }) {
+function Hero({ name, role, audioSrc, summary }) {
   return (
     <header>
       <div className="hero-header">
