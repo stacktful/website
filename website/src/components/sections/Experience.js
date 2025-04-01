@@ -7,6 +7,15 @@ import Bullet from "../Bullet";
 
 import React from "react";
 
+const countryNamesByCode = {
+  NL: "Netherlands",
+  JP: "Japan",
+};
+
+function getCountryName(countryCode) {
+  return countryNamesByCode[countryCode] || countryCode;
+}
+
 const ProjectTitle = ({ title }) => {
   const [name, description] = title.split(" — ");
   return (
@@ -30,7 +39,8 @@ function Job({
   company,
   start,
   end,
-  location,
+  city,
+  country,
   url,
   stack,
   title,
@@ -64,7 +74,7 @@ function Job({
                 <div className="job-location-icon">
                   <IoLocationSharp />
                 </div>
-                {location}
+                {city}, {getCountryName(country)}
               </div>
               <div className="job-url">
                 <div className="job-url-icon">
