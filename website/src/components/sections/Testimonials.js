@@ -1,4 +1,5 @@
 import Section from "../Section";
+import JobTitle from "../JobTitle";
 
 function Testimonial({ name, role, company, quote, img }) {
   return (
@@ -9,8 +10,7 @@ function Testimonial({ name, role, company, quote, img }) {
         <div className="testimonial-reference">
           <h5 className="testimonial-name">— {name.toUpperCase()}</h5>
           <h5 className="testimonial-role">
-            <span className="testimonial-role-title">{role}</span>
-            <span className="testimonial-role-company"> @ {company}</span>
+            <JobTitle role={role} company={company} />
           </h5>
         </div>
       </div>

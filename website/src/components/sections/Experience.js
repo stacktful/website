@@ -4,6 +4,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 import Section from "../Section";
 import Bullet from "../Bullet";
+import JobTitle from "../JobTitle";
 
 import React from "react";
 
@@ -57,11 +58,7 @@ function Job({
         <div className="job-header">
           <div className="job-title">
             <DropdownArrow angle={expanded ? 180 : 90} />
-            <span className="job-role">{role}</span>
-            &nbsp;
-            <span className="job-at">@</span>
-            &nbsp;
-            <span className="job-company">{company}</span>
+            <JobTitle role={role} company={company} />
           </div>
           <div className="job-date">
             {start} - {end}

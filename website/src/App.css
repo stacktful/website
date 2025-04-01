@@ -441,7 +441,6 @@ h3.service-header {
 
 .job-company {
   color: var(--tertiary-color);
-  display: inline-block;
 }
 
 .job-date {
