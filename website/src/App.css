@@ -235,6 +235,17 @@ button.btn-about {
   color: var(--primary-color);
 }
 
+button.btn-show-all-stack {
+  background-color: transparent;
+  color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+button.btn-show-all-stack:active {
+  transform: translate(0px, 0px);
+  transition: ease-in-out 0.2s;
+}
+
 button.btn-audio {
   background-color: transparent;
   color: var(--primary-color);
@@ -709,6 +720,13 @@ a.contact-item:not(:hover) {
   font-weight: bold;
   font-family: var(--code-font);
   color: var(--tertiary-color);
+}
+
+.tech-stack-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.0rem;
 }
 
 /* ------------------------ FOOTER ------------------------ */

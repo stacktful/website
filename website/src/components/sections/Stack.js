@@ -1,11 +1,15 @@
+import React, { useState } from "react";
+
 import Section from "../Section";
 import Tile from "../Tile";
 
 function Stack({ stack }) {
+  const [showAll, setShowAll] = useState(false);
+  const visibleStack = showAll ? stack.slice(0, 15) : stack;
   return (
     <Section title="Stack">
       <div className="tech-stack-grid">
-        {stack.map((tech, index) => (
+        {visibleStack.map((tech, index) => (
           <Tile key={index} className="tech-stack-cell">
             <div className="tech-stack-cell-content">
               <div className="tech-stack-icon">{tech.icon}</div>
@@ -13,6 +17,14 @@ function Stack({ stack }) {
             </div>
           </Tile>
         ))}
+      </div>
+      <div className="tech-stack-button-wrapper">
+        <button
+          className="btn-show-all-stack"
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll ? "Show All" : "Show Less"}
+        </button>
       </div>
     </Section>
   );
