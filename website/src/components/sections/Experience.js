@@ -5,6 +5,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import Section from "../Section";
 import Bullet from "../Bullet";
 import JobTitle from "../JobTitle";
+import Tile from "../Tile";
 
 import React from "react";
 
@@ -50,10 +51,7 @@ function Job({
   const [expanded, setExpanded] = React.useState(false);
   return (
     <div className="job-container">
-      <div
-        className="tile job-header-tile"
-        onClick={() => setExpanded(!expanded)}
-      >
+      <Tile className="job-header-tile" onClick={() => setExpanded(!expanded)}>
         {/* Job Header - always visible */}
         <div className="job-header">
           <div className="job-title">
@@ -64,10 +62,10 @@ function Job({
             {start} - {end}
           </div>
         </div>
-      </div>
+      </Tile>
       {/* Job Description - dropdown */}
       {expanded && (
-        <div className="tile job-content-tile">
+        <Tile className="job-content-tile">
           <div className="job-content">
             <div className="job-details">
               <div className="job-location">
@@ -104,7 +102,7 @@ function Job({
               ))}
             </div>
           </div>
-        </div>
+        </Tile>
       )}
     </div>
   );

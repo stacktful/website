@@ -1,8 +1,9 @@
 import Section from "../Section";
+import Tile from "../Tile";
 
 function Service({ icon, title, description, techStack }) {
   return (
-    <div className="tile service-tile">
+    <Tile className="service-tile">
       <h3 className="service-header">
         <div className="service-icon">{icon}</div>
         {title}
@@ -15,7 +16,7 @@ function Service({ icon, title, description, techStack }) {
           </div>
         ))}
       </div>
-    </div>
+    </Tile>
   );
 }
 

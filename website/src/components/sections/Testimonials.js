@@ -1,11 +1,12 @@
 import Section from "../Section";
 import JobTitle from "../JobTitle";
+import Tile from "../Tile";
 
 function Testimonial({ name, role, company, quote, img }) {
   return (
     <div className="testimonial-wrapper">
       <img className="testimonial-image" src={img} />
-      <div className="tile testimonial-tile">
+      <Tile className="testimonial-tile">
         <blockquote>"{quote}"</blockquote>
         <div className="testimonial-reference">
           <h5 className="testimonial-name">— {name.toUpperCase()}</h5>
@@ -13,7 +14,7 @@ function Testimonial({ name, role, company, quote, img }) {
             <JobTitle role={role} company={company} />
           </h5>
         </div>
-      </div>
+      </Tile>
     </div>
   );
 }
