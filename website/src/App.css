@@ -433,7 +433,10 @@ h3.service-header {
   font-weight: bold;
   color: var(--primary-color);
   display: inline-block;
-  margin-right: 0.5rem;
+}
+
+.job-at {
+  color: var(--darkgray);
 }
 
 .job-company {

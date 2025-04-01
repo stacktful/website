@@ -58,7 +58,10 @@ function Job({
           <div className="job-title">
             <DropdownArrow angle={expanded ? 180 : 90} />
             <span className="job-role">{role}</span>
-            <span className="job-company">@ {company}</span>
+            &nbsp;
+            <span className="job-at">@</span>
+            &nbsp;
+            <span className="job-company">{company}</span>
           </div>
           <div className="job-date">
             {start} - {end}
