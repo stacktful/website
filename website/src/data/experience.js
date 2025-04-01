@@ -1,6 +1,11 @@
 import jobsData from "./json/jobs";
 import activitiesData from "./json/activities";
 
+const rolesToFilter = [
+  "President of Executive Board",
+  "Vehicle Dynamics Engineer",
+];
+
 function parseJobs(data) {
   // This function parses the jobs from the JSON data
   // and returns an array of parsed jobs.
@@ -30,11 +35,7 @@ function parseActivities(data) {
   // and returns an array of parsed activities.
   const parsedActivities = [];
   for (const activity of data) {
-    // Check if the job has multiple projects
-    if (
-      activity.title.includes("President") ||
-      activity.title.includes("Vehicle")
-    ) {
+    if (rolesToFilter.includes(activity.title)) {
       continue;
     }
     var parsedActivity = parseActivity(activity);
