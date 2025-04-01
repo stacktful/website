@@ -54,6 +54,4 @@ function parseActivity(activity) {
 
 const jobs = [...parseJobs(jobsData), ...parseActivities(activitiesData)];
 
-console.log("Jobs: ", jobs);
-
 export default jobs;
