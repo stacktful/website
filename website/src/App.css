@@ -241,6 +241,11 @@ button.btn-show-all-stack {
   border-color: var(--tertiary-color);
 }
 
+button.btn-show-all-stack:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
 button.btn-show-all-stack:active {
   transform: translate(0px, 0px);
   transition: ease-in-out 0.2s;
