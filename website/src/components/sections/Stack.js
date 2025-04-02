@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 import Section from "../Section";
 import Tile from "../Tile";
+
+function ArrowIcon({ angle }) {
+  return (
+    <div className="show-all-stack-arrow">
+      <MdOutlineKeyboardArrowUp transform={`rotate(${angle})`} />
+    </div>
+  );
+}
 
 function Stack({ stack }) {
   const [showAll, setShowAll] = useState(false);
@@ -24,6 +33,7 @@ function Stack({ stack }) {
           onClick={() => setShowAll(!showAll)}
         >
           {showAll ? "Show All" : "Show Less"}
+          <ArrowIcon angle={showAll ? 180 : 0} />
         </button>
       </div>
     </Section>

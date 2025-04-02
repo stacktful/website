@@ -235,22 +235,6 @@ button.btn-about {
   color: var(--primary-color);
 }
 
-button.btn-show-all-stack {
-  background-color: transparent;
-  color: var(--tertiary-color);
-  border-color: var(--tertiary-color);
-}
-
-button.btn-show-all-stack:hover {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-button.btn-show-all-stack:active {
-  transform: translate(0px, 0px);
-  transition: ease-in-out 0.2s;
-}
-
 button.btn-audio {
   background-color: transparent;
   color: var(--primary-color);
@@ -732,6 +716,32 @@ a.contact-item:not(:hover) {
   justify-content: center;
   align-items: center;
   margin-top: 1.0rem;
+}
+
+.btn-show-all-stack {
+  display: flex;
+  background-color: transparent;
+  color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+.btn-show-all-stack:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-show-all-stack:active {
+  transform: translate(0px, 0px);
+  transition: ease-in-out 0.2s;
+}
+
+.show-all-stack-arrow {
+  font-size: 1.0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  color: inherit;
 }
 
 /* ------------------------ FOOTER ------------------------ */
