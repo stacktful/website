@@ -3,9 +3,9 @@ import { IoOpenOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 import Section from "../Section";
-import Bullet from "../Bullet";
 import JobTitle from "../JobTitle";
 import Tile from "../Tile";
+import Bullet from "../icons/Bullet";
 
 import React from "react";
 
