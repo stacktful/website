@@ -205,6 +205,8 @@ div.hero-image {
   object-fit: contain;
 }
 
+/* -------------------------- Buttons -------------------------- */
+
 button {
   font-family: var(--code-font);
   font-size: 0.9rem;
@@ -230,9 +232,17 @@ button:not(:hover) {
   transition: ease-in-out 0.2s;
 }
 
+button.btn-resume :nth-child(2) {
+  margin-left: 0.5rem;
+}
+
 button.btn-about {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+button.btn-about :nth-child(2) {
+  margin-left: 0.5rem;
 }
 
 button.btn-audio {

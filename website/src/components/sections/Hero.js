@@ -1,49 +1,9 @@
-import { HiMiniSpeakerWave } from "react-icons/hi2";
-import { IoDownloadOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
-import { useRef } from "react";
+import { IoDownloadOutline } from "react-icons/io5";
+
+import AudioButton from "../AudioButton";
 
 import resumePDF from "../../static/resume-thibaut.pdf";
-
-function ResumeButton() {
-  return (
-    <button className="btn-resume">
-      <a href={resumePDF} target="_blank">
-        <IoDownloadOutline />
-        {" Resume"}
-      </a>
-    </button>
-  );
-}
-
-function AboutButton() {
-  return (
-    <button className="btn-about">
-      {"About me "}
-      <FaArrowRight />
-    </button>
-  );
-}
-
-function AudioButton({ src }) {
-  const audioRef = useRef(null);
-  const playAudio = () => {
-    audioRef.current?.play();
-  };
-
-  return (
-    <>
-      <button
-        className="btn-audio"
-        onClick={playAudio}
-        aria-label="Play name pronunciation"
-      >
-        <HiMiniSpeakerWave />
-      </button>
-      <audio ref={audioRef} src={src} preload="auto" />
-    </>
-  );
-}
 
 function Hero({ name, role, audioSrc, summary }) {
   return (
@@ -52,7 +12,7 @@ function Hero({ name, role, audioSrc, summary }) {
         <div className="hero-text">
           <h1>
             Hi, I'm<span className="hero-name"> {name}</span>
-            <AudioButton src={audioSrc} />
+            <AudioButton src={audioSrc} ariaLabel={"Pronunciation audio"} />
           </h1>
           <h2 className="hero-headline">{role}</h2>
         </div>
@@ -61,8 +21,18 @@ function Hero({ name, role, audioSrc, summary }) {
         </div>
       </div>
       <p className="hero-description">{summary}</p>
-      <ResumeButton />
-      <AboutButton />
+      <button className="btn-resume">
+        <a href={resumePDF} target="_blank">
+          <IoDownloadOutline />
+          <span>Resume</span>
+        </a>
+      </button>
+      <button className="btn-about">
+        <a href={"/"} target="">
+          <span>About me</span>
+          <FaArrowRight />
+        </a>
+      </button>
     </header>
   );
 }
