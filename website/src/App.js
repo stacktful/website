@@ -23,10 +23,10 @@ function App() {
       <Layout>
         <Hero {...hero} />
         <Services services={services} />
+        <Stack stack={stack} />
         <Projects projects={projects} />
         <Experience jobs={jobs} />
         <Testimonials testimonials={testimonials} />
-        <Stack stack={stack} />
         <Contact contacts={contacts} />
       </Layout>
     </div>
