@@ -21,7 +21,10 @@ function JobHeader({ role, company, start, end, expanded, setExpanded }) {
       <div className="job-header">
         <div className="job-title">
           <div className="job-dropdown-arrow">
-            <MdOutlineKeyboardArrowUp transform={`rotate(${expanded ? 180 : 90})`} />
+            <MdOutlineKeyboardArrowUp
+              transform={`rotate(${expanded ? 180 : 90})`}
+              style={{ transition: "transform 0.3s ease" }}
+            />
           </div>
           <JobTitle role={role} company={company} />
         </div>
