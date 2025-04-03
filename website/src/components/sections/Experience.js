@@ -79,38 +79,25 @@ function JobDetails({ city, country, url, stack, title, contributions }) {
   );
 }
 
-function Job({
-  isOpen,
-  onToggle,
-  role,
-  company,
-  start,
-  end,
-  city,
-  country,
-  url,
-  stack,
-  title,
-  contributions,
-}) {
+function Job({ job, isOpen, onToggle }) {
   return (
     <div className="job-container">
       <JobHeader
-        role={role}
-        company={company}
-        start={start}
-        end={end}
+        role={job.role}
+        company={job.company}
+        start={job.start}
+        end={job.end}
         expanded={isOpen}
         setExpanded={onToggle}
       />
       <AccordionItem isOpen={isOpen} onToggle={onToggle}>
         <JobDetails
-          city={city}
-          country={country}
-          url={url}
-          stack={stack}
-          title={title}
-          contributions={contributions}
+          city={job.city}
+          country={job.country}
+          url={job.url}
+          stack={job.stack}
+          title={job.title}
+          contributions={job.contributions}
         />
       </AccordionItem>
     </div>
@@ -126,7 +113,7 @@ function Experience({ jobs }) {
     <Section title="Experience">
       <div className="experience-list">
         {jobs.map((job, index) => (
-          <Job key={index} isOpen={openIndex === index} onToggle={() => toggle(index)} {...job} />
+          <Job key={index} job={job} isOpen={openIndex === index} onToggle={() => toggle(index)} />
         ))}
       </div>
     </Section>
