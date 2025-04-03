@@ -694,6 +694,7 @@ a.contact-item:not(:hover) {
   padding-right: 18.75%;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .tech-stack-cell {
