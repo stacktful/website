@@ -417,13 +417,13 @@ h3.service-header {
 
 .job-header-tile {
   width: 100%;
-  padding: 1.0rem;
+  padding: 1.0rem 0;
 }
 
 .job-content-tile {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 0.8rem;
-  padding: 1.0rem;
+  padding: 1.0rem 0;
 }
 
 .job-title {
@@ -465,6 +465,7 @@ h3.service-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 0.5rem;
 }
 
 .job-details {
@@ -518,7 +519,11 @@ h3.service-header {
   font-size: 0.9rem;
 }
 
-.job-content .tech-stack-container {
+.job-content {
+  padding: 0 1.0rem;
+}
+
+.tech-stack-container {
   margin-top: 1.0rem;
 }
 
@@ -779,4 +784,14 @@ footer a:hover {
   color: var(--primary-color);
   text-decoration: none;
   transition: ease-in-out 0.2s;
+}
+
+.accordion-item {
+  width: 100%;
+  /* padding: 1.0rem; */
+}
+
+.accordion-content {
+  width: 100%;
+  transition: max-height 0.3s ease;
 }
