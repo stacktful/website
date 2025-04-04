@@ -421,7 +421,6 @@ h3.service-header {
 }
 
 .job-content-tile {
-  /* width: 100%; */
   margin-top: 0.8rem;
   padding: 1.0rem 0;
 }
@@ -430,13 +429,13 @@ h3.service-header {
   font-size: 1.5rem;
   display: flex;
   user-select: none;
+  gap: 0.5rem;
 }
 
 .job-dropdown-arrow {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  margin-right: 0.5rem;
   color: var(--primary-color);
 }
 
