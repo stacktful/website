@@ -15,7 +15,7 @@ const testimonials = [
   {
     name: "Conno Kuyt",
     role: "Head of Product",
-    company: "EBITWISE",
+    company: "Ebitwise",
     quote:
       "I never believed in unicorns until I met Thibaut, he's a real one. Everything he touches turns to gold. \
       You can't go wrong with this guy.",
