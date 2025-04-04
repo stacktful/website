@@ -611,10 +611,7 @@ blockquote {
 }
 
 .testimonial-reference {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+  margin: 0.5rem 0.8rem;
 }
 
 h5.testimonial-name {
@@ -625,15 +622,6 @@ h5.testimonial-name {
 
 h5.testimonial-role {
   margin: 0;
-}
-
-.testimonial-role-title {
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.testimonial-role-company {
-  color: var(--tertiary-color);
 }
 
 /* ------------------------ CONTACT ------------------------ */
@@ -702,7 +690,6 @@ a.contact-item:not(:hover) {
   width: calc(var(--main-width) / 8 - 10px);
   height: calc(var(--main-width) / 8 - 10px);
   border: 1px solid var(--header-line-color);
-  background-color: lightblue;
 }
 
 .tech-stack-cell-content {
