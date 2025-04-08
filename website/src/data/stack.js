@@ -142,7 +142,7 @@ const stack = [
   // Other
   {
     icon: <RiOpenaiFill />,
-    name: "OpenAI",
+    name: "ChatGPT",
   },
   {
     icon: <SiJira />,
