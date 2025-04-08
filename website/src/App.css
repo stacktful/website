@@ -281,7 +281,6 @@ button a {
 /* ------------------------ SERVICES ------------------------ */
 
 .service-tile {
-  height: 180px;
   position: relative;
   padding: 20px;
 
@@ -307,16 +306,6 @@ button a {
   /* Assuming grid-gap is 10px, adjust if different */
 }
 
-p.service-description {
-  margin-top: 0.5rem;
-  margin-bottom: 1.0rem;
-}
-
-h3.service-header {
-  margin-top: 0;
-  font-weight: bold;
-}
-
 .tech-stack-container {
   left: calc(20px - 0.5rem);
   display: flex;
@@ -340,6 +329,14 @@ h3.service-header {
 .service-header {
   display: flex;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.service-description {
+  margin-top: 0.5rem;
+  margin-bottom: 1.0rem;
 }
 
 .service-icon {
