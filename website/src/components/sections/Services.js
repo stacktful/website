@@ -4,19 +4,20 @@ import Tile from "../Tile";
 function Service({ icon, title, description, techStack }) {
   return (
     <Tile className="service-tile">
-      <h3 className="service-header">
+      <h3 className="service-header" style={{ marginBottom: 0 }}>
         <div className="service-icon">{icon}</div>
         {title}
       </h3>
-      <p className="service-description">{description}</p>
-      <div className="tech-stack-container">
-        {techStack &&
-          techStack.map((tech, index) => (
+      {description && <p className="service-description">{description}</p>}
+      {techStack && (
+        <div className="tech-stack-container">
+          {techStack.map((tech, index) => (
             <div key={index} className="tech-stack-item">
               {tech}
             </div>
           ))}
-      </div>
+        </div>
+      )}
     </Tile>
   );
 }
