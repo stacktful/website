@@ -1,4 +1,4 @@
-import Logo from "../icons/Logo";
+import Logo from "./icons/Logo";
 
 const navBarItems = [
   { name: "Services", href: "#services" },
@@ -7,6 +7,19 @@ const navBarItems = [
   { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
+
+const repositoryUrl = "https://github.com/stacktful/website";
+
+function Footer() {
+  return (
+    <footer>
+      <a href={repositoryUrl} target="_blank">
+        <p>Designed & built by Thibaut van Bergen</p>
+        <p>Last update: Mar 2025</p>
+      </a>
+    </footer>
+  );
+}
 
 function NavBarItem(props) {
   return (
@@ -33,4 +46,14 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+function Layout({ children }) {
+  return (
+    <>
+      <NavBar />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+}
+
+export default Layout;

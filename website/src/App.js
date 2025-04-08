@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Layout from "./components/layout/Layout";
+import Layout from "./components/Layout";
 import Hero from "./components/sections/Hero";
 import Services from "./components/sections/Services";
 import Projects from "./components/sections/Projects";
