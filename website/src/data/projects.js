@@ -5,25 +5,21 @@ const projects = [
   {
     title: <>Dashwise&reg;</>,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum, \
-    eros nec commodo cursus, nunc elit tincidunt nunc, et tincidunt nunc elit in \
-    nulla. Donec euismod, nunc sed ultricies tincidunt, felis nunc tincidunt nisi, \
-    et aliquam felis arcu eget mauris. Donec ultricies, lorem eget lacinia aliquet, \
-    nisl dui sollicitudin risus, vitae ultricies justo nisl eu nunc. In hac habitasse \
-    platea dictumst. In hac habitasse platea dictumst.",
-    link: "https://dashwise.io",
+      "Cloud-native multi-tenant web application (SaaS) presenting real-time financial \
+      data for start-up and/or scale-up founders. It provides an interactive dashboard \
+      presenting digestible financial insights and key performance metrics (KPIs), \
+      enabling founders make informed decisions while focusing on their core business.",
+    link: "https://ebitwise.nl/en/dashwise/",
     image: imgEbitwise,
   },
   {
     title: <>CamDirector&reg;</>,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum, \
-      eros nec commodo cursus, nunc elit tincidunt nunc, et tincidunt nunc elit in \
-      nulla. Donec euismod, nunc sed ultricies tincidunt, felis nunc tincidunt nisi, \
-      et aliquam felis arcu eget mauris. Donec ultricies, lorem eget lacinia aliquet, \
-      nisl dui sollicitudin risus, vitae ultricies justo nisl eu nunc. In hac habitasse \
-      platea dictumst. In hac habitasse platea dictumst.",
-    link: "https://dashwise.io",
+      "AI-driven multiple camera system for automated video registration of lectures, \
+      capable to automatically find and track the speaker while omitting spectators. \
+      Using the different camera views such as close-ups and overview shots, it also \
+      provides an elegant composition, for both small and large lecture halls.",
+    link: "https://avonic.com/product/av-cd-trac1/",
     image: imgAvonic,
   },
 ];

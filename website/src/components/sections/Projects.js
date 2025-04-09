@@ -4,10 +4,12 @@ import Section from "../Section";
 
 const Project = ({ title, description, link, image }) => (
   <div className="project-container">
-    <div className="project-header">
-      <h3>{title}</h3>
-      <IoOpenOutline />
-    </div>
+    <h3 className="project-header">
+      {title}
+      <a className="project-link-icon" href={link} target="_blank" rel="noopener noreferrer">
+        <IoOpenOutline />
+      </a>
+    </h3>
     <div className="project-content">
       <img src={image} className="project-image"></img>
       <p>{description}</p>

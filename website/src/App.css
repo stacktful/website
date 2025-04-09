@@ -362,16 +362,17 @@ button a {
   width: 100%;
   margin-bottom: 1.0rem;
 }
-
+  
 .project-header {
   display: flex;
+  gap: 0.5rem;
   align-items: center;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
-.project-header h3 {
-  font-weight: bold;
-  margin-bottom: 1.0rem;
-  margin-right: 0.5rem;
+.project-link-icon {
+  color: var(--primary-color);
 }
 
 .project-content {
