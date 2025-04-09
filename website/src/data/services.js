@@ -5,29 +5,31 @@ import { TbCloudComputing } from "react-icons/tb";
 
 export const services = [
   {
-    icon: <IoCodeSlash />,
-    title: "Web Development",
-    description:
-      "I build responsive user interfaces using the latest technologies and best practices.",
-    techStack: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
-  },
-  {
     icon: <AiOutlineCode />,
     title: "Software Engineering",
-    description: "I build Python-based API's using the latest technologies and best practices.",
-    techStack: ["Python", "Flask", "FastAPI", "Django", "PostgreSQL", "MongoDB"],
-  },
-  {
-    icon: <GoGitCompare />,
-    title: "DevOps",
-    description: "I build web applications using the latest technologies and best practices.",
-    techStack: ["Terraform", "GitHub Actions", "Docker"],
+    description:
+      "Specialized in Python-based backend development, including REST APIs and microservices.",
+    // techStack: ["Flask", "FastAPI", "Django"],
   },
   {
     icon: <TbCloudComputing />,
     title: "Cloud Infrastructure",
-    description: "I build web applications using the latest technologies and best practices.",
-    techStack: ["AWS", "Google Cloud", "Azure"],
+    description:
+      "Experience in cloud infrastructure and deployment of applications on AWS, GCP and Azure.",
+    // techStack: ["AWS", "Google Cloud", "Azure"],
+  },
+  {
+    icon: <GoGitCompare />,
+    title: "DevOps",
+    description:
+      "Creating CI/CD pipelines and automating deployment processes for efficient software delivery.",
+    // techStack: ["Terraform", "GitHub Actions", "Docker"],
+  },
+  {
+    icon: <IoCodeSlash />,
+    title: "Web Development",
+    description: "Building responsive and user-friendly web applications prototypes and or MVPs.",
+    // techStack: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
   },
 ];
 
