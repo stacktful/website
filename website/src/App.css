@@ -281,6 +281,7 @@ button a {
 /* ------------------------ SERVICES ------------------------ */
 
 .service-tile {
+  width: 280px;
   position: relative;
   padding: 20px;
 
@@ -293,7 +294,7 @@ button a {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 20px;
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
 }
