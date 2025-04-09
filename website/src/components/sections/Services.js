@@ -4,7 +4,7 @@ import Tile from "../Tile";
 function Service({ icon, title, description, techStack }) {
   return (
     <Tile className="service-tile">
-      <h3 className="service-header" style={{ marginBottom: 0 }}>
+      <h3 className="service-header">
         <div className="service-icon">{icon}</div>
         {title}
       </h3>
