@@ -21,16 +21,6 @@ function Footer() {
   );
 }
 
-function NavBarItem(props) {
-  return (
-    <li>
-      <span className="nav-item-index">0{props.index + 1}.</span>
-      <a href={props.href}>{props.name}</a>
-    </li>
-  );
-}
-
-// component
 function NavBar() {
   return (
     <nav>
@@ -39,7 +29,10 @@ function NavBar() {
       </span>
       <ul>
         {navBarItems.map((item, index) => (
-          <NavBarItem key={index} index={index} {...item} />
+          <li>
+            <span className="nav-item-index">0{index + 1}.</span>
+            <a href={item.href}>{item.name}</a>
+          </li>
         ))}
       </ul>
     </nav>
