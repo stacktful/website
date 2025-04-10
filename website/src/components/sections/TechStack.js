@@ -20,10 +20,11 @@ function TechStackGrid({ stack }) {
   );
 }
 
-function Stack({ stack }) {
+function TechStack({ stack }) {
   const [showAll, setShowAll] = useState(false);
-  const baseStack = stack.slice(0, 15);
-  const restStack = stack.slice(15);
+  const sliceSize = 15; // Must be multiple of 5 /!\
+  const baseStack = stack.slice(0, sliceSize);
+  const restStack = stack.slice(sliceSize);
 
   return (
     <Section title="Stack">
@@ -48,4 +49,4 @@ function Stack({ stack }) {
   );
 }
 
-export default Stack;
+export default TechStack;

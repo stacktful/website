@@ -7,7 +7,7 @@ import Projects from "./components/sections/Projects";
 import Experience from "./components/sections/Experience";
 import Testimonials from "./components/sections/Testimonials";
 import Contact from "./components/sections/Contact";
-import Stack from "./components/sections/Stack";
+import TechStack from "./components/sections/TechStack";
 
 import jobs from "./data/experience";
 import projects from "./data/projects";
@@ -23,7 +23,7 @@ function App() {
       <Layout>
         <Hero {...hero} />
         <Services services={services} />
-        <Stack stack={stack} />
+        <TechStack stack={stack} />
         <Projects projects={projects} />
         <Experience jobs={jobs} />
         <Testimonials testimonials={testimonials} />
