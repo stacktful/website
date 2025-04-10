@@ -442,6 +442,16 @@ button a {
   padding: 1.0rem 0;
 }
 
+.job-header-tile:hover .job-dropdown-arrow {
+  transform: scale(1.5);
+  transition: ease-in 0.2s;
+}
+
+.job-header-tile:not(:hover) .job-dropdown-arrow {
+  transform: scale(1.0);
+  transition: ease-in 0.2s;
+}
+
 .job-content-tile {
   margin-top: 0.8rem;
   padding: 1.0rem 0;
