@@ -53,7 +53,7 @@ function JobDetails({ city, country, url, stack, title, contributions }) {
             <span>{url.replaceAll("https://www.", "")}</span>
           </a>
         </div>
-        <p class="job-project">
+        <p className="job-project">
           <strong className="job-project-name">{name}</strong>
           <strong> &mdash; {description}</strong>
         </p>

@@ -29,7 +29,7 @@ function NavBar() {
       </span>
       <ul>
         {navBarItems.map((item, index) => (
-          <li>
+          <li key={index}>
             <span className="nav-item-index">0{index + 1}.</span>
             <a href={item.href}>{item.name}</a>
           </li>

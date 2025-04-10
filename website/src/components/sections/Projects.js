@@ -21,8 +21,9 @@ function Projects({ projects }) {
   return (
     <Section title="My Projects">
       <div className="project-list">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <Project
+            key={index}
             title={project.title}
             description={project.description}
             link={project.link}
