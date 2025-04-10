@@ -3,7 +3,7 @@ import { IoDownloadOutline } from "react-icons/io5";
 
 import AudioButton from "../AudioButton";
 
-import resumePDF from "../../static/resume-thibaut.pdf";
+import resumePDF from "../../static/resume.pdf";
 
 function Hero({ name, role, audioSrc, summary }) {
   return (
