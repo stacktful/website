@@ -2,7 +2,7 @@ import Section from "../Section";
 
 function Contact({ contacts }) {
   return (
-    <Section title="Contact">
+    <Section title="Contact" id="contact">
       <div className="contact-cta">
         <h2>Let's get in touch!</h2>
         <p>

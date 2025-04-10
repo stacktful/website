@@ -24,7 +24,7 @@ function Service({ icon, title, description, techStack }) {
 
 function Services({ services }) {
   return (
-    <Section title="What I Do">
+    <Section title="What I Do" id="services">
       <div className={`tiles-grid ${services.length === 3 ? "three-tiles" : ""}`}>
         {services.map((service, index) => (
           <Service key={index} {...service} />

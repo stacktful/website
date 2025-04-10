@@ -109,7 +109,7 @@ function Experience({ jobs }) {
     setOpenIndex((prev) => (prev === index ? null : index));
   };
   return (
-    <Section title="Experience">
+    <Section title="Experience" id="experience">
       <div className="experience-list">
         {jobs.map((job, index) => (
           <Job key={index} job={job} isOpen={openIndex === index} onToggle={() => toggle(index)} />

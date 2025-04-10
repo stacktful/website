@@ -27,7 +27,7 @@ function TechStack({ stack }) {
   const restStack = stack.slice(sliceSize);
 
   return (
-    <Section title="Tools I Use">
+    <Section title="Tools I Use" id="teckstack">
       <TechStackGrid stack={baseStack} />
       <AccordionItem isOpen={showAll}>
         <TechStackGrid stack={restStack} />

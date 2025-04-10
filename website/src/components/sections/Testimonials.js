@@ -21,7 +21,7 @@ function Testimonial({ name, role, company, quote, img }) {
 
 function Testimonials({ testimonials }) {
   return (
-    <Section title="Testimonials">
+    <Section title="Testimonials" id="testimonials">
       <div className="testimonial-list">
         {testimonials.map((testimonial, index) => (
           <Testimonial {...testimonial} key={index} />

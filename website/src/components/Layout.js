@@ -2,6 +2,7 @@ import Logo from "./icons/Logo";
 
 const navBarItems = [
   { name: "Services", href: "#services" },
+  { name: "Tech Stack", href: "#teckstack" },
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Testimonials", href: "#testimonials" },
