@@ -24,17 +24,19 @@ function Footer() {
 function NavBar() {
   return (
     <nav>
-      <span className="nav-logo">
+      <div className="nav-logo">
         <Logo />
-      </span>
-      <ul>
-        {navBarItems.map((item, index) => (
-          <li key={index}>
-            <span className="nav-item-index">0{index + 1}.</span>
-            <a href={item.href}>{item.name}</a>
-          </li>
-        ))}
-      </ul>
+      </div>
+      <div className="nav-links">
+        <ul className="nav-links-list">
+          {navBarItems.map((item, index) => (
+            <li key={index}>
+              <span className="nav-item-index">0{index + 1}.</span>
+              <a href={item.href}>{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
