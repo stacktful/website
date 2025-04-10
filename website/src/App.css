@@ -127,12 +127,12 @@ nav {
   justify-content: center;
 }
 
-.nav-logo>svg:hover {
+.nav-logo>a:hover {
   transform: scale(1.0);
   transition: ease-in-out 0.2s;
 }
 
-.nav-logo>svg:not(:hover) {
+.nav-logo>a:not(:hover) {
   transform: scale(0.9);
   transition: ease-in-out 0.2s;
 }

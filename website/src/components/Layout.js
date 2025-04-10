@@ -25,7 +25,9 @@ function NavBar() {
   return (
     <nav>
       <div className="nav-logo">
-        <Logo />
+        <a href="/">
+          <Logo />
+        </a>
       </div>
       <div className="nav-links">
         <ul className="nav-links-list">
