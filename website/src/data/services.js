@@ -9,27 +9,23 @@ export const services = [
     title: "Software Engineering",
     description:
       "Specialized in Python-based backend development, including REST APIs and microservices.",
-    // techStack: ["Flask", "FastAPI", "Django"],
   },
   {
     icon: <TbCloudComputing />,
     title: "Cloud Infrastructure",
     description:
       "Experience in cloud infrastructure and deployment of applications on AWS, GCP and Azure.",
-    // techStack: ["AWS", "Google Cloud", "Azure"],
   },
   {
     icon: <GoGitCompare />,
     title: "DevOps",
     description:
       "Creating CI/CD pipelines and automating deployment processes for efficient software delivery.",
-    // techStack: ["Terraform", "GitHub Actions", "Docker"],
   },
   {
     icon: <IoCodeSlash />,
     title: "Web Development",
     description: "Building responsive and user-friendly web applications prototypes and or MVPs.",
-    // techStack: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
   },
 ];
 
