@@ -19,7 +19,7 @@ const Project = ({ title, description, link, image }) => (
 
 function Projects({ projects }) {
   return (
-    <Section title={"Projects"}>
+    <Section title="My Projects">
       <div className="project-list">
         {projects.map((project) => (
           <Project
