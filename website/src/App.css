@@ -205,6 +205,12 @@ div.hero-image {
   object-fit: contain;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* -------------------------- Buttons -------------------------- */
 
 button {
@@ -256,8 +262,6 @@ button.btn-audio svg {
   width: 42px;
 }
 
-
-
 button.btn-audio:hover {
   transform: scale(1.25);
 }
@@ -269,6 +273,12 @@ button.btn-audio:not(:hover) {
 button a {
   color: inherit;
   text-decoration: none;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .tile {
@@ -364,14 +374,25 @@ button a {
 }
   
 .project-header {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 0.25rem;
   font-weight: bold;
 }
 
-.project-link-icon {
+.project-header-anchor {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.project-header-anchor>span {
+  color: var(--tertiary-color);
+}
+
+.project-header-anchor>svg {
   color: var(--primary-color);
 }
 
@@ -477,32 +498,21 @@ button a {
 .job-location, .job-url {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
   font-family: var(--code-font);
   color: var(--darkgray);
-}
-
-.job-url>a {
-  color: var(--darkgray);
   text-decoration: none;
-  color: inherit;
 }
 
-.job-url>a:hover {
-  color: var(--darkgray);
+.job-url:hover {
   text-decoration: underline;
 }
 
-.job-location-icon, .job-url-icon {
-  width: auto;
-  height: 100%;
-  margin: auto;
-  margin-left: 0;
-  margin-right: 0.5rem;
-}
-
-.job-location-icon>svg, .job-url-icon>svg {
-  height: 100%;
-  color: var(--primary-color)
+.job-location>svg,
+.job-url>svg {
+  color: var(--primary-color);
 }
 
 .job-project-name {

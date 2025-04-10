@@ -21,18 +21,20 @@ function Hero({ name, role, audioSrc, summary }) {
         </div>
       </div>
       <p className="hero-description">{summary}</p>
-      <button className="btn-resume">
-        <a href={resumePDF} target="_blank">
-          <IoDownloadOutline />
-          <span>Resume</span>
-        </a>
-      </button>
-      <button className="btn-about">
-        <a href={"/"} target="">
-          <span>About me</span>
-          <FaArrowRight />
-        </a>
-      </button>
+      <div className="hero-buttons">
+        <button className="btn-resume">
+          <a className="flex-row-center" href={resumePDF} target="_blank">
+            <IoDownloadOutline />
+            <span>Resume</span>
+          </a>
+        </button>
+        <button className="btn-about">
+          <a className="flex-row-center" href={"/"} target="">
+            <span>About me</span>
+            <FaArrowRight />
+          </a>
+        </button>
+      </div>
     </header>
   );
 }

@@ -43,19 +43,15 @@ function JobDetails({ city, country, url, stack, title, contributions }) {
       <div className="job-content">
         <div className="job-details">
           <div className="job-location">
-            <div className="job-location-icon">
-              <IoLocationSharp />
-            </div>
-            {city}, {countryNamesByCode[country] || country}
+            <IoLocationSharp />
+            <span>
+              {city}, {countryNamesByCode[country] || country}
+            </span>
           </div>
-          <div className="job-url">
-            <div className="job-url-icon">
-              <IoOpenOutline />
-            </div>
-            <a href={url} target="_blank">
-              {url.replaceAll("https://www.", "")}
-            </a>
-          </div>
+          <a className="job-url" href={url} target="_blank">
+            <IoOpenOutline />
+            <span>{url.replaceAll("https://www.", "")}</span>
+          </a>
         </div>
         <p class="job-project">
           <strong className="job-project-name">{name}</strong>

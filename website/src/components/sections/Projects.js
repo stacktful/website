@@ -5,8 +5,8 @@ import Section from "../Section";
 const Project = ({ title, description, link, image }) => (
   <div className="project-container">
     <h3 className="project-header">
-      {title}
-      <a className="project-link-icon" href={link} target="_blank" rel="noopener noreferrer">
+      <a className="project-header-anchor" href={link} target="_blank" rel="noopener noreferrer">
+        <span>{title}</span>
         <IoOpenOutline />
       </a>
     </h3>
