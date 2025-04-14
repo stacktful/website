@@ -505,7 +505,7 @@ button a {
   display: flex;
   flex-direction: row;
   gap: 3.0rem;
-  margin-bottom: 1.0rem;
+  margin-bottom: 0.5rem;
 }
 
 .job-location, .job-url {
