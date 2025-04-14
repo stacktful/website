@@ -18,6 +18,7 @@
   --border-radius: 10px;
   --code-font: "Fira Code";
   --main-width: 960px;
+  --tile-gap: 10px;
   /* --main-bg-color-1: #024a45; */
   /* --main-bg-color-2: #012725; */
   /* --tile-color: #024a45; */
@@ -306,7 +307,7 @@ button a {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 10px;
+  grid-gap: var(--tile-gap);
   justify-content: center;
   align-items: center;
 }
@@ -315,7 +316,7 @@ button a {
   grid-column-start: 1;
   grid-column-end: 3;
   justify-self: center;
-  max-width: calc(50% - 10px);
+  max-width: calc(50% - var(--tile-gap));
   /* Assuming grid-gap is 10px, adjust if different */
 }
 
@@ -431,7 +432,7 @@ button a {
 /* ------------------------ EXPERIENCE ------------------------ */
 
 .job-container {
-  margin-bottom: 0.8rem;
+  margin-bottom: var(--tile-gap);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,7 +440,7 @@ button a {
 
 .job-header-tile {
   width: 100%;
-  padding: 1.0rem 0;
+  padding: 0.5rem 0;
 }
 
 .job-header-tile:hover .job-dropdown-arrow {
@@ -453,7 +454,7 @@ button a {
 }
 
 .job-content-tile {
-  margin-top: 0.8rem;
+  margin-top: var(--tile-gap);
   padding: 1.0rem 0;
 }
 
@@ -569,12 +570,12 @@ button a {
 .testimonial-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: var(--tile-gap);
 }
 
 .testimonial-wrapper {
-  width: calc(33% - 10px);
+  width: calc(33% - var(--tile-gap));
   height: 280px;
   display: flex;
   flex-direction: row;
@@ -701,14 +702,14 @@ a.contact-item:not(:hover) {
   padding-left: 18.75%;
   padding-right: 18.75%;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: var(--tile-gap);
+  margin-bottom: var(--tile-gap);
 }
 
 .tech-stack-cell {
   position: relative;
-  width: calc(var(--main-width) / 8 - 10px);
-  height: calc(var(--main-width) / 8 - 10px);
+  width: calc(var(--main-width) / 8 - var(--tile-gap));
+  height: calc(var(--main-width) / 8 - var(--tile-gap));
   border: 1px solid var(--header-line-color);
 }
 

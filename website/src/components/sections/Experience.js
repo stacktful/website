@@ -110,7 +110,7 @@ function Experience({ jobs }) {
   };
   return (
     <Section title="Experience" id="experience">
-      <div className="experience-list">
+      <div className="job-list-container">
         {jobs.map((job, index) => (
           <Job key={index} job={job} isOpen={openIndex === index} onToggle={() => toggle(index)} />
         ))}
