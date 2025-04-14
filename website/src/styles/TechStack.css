@@ -1,0 +1,73 @@
+/* ------------------------ STACK ------------------------ */
+
+.tech-stack-grid {
+    display: grid;
+    width: 62.5%;
+    padding-left: 18.75%;
+    padding-right: 18.75%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--tile-gap);
+    margin-bottom: var(--tile-gap);
+}
+
+.tech-stack-cell {
+    position: relative;
+    width: calc(var(--main-width) / 8 - var(--tile-gap));
+    height: calc(var(--main-width) / 8 - var(--tile-gap));
+    border: 1px solid var(--header-line-color);
+}
+
+.tech-stack-cell-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tech-stack-icon {
+    font-size: 32px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+}
+
+.tech-stack-name {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: var(--code-font);
+    color: var(--tertiary-color);
+}
+
+.tech-stack-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.0rem;
+}
+
+.btn-show-all-stack {
+    display: flex;
+    background-color: transparent;
+    color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+}
+
+.btn-show-all-stack:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-show-all-stack:active {
+    transform: translate(0px, 0px);
+    transition: ease-in-out 0.2s;
+}
+
+.show-all-stack-arrow {
+    font-size: 1.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    color: inherit;
+}

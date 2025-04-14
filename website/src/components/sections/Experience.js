@@ -1,3 +1,5 @@
+import React from "react";
+
 import { IoLocationSharp } from "react-icons/io5";
 import { IoOpenOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
@@ -8,7 +10,7 @@ import Tile from "../Tile";
 import Bullet from "../icons/Bullet";
 import AccordionItem from "../AccordionItem";
 
-import React from "react";
+import "../../styles/Experience.css";
 
 const countryNamesByCode = {
   NL: "Netherlands",

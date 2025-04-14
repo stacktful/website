@@ -1,6 +1,8 @@
 import Section from "../Section";
 import Tile from "../Tile";
 
+import "../../styles/Services.css";
+
 function Service({ icon, title, description, techStack }) {
   return (
     <Tile className="service-tile">

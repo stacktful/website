@@ -5,6 +5,8 @@ import AudioButton from "../AudioButton";
 
 import resumePDF from "../../static/resume.pdf";
 
+import "../../styles/Hero.css";
+
 function Hero({ name, role, audioSrc, summary }) {
   return (
     <header>

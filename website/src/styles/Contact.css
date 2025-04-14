@@ -1,0 +1,48 @@
+/* ------------------------ CONTACT ------------------------ */
+
+.contact-list {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 10rem 0 10rem;
+}
+
+a.contact-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.contact-item:hover {
+    color: inherit;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+a.contact-item:not(:hover) {
+    transform: scale(1.0);
+    transition: ease-in-out 0.2s;
+}
+
+.contact-item>svg {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+.contact-cta {
+    text-align: center;
+    margin-top: 1.0rem;
+    margin-bottom: 5.0rem;
+    font-size: 1.5rem;
+}
+
+.contact-cta h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,77 @@
+/* ------------------------ SERVICES ------------------------ */
+
+.service-tile {
+    width: 280px;
+    position: relative;
+    padding: 20px;
+
+    /* Ensures the content scales with the tile */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tiles-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: var(--tile-gap);
+    justify-content: center;
+    align-items: center;
+}
+
+.tiles-grid.three-tiles> :nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    max-width: calc(50% - var(--tile-gap));
+    /* Assuming grid-gap is 10px, adjust if different */
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.service-description {
+    margin-bottom: 0;
+}
+
+.service-icon {
+    width: auto;
+    height: 100%;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0.5rem;
+    color: var(--tertiary-color);
+}
+
+.service-icon>svg {
+    color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    margin-top: 0.35rem;
+    /* TODO: quick & dirty fix */
+}
+
+.tech-tag-container {
+    left: calc(20px - 0.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    font-family: var(--code-font);
+    font-size: 0.8rem;
+    font-weight: bold;
+    height: auto;
+    padding: 0.25rem 1.0rem 0.25rem 1.0rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--tertiary-color);
+    color: var(--secondary-color);
+    background-color: var(--tile-color-1);
+}

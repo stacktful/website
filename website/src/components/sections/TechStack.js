@@ -5,6 +5,8 @@ import Section from "../Section";
 import Tile from "../Tile";
 import AccordionItem from "../AccordionItem"; // import your animated wrapper
 
+import "../../styles/TechStack.css";
+
 function TechStackGrid({ stack }) {
   return (
     <div className="tech-stack-grid">

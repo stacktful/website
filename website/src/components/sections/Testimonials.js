@@ -2,6 +2,8 @@ import Section from "../Section";
 import JobTitle from "../JobTitle";
 import Tile from "../Tile";
 
+import "../../styles/Testimonials.css";
+
 function Testimonial({ name, role, company, quote, img }) {
   return (
     <div className="testimonial-wrapper">

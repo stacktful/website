@@ -1,5 +1,7 @@
 import Section from "../Section";
 
+import "../../styles/Contact.css";
+
 function Contact({ contacts }) {
   return (
     <Section title="Contact" id="contact">
