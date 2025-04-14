@@ -614,7 +614,7 @@ button a {
   left: calc(50% - 50px);
 }
 
-blockquote {
+.testimonial-quote {
   font-size: 0.8rem;
   text-align: left;
   margin: 0.8rem;
