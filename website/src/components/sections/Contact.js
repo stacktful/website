@@ -4,7 +4,7 @@ function Contact({ contacts }) {
   return (
     <Section title="Contact" id="contact">
       <div className="contact-cta">
-        <h2>Let's get in touch!</h2>
+        <h2>Let's connect!</h2>
         <p>
           Whether you have an exciting opportunity, a question, or just want to connect, I'd love to
           hear from you.
