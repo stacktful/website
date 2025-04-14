@@ -583,7 +583,7 @@ button a {
 }
 
 .testimonial-wrapper:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: ease-in-out 0.2s;
 }
 
