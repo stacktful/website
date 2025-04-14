@@ -244,7 +244,6 @@ button a {
   background-image: linear-gradient(to bottom right, var(--tile-color-1), var(--tile-color-2));
   border: 1px solid var(--header-line-color);
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------------ FOOTER ------------------------ */
