@@ -10,9 +10,9 @@ function Service({ icon, title, description, techStack }) {
       </h3>
       {description && <p className="service-description">{description}</p>}
       {techStack && (
-        <div className="tech-stack-container">
+        <div className="tech-tag-container">
           {techStack.map((tech, index) => (
-            <div key={index} className="tech-stack-item">
+            <div key={index} className="tech-tag">
               {tech}
             </div>
           ))}

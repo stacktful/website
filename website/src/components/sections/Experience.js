@@ -66,9 +66,9 @@ function JobDetails({ city, country, url, stack, title, contributions }) {
             </li>
           ))}
         </ul>
-        <div className="tech-stack-container">
+        <div className="tech-tag-container">
           {stack.map((tech, index) => (
-            <div key={index} className="tech-stack-item">
+            <div key={index} className="tech-tag">
               {tech}
             </div>
           ))}

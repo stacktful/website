@@ -319,26 +319,6 @@ button a {
   /* Assuming grid-gap is 10px, adjust if different */
 }
 
-.tech-stack-container {
-  left: calc(20px - 0.5rem);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tech-stack-item {
-  display: inline-block;
-  font-family: var(--code-font);
-  font-size: 0.8rem;
-  font-weight: bold;
-  height: auto;
-  padding: 0.25rem 1.0rem 0.25rem 1.0rem;
-  border-radius: 1.5rem;
-  border: 1px solid var(--tertiary-color);
-  color: var(--secondary-color);
-  background-color: var(--tile-color-1);
-}
-
 .service-header {
   display: flex;
   align-items: center;
@@ -366,6 +346,26 @@ button a {
   width: 100%;
   height: 100%;
   margin-top: 0.35rem;  /* TODO: quick & dirty fix */
+}
+
+.tech-tag-container {
+  left: calc(20px - 0.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  font-family: var(--code-font);
+  font-size: 0.8rem;
+  font-weight: bold;
+  height: auto;
+  padding: 0.25rem 1.0rem 0.25rem 1.0rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--tertiary-color);
+  color: var(--secondary-color);
+  background-color: var(--tile-color-1);
 }
 
 /* ------------------------ PROJECTS ------------------------ */
@@ -543,7 +543,7 @@ button a {
   padding: 0 1.0rem;
 }
 
-.tech-stack-container {
+.tech-tag-container {
   margin-top: 1.0rem;
 }
 
