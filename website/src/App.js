@@ -24,8 +24,8 @@ function App() {
         <Hero {...hero} />
         <Services services={services} />
         <TechStack stack={stack} />
-        <Projects projects={projects} />
         <Experience jobs={jobs} />
+        <Projects projects={projects} />
         <Testimonials testimonials={testimonials} />
         <Contact contacts={contacts} />
       </Layout>
