@@ -1,7 +1,7 @@
 /* ------------------------ EXPERIENCE ------------------------ */
 
 .job-container {
-    margin-bottom: var(--tile-gap);
+    margin-bottom: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .job-content-tile {
-    margin-top: var(--tile-gap);
+    margin-top: 4px;
     padding: 1.0rem 0;
 }
 
