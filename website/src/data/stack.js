@@ -1,3 +1,4 @@
+import { DiRedis } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
 import { RiOpenaiFill } from "react-icons/ri";
 import { BsFiletypeSql } from "react-icons/bs";
@@ -21,6 +22,8 @@ import {
   SiPytest,
   SiGnubash,
   SiNotion,
+  SiKubernetes,
+  SiAnsible,
 } from "react-icons/si";
 import {
   FaReact,
@@ -81,6 +84,10 @@ const stack = [
   //   icon: <BiLogoMongodb />,
   //   name: "MongoDB",
   // },
+  // {
+  //   icon: <DiRedis />,
+  //   name: "Redis",
+  // },
   {
     icon: <BsFiletypeSql />,
     name: "SQL",
@@ -108,10 +115,6 @@ const stack = [
   },
   // Cloud Infrastructure and DevOps
   {
-    icon: <SiTerraform />,
-    name: "Terraform",
-  },
-  {
     icon: <SiGooglecloud />,
     name: "GCP",
   },
@@ -127,6 +130,18 @@ const stack = [
     icon: <FaDocker />,
     name: "Docker",
   },
+  // {
+  //   icon: <SiKubernetes />,
+  //   name: "Kubernetes",
+  // },
+  // {
+  //   icon: <SiTerraform />,
+  //   name: "Terraform",
+  // },
+  // {
+  //   icon: <SiAnsible />,
+  //   name: "Ansible",
+  // },
   {
     icon: <FaGitAlt />,
     name: "Git",
