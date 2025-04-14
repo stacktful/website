@@ -172,7 +172,7 @@
         "end": "Mar 2020",
         "projects": [
             {
-                "title": "FLS Localization — Onboard localization system for ship-hull-cleaning robot based on Forward Looking Sonar (FLS) images",
+                "title": "FLS Localization — Localization system for ship-hull-cleaning robot based on Forward Looking Sonar (FLS) images",
                 "contributions": [
                     "Delivered Proof-of-Concept for automated localization system enabling centimeter-level accuracy, including image filtering & processing, quay wall detection, target tracking and sensor data fusion (i.e. Extended Kalman Filter)."
                 ],
