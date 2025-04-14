@@ -19,7 +19,7 @@ const Project = ({ title, description, link, image }) => (
 
 function Projects({ projects }) {
   return (
-    <Section title="My Projects" id="projects">
+    <Section title="Notable Projects" id="projects">
       <div className="project-list">
         {projects.map((project, index) => (
           <Project
