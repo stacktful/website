@@ -14,7 +14,6 @@
     position: relative;
     width: calc(var(--main-width) / 8 - var(--tile-gap));
     height: calc(var(--main-width) / 8 - var(--tile-gap));
-    border: 1px solid var(--header-line-color);
 }
 
 .tech-stack-cell-content {
