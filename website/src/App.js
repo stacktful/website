@@ -26,7 +26,7 @@ function App() {
         <TechStack stack={stack} />
         <Experience jobs={jobs} />
         <Projects projects={projects} />
-        <Testimonials testimonials={testimonials} />
+        {/* <Testimonials testimonials={testimonials} /> */}
         <Contact contacts={contacts} />
       </Layout>
     </div>
