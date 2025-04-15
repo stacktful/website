@@ -1,15 +1,6 @@
 import Logo from "./icons/Logo";
 
-const navBarItems = [
-  { name: "Services", href: "#services" },
-  { name: "Tech Stack", href: "#teckstack" },
-  { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
-];
-
-const repositoryUrl = "https://github.com/stacktful/website";
+import { navLinks, repositoryUrl } from "../config";
 
 function Footer() {
   return (
@@ -32,7 +23,7 @@ function NavBar() {
       </div>
       <div className="nav-links">
         <ul className="nav-links-list">
-          {navBarItems.map((item, index) => (
+          {navLinks.map((item, index) => (
             <li key={index}>
               <span className="nav-item-index">0{index + 1}.</span>
               <a href={item.href}>{item.name}</a>
