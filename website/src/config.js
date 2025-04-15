@@ -3,8 +3,8 @@ module.exports = {
   navLinks: [
     { name: "Services", href: "#services" },
     { name: "Tech Stack", href: "#teckstack" },
-    { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
     // { name: "Testimonials", href: "#testimonials" },
     { name: "Contact", href: "#contact" },
   ],
