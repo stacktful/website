@@ -9,9 +9,9 @@
   --tile-color-1: color-mix(in srgb, var(--primary-color) 18%, var(--color-mode));
   --tile-color-2: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode)); */
   --main-background-color: rgb(20, 20, 20);
-  --tile-color-1: rgb(28, 28, 28);
-  --tile-color-2: var(--main-background-color);
-  --header-line-color: rgb(32, 32, 32);
+  --tile-color-1: rgb(32, 32, 32); /* slightly brighter for more visibility */
+  --tile-color-2: rgb(24, 24, 24); /* slightly brighter for more visibility */
+  --header-line-color: rgb(36, 36, 36); /* slightly brighter for more visibility */
   --content-width: 80%;
   --hero-image-size: 180px;
   --header-margin: 150px;
