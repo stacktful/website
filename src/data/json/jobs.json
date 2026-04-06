@@ -9,6 +9,67 @@
         "end": "Present",
         "projects": [
             {
+                "title": "Voltix Agent — Internal Python package for building and deploying AI Agents within Alliander IT landscape",
+                "role": "Software Engineer",
+                "company": "Alliander",
+                "city": "Arnhem",
+                "country": "NL",
+                "url": "https://www.alliander.nl",
+                "start": "Jan 2026",
+                "end": "Present",
+                "contributions": [
+                    "Developing package including architectural design, implementation, testing, documentation and deployment.",
+                    "Prototyping Agentic AI use cases and demonstrating Voltix Agent’s capabilities to internal stakeholders.",
+                    "Creating comprehensive catalogue of Agent skills & instructions to improve workflow, productivity and code quality.",
+                    "Collaborating with cross-functional teams to integrate Voltix Agent into existing IT landscape.",
+                    "Providing training and support to internal developers on using Voltix Agent for building and deploying AI Agents."
+                ],
+                "stack": [
+                    "Python",
+                    "PydanticAI",
+                    "ReactJS",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "Vite",
+                    "AWS",
+                    "Snowflake",
+                    "Atlan",
+                    "CI/CD",
+                    "SonarQube",
+                    "Dynatrace",
+                    "Git",
+                    "GitHub",
+                    "Agile",
+                    "Scrum"
+                ]
+            },
+            {
+                "title": "Project StA — Python-based discrete event simulation of warehouse processes for logistics optimization",
+                "role": "Sofware Engineer",
+                "company": "Bol.com",
+                "city": "Utrecht",
+                "country": "NL",
+                "url": "https://www.bol.com",
+                "start": "Jun 2025",
+                "end": "Dec 2025",
+                "contributions": [
+                    "Writing StA package's documentation and setting up CI/CD pipeline for automated testing and deployment to PyPI.",
+                    "Collaborating with logistics experts to translate warehouse processes into accurate simulation models and scenarios.",
+                    "Optimizing simulation performance and scalability to handle large datasets and complex scenarios, enabling faster insights and decision-making."
+                ],
+                "stack": [
+                    "Python",
+                    "SimPy",
+                    "Google Cloud",
+                    "BigQuery",
+                    "CI/CD",
+                    "Git",
+                    "GitLab",
+                    "Agile",
+                    "Scrum"
+                ]
+            },
+            {
                 "title": "Trimbel\u00AE — cloud-native platform for car dealerships to manage their inventory and sales",
                 "role": "DevOps Engineer",
                 "company": "Louwman Group",
@@ -25,6 +86,7 @@
                     "Terraform",
                     "CI/CD",
                     "Git",
+                    "GitHub",
                     "Azure DevOps",
                     "Agile",
                     "Scrum"
