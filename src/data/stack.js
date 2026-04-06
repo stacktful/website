@@ -1,9 +1,9 @@
-import { DiRedis } from "react-icons/di";
+import { GoCopilot } from "react-icons/go";
 import { BiLogoMongodb } from "react-icons/bi";
 import { RiOpenaiFill } from "react-icons/ri";
 import { BsFiletypeSql } from "react-icons/bs";
 import { VscAzure } from "react-icons/vsc";
-import { IoLogoGithub } from "react-icons/io";
+import { IoLogoGithub, IoLogoGitlab } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
   SiTypescript,
@@ -24,6 +24,10 @@ import {
   SiNotion,
   SiKubernetes,
   SiAnsible,
+  SiSnowflake,
+  SiLinux,
+  SiTailwindcss,
+  SiRedis,
 } from "react-icons/si";
 import {
   FaReact,
@@ -35,6 +39,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaSlack,
+  FaGitlab,
 } from "react-icons/fa";
 
 const stack = [
@@ -80,12 +85,16 @@ const stack = [
     icon: <SiGooglebigquery />,
     name: "BigQuery",
   },
+  {
+    icon: <SiSnowflake />,
+    name: "Snowflake",
+  },
   // {
   //   icon: <BiLogoMongodb />,
   //   name: "MongoDB",
   // },
   // {
-  //   icon: <DiRedis />,
+  //   icon: <SiRedis />,
   //   name: "Redis",
   // },
   {
@@ -97,10 +106,10 @@ const stack = [
     icon: <FaReact />,
     name: "React",
   },
-  // {
-  //   icon: <SiTypescript />,
-  //   name: "TypeScript",
-  // },
+  {
+    icon: <SiTypescript />,
+    name: "TypeScript",
+  },
   {
     icon: <IoLogoJavascript />,
     name: "JavaScript",
@@ -112,6 +121,10 @@ const stack = [
   {
     icon: <FaCss3Alt />,
     name: "CSS",
+  },
+  {
+    icon: <SiTailwindcss />,
+    name: "Tailwind",
   },
   // Cloud Infrastructure and DevOps
   {
@@ -134,10 +147,10 @@ const stack = [
   //   icon: <SiKubernetes />,
   //   name: "Kubernetes",
   // },
-  // {
-  //   icon: <SiTerraform />,
-  //   name: "Terraform",
-  // },
+  {
+    icon: <SiTerraform />,
+    name: "Terraform",
+  },
   // {
   //   icon: <SiAnsible />,
   //   name: "Ansible",
@@ -151,34 +164,47 @@ const stack = [
     name: "GitHub",
   },
   {
+    icon: <FaGitlab />,
+    name: "GitLab",
+  },
+  {
     icon: <SiGnubash />,
     name: "Bash",
   },
+  {
+    icon: <SiLinux />,
+    name: "Linux",
+  },
+
   // Other
   {
     icon: <RiOpenaiFill />,
     name: "ChatGPT",
   },
   {
-    icon: <SiJira />,
-    name: "Jira",
+    icon: <GoCopilot />,
+    name: "Copilot",
   },
-  {
-    icon: <FaConfluence />,
-    name: "Confluence",
-  },
-  {
-    icon: <FaSlack />,
-    name: "Slack",
-  },
-  {
-    icon: <SiClickup />,
-    name: "ClickUp",
-  },
-  {
-    icon: <SiNotion />,
-    name: "Notion",
-  },
+  // {
+  //   icon: <SiJira />,
+  //   name: "Jira",
+  // },
+  // {
+  //   icon: <FaConfluence />,
+  //   name: "Confluence",
+  // },
+  // {
+  //   icon: <FaSlack />,
+  //   name: "Slack",
+  // },
+  // {
+  //   icon: <SiClickup />,
+  //   name: "ClickUp",
+  // },
+  // {
+  //   icon: <SiNotion />,
+  //   name: "Notion",
+  // },
 ];
 
 export default stack;
