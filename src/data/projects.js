@@ -19,7 +19,7 @@ const projects = [
       capable to automatically find and track the speaker while omitting spectators. \
       Using the different camera views such as close-ups and overview shots, it also \
       provides an elegant composition, for both small and large lecture halls.",
-    link: "https://avonic.com/product/av-cd-trac1/",
+    link: "https://avonic.com/cd600/",
     image: imgAvonic,
   },
 ];
