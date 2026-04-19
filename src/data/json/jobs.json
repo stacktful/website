@@ -53,15 +53,19 @@
                 "start": "Jun 2025",
                 "end": "Dec 2025",
                 "contributions": [
-                    "Writing StA package's documentation and setting up CI/CD pipeline for automated testing and deployment to PyPI.",
-                    "Collaborating with logistics experts to translate warehouse processes into accurate simulation models and scenarios.",
-                    "Optimizing simulation performance and scalability to handle large datasets and complex scenarios, enabling faster insights and decision-making."
+                    "Developed highly configurable discrete event simulation software in Python to model and optimize warehouse processes.",
+                    "Collaborated with logistics experts to translate warehouse processes into accurate simulation models and scenarios.",
+                    "Optimized simulation performance and scalability to handle large datasets and complex scenarios, enabling faster insights and decision-making."
                 ],
                 "stack": [
                     "Python",
                     "SimPy",
+                    "SQLAlchemy",
+                    "PostgreSQL",
+                    "SQL",
                     "Google Cloud",
                     "BigQuery",
+                    "Looker Studio",
                     "CI/CD",
                     "Git",
                     "GitLab",
@@ -76,8 +80,8 @@
                 "city": "Den Haag",
                 "country": "NL",
                 "url": "https://www.louwmangroup.com",
-                "start": "Feb 2025",
-                "end": "Present",
+                "start": "Jan 2025",
+                "end": "Jun 2025",
                 "contributions": [
                     "Setting up platform's Infrastructure-as-Code (Terraform, Azure) and CI/CD pipeline (Azure DevOps)."
                 ],
@@ -100,11 +104,11 @@
                 "country": "NL",
                 "url": "https://www.actcommodities.com",
                 "start": "Jun 2024",
-                "end": "Oct 2024",
+                "end": "Dec 2024",
                 "contributions": [
-                    "Monitored and optimized reporting functions ensuring accurate and compliant daily trade activity submissions.",
-                    "Added automations to reporting workflows, further reducing operational workload and manual interventions.",
-                    "Investigated and corrected inaccurate historical reports, enhancing data integrity and regulatory compliance."
+                    "Monitored and optimized event-driven regulatory reporting cloud functions, ensuring accurate and compliant daily trade activity submissions.",
+                    "Added automations to reporting workflows, reducing operational workload and manual intervention.",
+                    "Corrected inaccurate historical reports, enhancing data integrity and regulatory compliance."
                 ],
                 "stack": [
                     "Python",
@@ -127,7 +131,7 @@
                 "country": "NL",
                 "url": "https://www.whitespacesolutions.eu",
                 "start": "Jan 2024",
-                "end": "Apr 2024",
+                "end": "Jun 2024",
                 "contributions": [
                     "Repaired REST API server’s long broken data import and export endpoints and improved data models.",
                     "Decoupled backend optimization (micro)services from databases to ease workload of algorithm developers."
@@ -136,6 +140,7 @@
                     "Python",
                     "FastAPI",
                     "PostgreSQL",
+                    "Alembic",
                     "Docker",
                     "Google Cloud",
                     "Pytest",
@@ -157,13 +162,12 @@
                 "country": "NL",
                 "url": "https://www.ebitwise.nl",
                 "start": "Jun 2022",
-                "end": "Oct 2023",
+                "end": "Dec 2023",
                 "contributions": [
-                    "Architected application's full stack i.e. frontend, backend (REST API), database, cloud infrastructure and launched MVP.",
-                    "Created CI/CD pipeline from ground up, including testing, automated workflows, infrastructure-as-code, and deployment.",
-                    "Built user authentication system using OpenID Connect, OAuth2.0, JWT and designed role-based access control (RBAC).",
-                    "Built automated ETL pipeline drawing client data (from Exact Online API to BigQuery) to create financial dashboard data.",
-                    "Set up and lead teams's Agile/Scrum ceremonies with automated workflows (ClickUp) and communication channels (Slack)."
+                    "Developed and built application across full stack (frontend UI, backend API, database, cloud infrastructure).",
+                    "Built automated ETL pipeline to create data consumed by dashboards.",
+                    "Created CI/CD pipeline incl. testing pipeline, building and cloud infrastructure as code.",
+                    "Set up and led Agile/Scrum automated workflows (ClickUp) and automated communication channels (Slack)."
                 ],
                 "stack": [
                     "Python",
@@ -191,17 +195,17 @@
         "city": "Delft",
         "country": "NL",
         "url": "https://www.avonic.com",
-        "start": "Feb 2021",
+        "start": "Jan 2021",
         "end": "Oct 2022",
         "projects": [
             {
                 "title": "CamDirector\u00AE — AI-driven multiple camera system for automated lecture recordings with 'teacher tracking'",
                 "contributions": [
-                    "Developed CamDirector from early prototype to MVP launch through iterative field testing and user feedback.",
-                    "Refactored code extensively to create clean, modular and decoupled software architecture and optimized tracking algorithms.",
-                    "Completely revamped CamDirector’s server-side rendered (SSR) application and improved UX design for MVP launch.",
-                    "Performed code reviews and tutoring juniors on software engineering best practices (Clean Code, SOLID principles etc.).",
-                    "Improved team’s Agile / Scrum incl. setting up project management workflows and automations, and leading ceremonies."
+                    "(Re)built CamDirector's server-side rendered (SSR) application and improved UX design.",
+                    "Extensive refactoring to create clean, modular and decoupled software architecture.",
+                    "Optimised target tracking software, leading to faster and more efficient tracking performance.",
+                    "Performed code reviews and tutoring juniors on software engineering best practices.",
+                    "Improved team's Agile / Scrum workflow, incl. setting up project management workflows and automations."
                 ],
                 "stack": [
                     "Python",
@@ -214,6 +218,7 @@
                     "OpenCV",
                     "WebSockets",
                     "Pytest",
+                    "Linux",
                     "CI/CD",
                     "Git",
                     "GitHub Actions",
@@ -231,12 +236,14 @@
         "country": "NL",
         "url": "https://www.fleetcleaner.com",
         "start": "Dec 2018",
-        "end": "Mar 2020",
+        "end": "Dec 2020",
         "projects": [
             {
                 "title": "FLS Localization — Localization system for ship-hull-cleaning robot based on Forward Looking Sonar (FLS) images",
                 "contributions": [
-                    "Delivered Proof-of-Concept for automated localization system enabling centimeter-level accuracy, including image filtering & processing, quay wall detection, target tracking and sensor data fusion (i.e. Extended Kalman Filter)."
+                    "Delivered proof-of-concept for localization system enabling centimeter-level accuracy, based on target tracking by using computer vision in sonar images.",
+                    "Developed line detection, target tracking and localization pipelines from the ground up.",
+                    "Assisted in sales operations with French business relations."
                 ],
                 "stack": [
                     "Python",
@@ -244,7 +251,9 @@
                     "NumPy",
                     "Cython",
                     "Git",
-                    "Jira"
+                    "GitHub",
+                    "Jira",
+                    "Agile (Scrum)"
                 ]
             }
         ]

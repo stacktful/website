@@ -3,7 +3,7 @@ import { IoDownloadOutline } from "react-icons/io5";
 
 import AudioButton from "../AudioButton";
 
-import resumePDF from "../../static/resume.pdf";
+import resumePDF from "../../static/cv.pdf";
 
 import "../../styles/Hero.css";
 
