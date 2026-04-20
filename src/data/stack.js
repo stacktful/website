@@ -3,13 +3,12 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { RiOpenaiFill } from "react-icons/ri";
 import { BsFiletypeSql } from "react-icons/bs";
 import { VscAzure } from "react-icons/vsc";
-import { IoLogoGithub, IoLogoGitlab } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
   SiTypescript,
   SiPostgresql,
   SiGooglecloud,
-  SiJira,
   SiPostman,
   SiSwagger,
   SiSqlite,
@@ -18,27 +17,20 @@ import {
   SiFlask,
   SiFastapi,
   SiDjango,
-  SiClickup,
   SiPytest,
   SiGnubash,
-  SiNotion,
-  SiKubernetes,
-  SiAnsible,
   SiSnowflake,
   SiLinux,
   SiTailwindcss,
-  SiRedis,
 } from "react-icons/si";
 import {
   FaReact,
   FaPython,
   FaAws,
   FaDocker,
-  FaConfluence,
   FaGitAlt,
   FaHtml5,
   FaCss3Alt,
-  FaSlack,
   FaGitlab,
 } from "react-icons/fa";
 
@@ -89,10 +81,10 @@ const stack = [
     icon: <SiSnowflake />,
     name: "Snowflake",
   },
-  // {
-  //   icon: <BiLogoMongodb />,
-  //   name: "MongoDB",
-  // },
+  {
+    icon: <BiLogoMongodb />,
+    name: "MongoDB",
+  },
   // {
   //   icon: <SiRedis />,
   //   name: "Redis",
