@@ -156,12 +156,17 @@ nav a:hover {
 }
 
 button.btn-theme {
-  --slot-size: 26px;
+  --knob-size: 20px;
+  --slot-gap: 4px; /* extra space between icons */
+  --slot-width: calc(var(--knob-size) + var(--slot-gap));
+  --pill-padding: 0.5px;
+  /* space between knob and pill edge, identical on all four sides */
+  --knob-margin: calc(var(--pill-padding) + var(--slot-gap) / 2);
   position: relative;
   display: flex;
   align-items: center;
   margin: 0 0 0 1.5rem;
-  padding: 3px;
+  padding: var(--pill-padding);
   background-color: var(--tile-color-1);
   border: 1px solid var(--header-line-color);
   border-radius: 999px;
@@ -170,13 +175,13 @@ button.btn-theme {
 /* the knob slides to the slot of the active theme */
 .btn-theme-knob {
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: var(--slot-size);
-  height: var(--slot-size);
+  top: var(--knob-margin);
+  left: var(--knob-margin);
+  width: var(--knob-size);
+  height: var(--knob-size);
   border-radius: 50%;
   background-color: var(--primary-color);
-  transform: translateX(calc(var(--theme-index) * var(--slot-size)));
+  transform: translateX(calc(var(--theme-index) * var(--slot-width)));
   transition: transform 0.25s ease-in-out;
 }
 
@@ -185,8 +190,8 @@ button.btn-theme {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--slot-size);
-  height: var(--slot-size);
+  width: var(--slot-width);
+  height: var(--slot-width);
   color: var(--darkgray);
   transition: color 0.25s ease-in-out;
 }
