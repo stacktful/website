@@ -1,4 +1,5 @@
 import Logo from "./icons/Logo";
+import ThemeToggle from "./ThemeToggle";
 
 import { navLinks, repositoryUrl } from "../config";
 
@@ -30,6 +31,7 @@ function NavBar() {
             </li>
           ))}
         </ul>
+        <ThemeToggle />
       </div>
     </nav>
   );

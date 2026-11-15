@@ -1,0 +1,13 @@
+/* Color theme: dark (default). Only color tokens belong in theme files. */
+:root,
+[data-theme="dark"] {
+  --primary-color: #00FFD1;
+  --secondary-color: #00FFD1;
+  --tertiary-color: #c9e2e8;
+  --darkgray: #909090;
+  --main-background-color: rgb(20, 20, 20);
+  --tile-color-1: rgb(32, 32, 32);
+  --tile-color-2: rgb(24, 24, 24);
+  --header-line-color: rgb(36, 36, 36);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}

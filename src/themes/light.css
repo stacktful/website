@@ -1,0 +1,12 @@
+/* Color theme: light. Same tokens as dark.css, different values. */
+[data-theme="light"] {
+  --primary-color: #007A66;
+  --secondary-color: #007A66;
+  --tertiary-color: #1f3a40;
+  --darkgray: #5f6b6e;
+  --main-background-color: rgb(245, 247, 247);
+  --tile-color-1: rgb(255, 255, 255);
+  --tile-color-2: rgb(236, 240, 240);
+  --header-line-color: rgb(210, 218, 219);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}

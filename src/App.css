@@ -1,17 +1,5 @@
-/* variables */
+/* layout variables (color tokens live in src/themes/) */
 :root {
-  --primary-color: #00FFD1;
-  --secondary-color: #00FFD1;
-  --tertiary-color: #c9e2e8;
-  --darkgray: #909090;
-  /* --color-mode: black;
-  --main-background-color: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode));
-  --tile-color-1: color-mix(in srgb, var(--primary-color) 18%, var(--color-mode));
-  --tile-color-2: color-mix(in srgb, var(--primary-color) 10%, var(--color-mode)); */
-  --main-background-color: rgb(20, 20, 20);
-  --tile-color-1: rgb(32, 32, 32); /* slightly brighter for more visibility */
-  --tile-color-2: rgb(24, 24, 24); /* slightly brighter for more visibility */
-  --header-line-color: rgb(36, 36, 36); /* slightly brighter for more visibility */
   --content-width: 80%;
   --hero-image-size: 180px;
   --header-margin: 150px;
@@ -19,9 +7,6 @@
   --code-font: "Fira Code";
   --main-width: 960px;
   --tile-gap: 10px;
-  /* --main-bg-color-1: #024a45; */
-  /* --main-bg-color-2: #012725; */
-  /* --tile-color: #024a45; */
 }
 
 /* ------------------------ LAYOUT ------------------------ */
@@ -119,7 +104,7 @@ nav {
   z-index: 9999;
   width: 100%;
   background-color: var(--main-background-color);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px var(--shadow-color);
 }
 
 .nav-logo {
@@ -168,6 +153,17 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.theme-toggle {
+  margin-left: 1.5rem;
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+  color: var(--tertiary-color);
+  background-color: var(--tile-color-1);
+  border: 1px solid var(--header-line-color);
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
 }
 
 /* -------------------------- Buttons -------------------------- */
