@@ -13,7 +13,7 @@ function parseJobs(data) {
 
   for (const job of data) {
     // Check if the job has multiple projects
-    if (job.projects.length == 1) {
+    if (job.projects.length === 1) {
       var parsedJob = parseJob(job);
       parsedJobs.push(parsedJob);
     }

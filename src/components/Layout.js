@@ -5,7 +5,7 @@ import { navLinks, repositoryUrl } from "../config";
 function Footer() {
   return (
     <footer>
-      <a href={repositoryUrl} target="_blank">
+      <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
         <p>Designed & built by Thibaut van Bergen</p>
         <p>Last update: Mar 2025</p>
       </a>

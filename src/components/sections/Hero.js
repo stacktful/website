@@ -19,13 +19,13 @@ function Hero({ name, role, audioSrc, summary }) {
           <h2 className="hero-headline">{role}</h2>
         </div>
         <div className="hero-image">
-          <img src={require("../../static/img/portrait.png")}></img>
+          <img src={require("../../static/img/portrait.png")} alt={`Portrait of ${name}`} />
         </div>
       </div>
       <p className="hero-description">{summary}</p>
       <div className="hero-buttons">
         <button className="btn-resume">
-          <a className="flex-row-center" href={resumePDF} target="_blank">
+          <a className="flex-row-center" href={resumePDF} target="_blank" rel="noopener noreferrer">
             <IoDownloadOutline />
             <span>Resume</span>
           </a>

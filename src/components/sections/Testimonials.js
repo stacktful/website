@@ -7,7 +7,7 @@ import "../../styles/Testimonials.css";
 function Testimonial({ name, role, company, quote, img }) {
   return (
     <div className="testimonial-wrapper">
-      <img className="testimonial-image" src={img} />
+      <img className="testimonial-image" src={img} alt={`Portrait of ${name}`} />
       <Tile className="testimonial-tile">
         <div className="testimonial-quote">"{quote}"</div>
         <div className="testimonial-reference">

@@ -14,7 +14,7 @@ function Contact({ contacts }) {
       </div>
       <div className="contact-list">
         {contacts.map((contact, index) => (
-          <a key={index} className="contact-item" href={contact.link} target="_blank">
+          <a key={index} className="contact-item" href={contact.link} target="_blank" rel="noopener noreferrer">
             {contact.icon}
             {contact.text}
           </a>

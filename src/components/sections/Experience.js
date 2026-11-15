@@ -50,7 +50,7 @@ function JobDetails({ city, country, url, stack, title, contributions }) {
               {city}, {countryNamesByCode[country] || country}
             </span>
           </div>
-          <a className="job-url" href={url} target="_blank">
+          <a className="job-url" href={url} target="_blank" rel="noopener noreferrer">
             <IoOpenOutline />
             <span>{url.replaceAll("https://www.", "")}</span>
           </a>
