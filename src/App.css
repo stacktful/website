@@ -155,15 +155,55 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.theme-toggle {
-  margin-left: 1.5rem;
-  font-family: var(--code-font);
-  font-size: 0.9rem;
-  color: var(--tertiary-color);
+button.btn-theme {
+  --slot-size: 26px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1.5rem;
+  padding: 3px;
   background-color: var(--tile-color-1);
   border: 1px solid var(--header-line-color);
-  border-radius: 5px;
-  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+/* the knob slides to the slot of the active theme */
+.btn-theme-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: var(--slot-size);
+  height: var(--slot-size);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translateX(calc(var(--theme-index) * var(--slot-size)));
+  transition: transform 0.25s ease-in-out;
+}
+
+.btn-theme-slot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--slot-size);
+  height: var(--slot-size);
+  color: var(--darkgray);
+  transition: color 0.25s ease-in-out;
+}
+
+.btn-theme-slot.active {
+  color: var(--main-background-color);
+}
+
+.btn-theme-slot svg {
+  height: 16px;
+  width: 16px;
+}
+
+/* override the generic button hover lift */
+button.btn-theme:hover,
+button.btn-theme:not(:hover) {
+  transform: none;
 }
 
 /* -------------------------- Buttons -------------------------- */
