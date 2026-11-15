@@ -4,6 +4,7 @@ import { IoDownloadOutline } from "react-icons/io5";
 import AudioButton from "../AudioButton";
 
 import resumePDF from "../../static/cv.pdf";
+import portrait from "../../static/img/portrait.png";
 
 import "../../styles/Hero.css";
 
@@ -19,7 +20,7 @@ function Hero({ name, role, audioSrc, summary }) {
           <h2 className="hero-headline">{role}</h2>
         </div>
         <div className="hero-image">
-          <img src={require("../../static/img/portrait.png")} alt={`Portrait of ${name}`} />
+          <img src={portrait} alt={`Portrait of ${name}`} />
         </div>
       </div>
       <p className="hero-description">{summary}</p>

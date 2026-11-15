@@ -131,3 +131,6 @@ dist
 
 # configs
 .vscode
+
+# Vite build output
+build
