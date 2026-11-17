@@ -47,7 +47,7 @@ function Capability({ icon, title, description, tools, featured, stack }) {
 
 function Services({ services, everydayTools, stack }) {
   return (
-    <Section title="What I Do" id="services">
+    <Section title="Services" id="services">
       <div className="capabilities">
         {services.map((service) => (
           <Capability key={service.title} {...service} stack={stack} />
