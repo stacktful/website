@@ -1,7 +1,6 @@
 /* ------------------------ SERVICES ------------------------ */
 
 .service-tile {
-    width: 280px;
     position: relative;
     padding: 20px;
 
@@ -13,18 +12,13 @@
 .tiles-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-gap: var(--tile-gap);
-    justify-content: center;
-    align-items: center;
 }
 
+/* with three services, the last one spans the full row */
 .tiles-grid.three-tiles> :nth-child(3) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: center;
-    max-width: calc(50% - var(--tile-gap));
-    /* Assuming grid-gap is 10px, adjust if different */
+    grid-column: 1 / -1;
 }
 
 .service-header {
@@ -81,13 +75,4 @@
         grid-template-columns: 1fr;
     }
 
-    .service-tile {
-        width: auto;
-    }
-
-    .tiles-grid.three-tiles> :nth-child(3) {
-        grid-column: auto;
-        justify-self: stretch;
-        max-width: none;
-    }
 }

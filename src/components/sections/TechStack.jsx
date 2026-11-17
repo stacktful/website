@@ -24,7 +24,7 @@ function TechStackGrid({ stack }) {
 
 function TechStack({ stack }) {
   const [showAll, setShowAll] = useState(false);
-  const sliceSize = 15; // Must be multiple of 5 /!\
+  const sliceSize = 16; // Fills complete rows: must be a multiple of 8 (desktop) and 4 (mobile) /!\
   const baseStack = stack.slice(0, sliceSize);
   const restStack = stack.slice(sliceSize);
 

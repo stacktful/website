@@ -10,33 +10,27 @@ import "../../styles/Hero.css";
 
 function Hero({ name, role, audioSrc, summary }) {
   return (
-    <header>
-      <div className="hero-header">
-        <div className="hero-text">
-          <h1>
-            Hi, I'm<span className="hero-name"> {name}</span>
-            <AudioButton src={audioSrc} ariaLabel={"Pronunciation audio"} />
-          </h1>
-          <h2 className="hero-headline">{role}</h2>
-        </div>
-        <div className="hero-image">
-          <img src={portrait} alt={`Portrait of ${name}`} />
-        </div>
-      </div>
-      <p className="hero-description">{summary}</p>
-      <div className="hero-buttons">
-        <button className="btn-resume">
-          <a className="flex-row-center" href={resumePDF} target="_blank" rel="noopener noreferrer">
+    <header className="hero">
+      <div className="hero-text">
+        <h1>
+          Hi, I'm<span className="hero-name"> {name}</span>
+          <AudioButton src={audioSrc} ariaLabel={"Pronunciation audio"} />
+        </h1>
+        <h2 className="hero-headline">{role}</h2>
+        <p className="hero-description">{summary}</p>
+        <div className="hero-buttons">
+          <a className="btn btn-primary" href={resumePDF} target="_blank" rel="noopener noreferrer">
             <IoDownloadOutline />
             <span>Resume</span>
           </a>
-        </button>
-        <button className="btn-about">
-          <a className="flex-row-center" href="#contact">
+          <a className="btn btn-secondary" href="#contact">
             <span>Get in touch</span>
             <FaArrowRight />
           </a>
-        </button>
+        </div>
+      </div>
+      <div className="hero-image">
+        <img src={portrait} alt={`Portrait of ${name}`} />
       </div>
     </header>
   );
