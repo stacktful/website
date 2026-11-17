@@ -1,32 +1,56 @@
 import { AiOutlineCode } from "react-icons/ai";
-import { GoGitCompare } from "react-icons/go";
 import { IoCodeSlash } from "react-icons/io5";
 import { TbCloudComputing } from "react-icons/tb";
 
+/* What I do: one featured capability (my main focus) and supporting ones.
+   `tools` refers to tools in stack.jsx by name, so their icons are defined in one place. */
 export const services = [
   {
     icon: <AiOutlineCode />,
-    title: "Software Engineering",
+    title: "Backend & Data",
+    featured: true,
     description:
-      "Specialized in Python-based backend development, including REST APIs and microservices.",
+      "My core: Python-based backend development, including REST APIs, microservices and the databases behind them.",
+    tools: [
+      "Python",
+      "FastAPI",
+      "Django",
+      "Flask",
+      "PostgreSQL",
+      "SQLite",
+      "MongoDB",
+      "BigQuery",
+      "Snowflake",
+      "SQL",
+    ],
   },
   {
     icon: <TbCloudComputing />,
-    title: "Cloud Infrastructure",
+    title: "Cloud & DevOps",
     description:
-      "Experience in cloud infrastructure and deployment of applications on AWS, GCP and Azure.",
-  },
-  {
-    icon: <GoGitCompare />,
-    title: "DevOps",
-    description:
-      "Creating CI/CD pipelines and automating deployment processes for efficient software delivery.",
+      "Deploying applications on AWS, GCP and Azure, with CI/CD pipelines that automate software delivery.",
+    tools: ["AWS", "GCP", "Azure", "Docker", "Terraform"],
   },
   {
     icon: <IoCodeSlash />,
     title: "Web Development",
-    description: "Building responsive and user-friendly web applications prototypes and or MVPs.",
+    description: "Building responsive and user-friendly web applications, prototypes and MVPs.",
+    tools: ["React", "TypeScript", "JavaScript", "Tailwind", "HTML", "CSS"],
   },
+];
+
+/* General tools used across all of the above */
+export const everydayTools = [
+  "Git",
+  "GitHub",
+  "GitLab",
+  "Bash",
+  "Linux",
+  "Pytest",
+  "Postman",
+  "Swagger",
+  "ChatGPT",
+  "Copilot",
 ];
 
 export default services;
