@@ -22,14 +22,14 @@ const startYear = (job) => job.start.split(" ").pop();
    click an entry, or use the arrow keys while it has focus. */
 function TimelineRail({ jobs, selected, onSelect }) {
   const itemRefs = useRef([]);
-  const isFirstRender = useRef(true);
+  const previousSelected = useRef(selected);
 
-  // keep the selected entry visible (matters for the horizontal strip on mobile)
+  // keep the selected entry visible (matters for the horizontal strip on mobile).
+  // Only when the selection actually changes: not on mount, which would scroll the page
+  // (React's StrictMode runs effects twice in development, so a "first render" flag is not enough).
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+    if (previousSelected.current === selected) return;
+    previousSelected.current = selected;
     itemRefs.current[selected]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [selected]);
 
