@@ -1,6 +1,6 @@
 import { AiOutlineCode } from "react-icons/ai";
-import { IoCodeSlash } from "react-icons/io5";
 import { GoGitCompare } from "react-icons/go";
+import { IoCodeSlash } from "react-icons/io5";
 import { TbCloudComputing } from "react-icons/tb";
 
 export const services = [

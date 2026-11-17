@@ -1,5 +1,5 @@
 import useTheme from "../hooks/useTheme";
-import { themes, themeIcons, FallbackThemeIcon } from "../themes";
+import { FallbackThemeIcon, themeIcons, themes } from "../themes";
 
 function ThemeToggle() {
   const [theme, setTheme] = useTheme();

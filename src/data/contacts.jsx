@@ -1,7 +1,7 @@
-import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io5";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 
 const contacts = [
   {

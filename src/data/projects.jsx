@@ -1,5 +1,5 @@
-import imgEbitwise from "../static/img/project-ebitwise-1.jpg";
 import imgAvonic from "../static/img/project-avonic.png";
+import imgEbitwise from "../static/img/project-ebitwise-1.jpg";
 
 const projects = [
   {

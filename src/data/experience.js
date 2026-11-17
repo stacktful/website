@@ -1,10 +1,7 @@
 import jobsData from "./json/jobs";
 import activitiesData from "./json/activities";
 
-const rolesToFilter = [
-  "President of Executive Board",
-  "Vehicle Dynamics Engineer",
-];
+const rolesToFilter = ["President of Executive Board", "Vehicle Dynamics Engineer"];
 
 function parseJobs(data) {
   // This function parses the jobs from the JSON data

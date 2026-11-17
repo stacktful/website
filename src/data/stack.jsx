@@ -1,38 +1,38 @@
-import { GoCopilot } from "react-icons/go";
 import { BiLogoMongodb } from "react-icons/bi";
-import { RiOpenaiFill } from "react-icons/ri";
 import { BsFiletypeSql } from "react-icons/bs";
-import { VscAzure } from "react-icons/vsc";
-import { IoLogoGithub } from "react-icons/io";
-import { IoLogoJavascript } from "react-icons/io5";
 import {
-  SiTypescript,
-  SiPostgresql,
-  SiGooglecloud,
-  SiPostman,
-  SiSwagger,
-  SiSqlite,
-  SiGooglebigquery,
-  SiTerraform,
-  SiFlask,
-  SiFastapi,
-  SiDjango,
-  SiPytest,
-  SiGnubash,
-  SiSnowflake,
-  SiLinux,
-  SiTailwindcss,
-} from "react-icons/si";
-import {
-  FaReact,
-  FaPython,
   FaAws,
+  FaCss3Alt,
   FaDocker,
   FaGitAlt,
-  FaHtml5,
-  FaCss3Alt,
   FaGitlab,
+  FaHtml5,
+  FaPython,
+  FaReact,
 } from "react-icons/fa";
+import { GoCopilot } from "react-icons/go";
+import { IoLogoGithub } from "react-icons/io";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiOpenaiFill } from "react-icons/ri";
+import {
+  SiDjango,
+  SiFastapi,
+  SiFlask,
+  SiGnubash,
+  SiGooglebigquery,
+  SiGooglecloud,
+  SiLinux,
+  SiPostgresql,
+  SiPostman,
+  SiPytest,
+  SiSnowflake,
+  SiSqlite,
+  SiSwagger,
+  SiTailwindcss,
+  SiTerraform,
+  SiTypescript,
+} from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 const stack = [
   // Backend

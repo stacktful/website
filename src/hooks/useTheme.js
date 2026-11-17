@@ -6,10 +6,7 @@ const STORAGE_KEY = "theme";
 function initialTheme() {
   const stored = localStorage.getItem(STORAGE_KEY);
   if (themes.includes(stored)) return stored;
-  if (
-    themes.includes("light") &&
-    window.matchMedia?.("(prefers-color-scheme: light)").matches
-  ) {
+  if (themes.includes("light") && window.matchMedia?.("(prefers-color-scheme: light)").matches) {
     return "light";
   }
   return defaultTheme;
