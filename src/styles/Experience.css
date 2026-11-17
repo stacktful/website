@@ -1,46 +1,213 @@
 /* ------------------------ EXPERIENCE ------------------------ */
 
-.job-container {
-    margin-bottom: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* rail (jobs list) on the left, details card on the right */
+.exp-timeline {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2.5rem;
+    align-items: start;
 }
 
-.job-header-tile {
+/* let the columns shrink below their content width (needed for the scrollable chip strip on mobile) */
+.exp-timeline>* {
+    min-width: 0;
+}
+
+/* ------------------------ RAIL ------------------------ */
+
+.exp-side {
+    --year-width: 3rem;
+    --dot-size: 12px;
+    --rail-gap: 0.75rem;
+}
+
+.exp-rail {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* vertical line running through the dots */
+.exp-rail::before {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    bottom: 1.2rem;
+    left: calc(var(--year-width) + var(--rail-gap) + var(--dot-size) / 2 - 1px);
+    width: 2px;
+    background-color: var(--header-line-color);
+}
+
+button.exp-rail-item {
+    display: grid;
+    grid-template-columns: var(--year-width) var(--dot-size) 1fr;
+    align-items: center;
+    gap: var(--rail-gap);
     width: 100%;
-    padding: 0.5rem 0;
+    margin: 0;
+    padding: 0.55rem 0.5rem 0.55rem 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    color: var(--darkgray);
+    background: none;
+    border: none;
+    border-radius: 6px;
+    transition: color 0.2s ease-in-out;
 }
 
-.job-header-tile:hover .job-dropdown-arrow {
-    transform: scale(1.5);
-    transition: ease-in 0.2s;
+/* no lift effect from the generic button style */
+button.exp-rail-item:hover,
+button.exp-rail-item:not(:hover) {
+    transform: none;
 }
 
-.job-header-tile:not(:hover) .job-dropdown-arrow {
-    transform: scale(1.0);
-    transition: ease-in 0.2s;
+.exp-rail-year {
+    font-family: var(--code-font);
+    font-size: 0.8rem;
+    text-align: right;
 }
 
-.job-content-tile {
-    margin-top: 4px;
-    padding: 1.0rem 0;
+.exp-rail-dot {
+    position: relative; /* above the line */
+    width: var(--dot-size);
+    height: var(--dot-size);
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+    border: 2px solid var(--header-line-color);
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
-.job-title {
-    font-size: 1.5rem;
+.exp-rail-company {
+    line-height: 1.3;
+}
+
+button.exp-rail-item:hover {
+    color: var(--tertiary-color);
+}
+
+button.exp-rail-item:hover .exp-rail-dot {
+    border-color: var(--primary-color);
+}
+
+button.exp-rail-item.active {
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+button.exp-rail-item.active .exp-rail-dot {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+/* ------------------------ PANEL ------------------------ */
+
+/* position counter and up/down buttons, under the rail */
+.exp-nav {
     display: flex;
-    user-select: none;
-    gap: 0.5rem;
-}
-
-.job-dropdown-arrow {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
+    gap: 0.5rem;
+    margin-top: 1rem;
+    /* line up with the company names */
+    padding-left: calc(var(--year-width) + var(--rail-gap) * 2 + var(--dot-size));
+}
+
+.exp-nav-count {
+    margin-right: 0.25rem;
+    font-family: var(--code-font);
+    font-size: 0.85rem;
+    color: var(--darkgray);
+}
+
+button.exp-nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0.2rem;
+    font-size: 1.25rem;
+    color: var(--tertiary-color);
+    background: none;
+    border: 1px solid var(--header-line-color);
+    border-radius: 50%;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+button.exp-nav-button:hover,
+button.exp-nav-button:not(:hover) {
+    transform: none;
+}
+
+button.exp-nav-button:hover:not(:disabled) {
     color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+button.exp-nav-button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.exp-card {
+    padding: 1.5rem 1.75rem;
+    animation: 0.3s ease-out both;
+}
+
+.exp-card-from-below {
+    animation-name: exp-slide-from-below;
+}
+
+.exp-card-from-above {
+    animation-name: exp-slide-from-above;
+}
+
+@keyframes exp-slide-from-below {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+}
+
+@keyframes exp-slide-from-above {
+    from {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .exp-card {
+        animation: none;
+    }
+}
+
+/* title | date
+   summary      */
+.exp-card-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "title date"
+        "summary summary";
+    align-items: baseline;
+    column-gap: 1rem;
+}
+
+.exp-card-body {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--header-line-color);
+}
+
+/* ------------------------ JOB CONTENT ------------------------ */
+
+.job-title-container {
+    grid-area: title;
+    font-size: 1.5rem;
 }
 
 .job-role {
@@ -58,26 +225,32 @@
 }
 
 .job-date {
+    grid-area: date;
     white-space: nowrap;
     font-size: 0.9rem;
     font-family: var(--code-font);
     color: var(--darkgray);
-    user-select: none;
 }
 
-.job-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.5rem;
+.job-summary {
+    grid-area: summary;
+    margin: 0.35rem 0 0;
+    font-size: 0.95rem;
+    color: var(--darkgray);
+}
+
+.job-summary-name {
+    font-weight: bold;
+    color: var(--tertiary-color);
 }
 
 .job-details {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 3.0rem;
-    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 3rem;
+    margin-bottom: 0.75rem;
 }
 
 .job-location,
@@ -101,20 +274,11 @@
     color: var(--primary-color);
 }
 
-.job-project-name {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
 .job-contributions {
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
-}
-
-.job-content {
-    padding: 0 1.0rem;
 }
 
 .tech-tag-container {
@@ -134,33 +298,84 @@
 
 .job-contribution-bullet-wrapper {
     display: inline-block;
-    margin-left: 0.75rem;
+    margin-left: 0;
     margin-right: 0.75rem;
 }
 
-@media (max-width: 640px) {
-    .job-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.25rem;
+/* ------------------------ SMALL SCREENS ------------------------ */
+
+/* the rail becomes a horizontal, scrollable strip of company chips */
+@media (max-width: 760px) {
+    .exp-timeline {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .job-title {
-        font-size: 1.1rem;
+    .exp-nav {
+        justify-content: flex-end;
+        margin-top: 0.5rem;
+        padding-left: 0;
+    }
+
+    .exp-rail {
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        scrollbar-width: none;
+    }
+
+    .exp-rail::-webkit-scrollbar {
+        display: none;
+    }
+
+    .exp-rail::before,
+    .exp-rail-year,
+    .exp-rail-dot {
+        display: none;
+    }
+
+    button.exp-rail-item {
+        display: block;
+        width: auto;
+        padding: 0.35rem 0.9rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        border: 1px solid var(--header-line-color);
+        border-radius: 999px;
+    }
+
+    button.exp-rail-item.active {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .exp-card {
+        padding: 1.25rem;
+    }
+
+    .exp-card-header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "date"
+            "summary";
+    }
+
+    .job-title-container {
+        font-size: 1.2rem;
     }
 
     .job-date {
-        /* line up with the title text, past the arrow */
-        padding-left: calc(1.1rem + 0.5rem);
+        margin-top: 0.25rem;
         font-size: 0.8rem;
     }
 
-    .job-details {
-        flex-wrap: wrap;
-        gap: 0.5rem 2rem;
+    .job-summary {
+        font-size: 0.9rem;
     }
 
-    .job-content {
-        padding: 0 0.75rem;
+    .job-details {
+        gap: 0.5rem 2rem;
     }
 }
