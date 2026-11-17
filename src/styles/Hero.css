@@ -41,3 +41,28 @@
     flex-direction: row;
     align-items: center;
 }
+
+@media (max-width: 640px) {
+    .hero-header {
+        /* portrait above the text */
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .hero-image,
+    .hero-image>img {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+    }
+
+    .hero-description {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+}

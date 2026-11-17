@@ -4,7 +4,7 @@
   --hero-image-size: 180px;
   --header-margin: 150px;
   --border-radius: 10px;
-  --code-font: "Fira Code";
+  --code-font: "Fira Code Variable", ui-monospace, monospace;
   --main-width: 960px;
   --tile-gap: 10px;
 }
@@ -27,7 +27,8 @@ header {
 }
 
 main {
-  width: var(--main-width);
+  /* fixed width on desktop, shrinks with a side gutter on smaller screens */
+  width: min(var(--main-width), calc(100% - 2.5rem));
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -57,18 +58,18 @@ div.section-header-line {
 /* ------------------------ TEXT STYLES ------------------------ */
 
 h1 {
-  font-size: 4.0rem;
+  font-size: clamp(2.5rem, 9vw, 4.0rem);
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.6rem, 6vw, 2.5rem);
 }
 
 h2.section-header-text {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
   margin: 0 10px;
   flex-shrink: 0;
   text-align: center;
@@ -103,6 +104,7 @@ nav {
   top: 0;
   z-index: 9999;
   width: 100%;
+  box-sizing: border-box;
   background-color: var(--main-background-color);
   box-shadow: 0 4px 4px var(--shadow-color);
 }
@@ -270,6 +272,27 @@ button.btn-audio:not(:hover) {
   transform: scale(1.0);
 }
 
+/* hamburger menu button, only shown on small screens */
+button.btn-menu {
+  display: none;
+  align-items: center;
+  margin: 0 0 0 0.75rem;
+  padding: 0.25rem;
+  background-color: transparent;
+  border: none;
+  color: var(--tertiary-color);
+}
+
+button.btn-menu svg {
+  width: 26px;
+  height: 26px;
+}
+
+button.btn-menu:hover,
+button.btn-menu:not(:hover) {
+  transform: none;
+}
+
 button a {
   color: inherit;
   text-decoration: none;
@@ -322,4 +345,61 @@ footer a:hover {
 .accordion-content {
   width: 100%;
   transition: max-height 0.3s ease;
+}
+
+/* ------------------------ RESPONSIVE ------------------------ */
+
+/* nav links collapse into a dropdown menu */
+@media (max-width: 860px) {
+  button.btn-menu {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-grow: 1;
+  }
+
+  .nav-links-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 1rem 1.5rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    background-color: var(--main-background-color);
+    box-shadow: 0 8px 8px var(--shadow-color);
+  }
+
+  nav.menu-open .nav-links-list {
+    display: flex;
+  }
+
+  nav .nav-links-list a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-margin: 80px;
+  }
+
+  header {
+    margin-top: 110px;
+  }
+
+  button.btn-audio {
+    margin: 0 0 0 0.25rem;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  button.btn-audio svg {
+    height: 28px;
+    width: 28px;
+  }
 }

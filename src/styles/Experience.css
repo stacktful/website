@@ -58,6 +58,7 @@
 }
 
 .job-date {
+    white-space: nowrap;
     font-size: 0.9rem;
     font-family: var(--code-font);
     color: var(--darkgray);
@@ -135,4 +136,31 @@
     display: inline-block;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .job-title {
+        font-size: 1.1rem;
+    }
+
+    .job-date {
+        /* line up with the title text, past the arrow */
+        padding-left: calc(1.1rem + 0.5rem);
+        font-size: 0.8rem;
+    }
+
+    .job-details {
+        flex-wrap: wrap;
+        gap: 0.5rem 2rem;
+    }
+
+    .job-content {
+        padding: 0 0.75rem;
+    }
 }

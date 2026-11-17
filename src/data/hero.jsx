@@ -8,7 +8,7 @@ function yearsSince(date) {
 
 const summary = (
   <>
-    {role} with over {yearsSince(startDate)} years of experience in Python-based
+    Over {yearsSince(startDate)} years of experience in Python-based
     greenfield projects, with MSc background in engineering, robotics & AI.
     Specialised in end-to-end development of cloud-native web applications (B2B,
     SaaS), in Agile/Scrum multidisciplinary teams within start-ups and

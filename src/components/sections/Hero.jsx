@@ -32,8 +32,8 @@ function Hero({ name, role, audioSrc, summary }) {
           </a>
         </button>
         <button className="btn-about">
-          <a className="flex-row-center" href={"/"} target="">
-            <span>About me</span>
+          <a className="flex-row-center" href="#contact">
+            <span>Get in touch</span>
             <FaArrowRight />
           </a>
         </button>

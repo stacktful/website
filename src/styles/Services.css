@@ -75,3 +75,19 @@
     color: var(--secondary-color);
     background-color: var(--tile-color-1);
 }
+
+@media (max-width: 640px) {
+    .tiles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-tile {
+        width: auto;
+    }
+
+    .tiles-grid.three-tiles> :nth-child(3) {
+        grid-column: auto;
+        justify-self: stretch;
+        max-width: none;
+    }
+}
