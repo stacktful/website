@@ -1,0 +1,66 @@
+/* ------------------------ BACKDROP ------------------------ */
+/* Decorative layers behind the page content. All colors derive from the theme tokens. */
+
+.backdrop {
+    /* tweakables */
+    --dot-spacing: 24px;
+    --dot-size: 1px;
+    --spotlight-radius: 260px;
+
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.backdrop>div {
+    position: absolute;
+    inset: 0;
+}
+
+/* faint dot grid, strongest at the top center of the screen and fading towards the edges */
+.backdrop-grid {
+    background-image: radial-gradient(circle,
+            color-mix(in srgb, var(--tertiary-color) 22%, transparent) var(--dot-size),
+            transparent calc(var(--dot-size) + 0.5px));
+    background-size: var(--dot-spacing) var(--dot-spacing);
+    -webkit-mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 25%, transparent 100%);
+    mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 25%, transparent 100%);
+}
+
+/* same grid, in the accent color, only visible in a circle around the mouse,
+   plus a soft glow; positioned by Backdrop.jsx through --mx / --my */
+.backdrop-spotlight {
+    --mx: -1000px;
+    --my: -1000px;
+    background-image:
+        radial-gradient(circle,
+            color-mix(in srgb, var(--primary-color) 75%, transparent) var(--dot-size),
+            transparent calc(var(--dot-size) + 0.5px)),
+        radial-gradient(circle var(--spotlight-radius) at var(--mx) var(--my),
+            color-mix(in srgb, var(--primary-color) 7%, transparent),
+            transparent 70%);
+    background-size: var(--dot-spacing) var(--dot-spacing), 100% 100%;
+    -webkit-mask-image: radial-gradient(circle var(--spotlight-radius) at var(--mx) var(--my), black, transparent 75%);
+    mask-image: radial-gradient(circle var(--spotlight-radius) at var(--mx) var(--my), black, transparent 75%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.backdrop-spotlight.active {
+    opacity: 1;
+}
+
+/* no spotlight on touch devices */
+@media (hover: none) {
+    .backdrop-spotlight {
+        display: none;
+    }
+}
+
+/* subtle film grain (greyscale SVG noise) */
+.backdrop-grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+}

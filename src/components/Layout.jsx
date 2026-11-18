@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HiMiniBars3, HiMiniXMark } from "react-icons/hi2";
 
+import Backdrop from "./Backdrop";
 import Logo from "./icons/Logo";
 import ThemeToggle from "./ThemeToggle";
 
@@ -78,6 +79,7 @@ function NavBar() {
 function Layout({ children }) {
   return (
     <>
+      <Backdrop />
       <NavBar />
       <main>{children}</main>
       <Footer />

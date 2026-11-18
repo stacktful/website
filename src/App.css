@@ -16,6 +16,9 @@
 .App {
   text-align: left;
   min-height: 100vh;
+  /* decorative glows may extend past the edges; never cause horizontal scrolling
+     (set here rather than on body, whose overflow would be applied to the viewport instead) */
+  overflow-x: clip;
   color: var(--tertiary-color);
 }
 
@@ -343,10 +346,15 @@ button.btn-menu:not(:hover) {
   transform: none;
 }
 
+/* translucent "frosted glass" so the backdrop (dot grid, spotlight, grain) shows through */
 .tile {
-  background-image: linear-gradient(to bottom right, var(--tile-color-1), var(--tile-color-2));
-  border: 1px solid var(--header-line-color);
+  background-image: linear-gradient(to bottom right,
+      color-mix(in srgb, var(--tile-color-1) 70%, transparent),
+      color-mix(in srgb, var(--tile-color-2) 45%, transparent));
+  border: 1px solid color-mix(in srgb, var(--header-line-color) 80%, transparent);
   border-radius: var(--border-radius);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 /* ------------------------ FOOTER ------------------------ */
