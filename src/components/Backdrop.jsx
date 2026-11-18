@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import "../styles/Backdrop.css";
 
@@ -7,7 +7,7 @@ import "../styles/Backdrop.css";
    - a spotlight that lights up the dots around the mouse (devices with a mouse only)
    - a subtle film grain
    Purely visual: hidden from assistive technology and ignores pointer events. */
-function Backdrop() {
+function BackdropLayers() {
   const spotlightRef = useRef(null);
 
   useEffect(() => {
@@ -43,6 +43,26 @@ function Backdrop() {
       <div className="backdrop-grain" />
     </div>
   );
+}
+
+/* the active theme, read from <html data-theme> (set by useTheme) */
+function useDocumentTheme() {
+  const root = document.documentElement;
+  const [theme, setTheme] = useState(root.dataset.theme);
+  useEffect(() => {
+    const observer = new MutationObserver(() => setTheme(root.dataset.theme));
+    observer.observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => observer.disconnect();
+  }, [root]);
+  return theme;
+}
+
+/* WebKit (Safari and every browser on iOS) caches the fixed backdrop layer and does not always
+   repaint it when only the theme's CSS variables change, leaving the old colors on screen until
+   the next scroll. Rebuilding the layers on every theme change forces a fresh paint. */
+function Backdrop() {
+  const theme = useDocumentTheme();
+  return <BackdropLayers key={theme} />;
 }
 
 export default Backdrop;
