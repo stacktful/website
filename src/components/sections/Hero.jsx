@@ -1,9 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
-import { IoDownloadOutline } from "react-icons/io5";
 
 import AudioButton from "../AudioButton";
 
-import resumePDF from "../../static/cv.pdf";
 import portrait from "../../static/img/portrait.png";
 
 import "../../styles/Hero.css";
@@ -19,11 +17,7 @@ function Hero({ name, role, audioSrc, summary }) {
         <h2 className="hero-headline">{role}</h2>
         <p className="hero-description">{summary}</p>
         <div className="hero-buttons">
-          <a className="btn btn-primary" href={resumePDF} target="_blank" rel="noopener noreferrer">
-            <IoDownloadOutline />
-            <span>Resume</span>
-          </a>
-          <a className="btn btn-secondary" href="#contact">
+          <a className="btn btn-primary" href="#contact">
             <span>Get in touch</span>
             <FaArrowRight />
           </a>
