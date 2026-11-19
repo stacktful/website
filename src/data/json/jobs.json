@@ -164,9 +164,9 @@
                 "start": "Jun 2022",
                 "end": "Dec 2023",
                 "contributions": [
-                    "Developed and built application across full stack (frontend UI, backend API, database, cloud infrastructure).",
+                    "Developed and built application across full stack (UI, API, database, infrastructure).",
                     "Built automated ETL pipeline to create data consumed by dashboards.",
-                    "Created CI/CD pipeline incl. testing pipeline, building and cloud infrastructure as code.",
+                    "Created CI/CD pipeline including infrastructure-as-code.",
                     "Set up and led Agile/Scrum automated workflows (ClickUp) and automated communication channels (Slack)."
                 ],
                 "stack": [
@@ -242,8 +242,7 @@
                 "title": "FLS Localization — Localization system for ship-hull-cleaning robot based on Forward Looking Sonar (FLS) images",
                 "contributions": [
                     "Delivered proof-of-concept for localization system enabling centimeter-level accuracy, based on target tracking by using computer vision in sonar images.",
-                    "Developed line detection, target tracking and localization pipelines from the ground up.",
-                    "Assisted in sales operations with French business relations."
+                    "Developed line detection, target tracking and localization pipelines from scratch."
                 ],
                 "stack": [
                     "Python",
