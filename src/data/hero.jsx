@@ -1,19 +1,22 @@
 const startDate = new Date(2018, 5, 1);
-const role = "Fullstack Software Engineer";
+const role = "Freelance Software Engineer";
 
 function yearsSince(date) {
   const today = new Date();
   return Math.floor((today - date) / (1000 * 60 * 60 * 24 * 365));
 }
 
+const years = yearsSince(startDate);
+
 const summary = (
   <>
-    Over {yearsSince(startDate)} years of experience in Python-based
-    greenfield projects, with MSc background in engineering, robotics & AI.
-    Specialised in end-to-end development of cloud-native web applications (B2B,
-    SaaS), in Agile/Scrum multidisciplinary teams within start-ups and
-    international corporations. Strong advocate of clean code, automated
-    workflows and clear communication for optimal collaboration.
+    {years}+ years of building software from robotics, microservices and SaaS to AI agents.
+    Different domains, same job: making hard problems boringly simple, from the code to how it 
+    ships. Currently helping{" "}
+    <a href="https://www.alliander.com/en" target="_blank" rel="noopener noreferrer">
+      Alliander
+    </a>{" "}
+    automate tedious processes with agentic AI.
   </>
 );
 

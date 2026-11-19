@@ -46,6 +46,17 @@
     line-height: 1.7;
 }
 
+.hero-description a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.hero-description a:hover {
+    text-decoration-thickness: 2px;
+}
+
 .hero-image {
     flex-shrink: 0;
     width: var(--hero-image-size);
