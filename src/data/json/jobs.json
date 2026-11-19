@@ -10,7 +10,7 @@
         "projects": [
             {
                 "title": "Voltix Agent — Internal Python package for building and deploying AI Agents within Alliander IT landscape",
-                "role": "Software Engineer",
+                "role": "AI Engineer",
                 "company": "Alliander",
                 "city": "Arnhem",
                 "country": "NL",
@@ -125,8 +125,8 @@
             },
             {
                 "title": "AIM\u00AE — cloud-native multi-tenant web application (SaaS) for AI-driven well trajectory optimization and planning",
-                "role": "Software Engineer",
-                "company": "WhiteSpace Solutions",
+                "role": "Backend Engineer",
+                "company": "WhiteSpace",
                 "city": "Den Haag",
                 "country": "NL",
                 "url": "https://www.whitespacesolutions.eu",
