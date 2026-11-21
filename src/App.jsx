@@ -17,7 +17,6 @@ function App() {
     <div className="App">
       <Layout>
         <Hero {...hero} />
-        {/* "What I Do" also covers the tech stack (tools grouped per capability) */}
         <Services services={services} everydayTools={everydayTools} stack={stack} />
         <Experience jobs={jobs} />
         <Contact contacts={contacts} />
