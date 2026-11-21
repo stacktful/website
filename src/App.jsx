@@ -20,7 +20,6 @@ function App() {
         {/* "What I Do" also covers the tech stack (tools grouped per capability) */}
         <Services services={services} everydayTools={everydayTools} stack={stack} />
         <Experience jobs={jobs} />
-        {/* <Testimonials testimonials={testimonials} /> */}
         <Contact contacts={contacts} />
       </Layout>
     </div>
