@@ -10,13 +10,13 @@ const years = yearsSince(startDate);
 
 const summary = (
   <>
-    {years}+ years of building software from robotics, microservices and SaaS to AI agents.
+    {years}+ years of building software, from robotics, microservices and SaaS to AI agents.
     Different domains, same job: making hard problems boringly simple, from the code to how it 
     ships. Currently helping{" "}
     <a href="https://www.alliander.com/en" target="_blank" rel="noopener noreferrer">
       Alliander
     </a>{" "}
-    automate tedious processes with agentic AI.
+    automate with agentic AI.
   </>
 );
 
