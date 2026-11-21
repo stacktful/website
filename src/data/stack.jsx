@@ -36,10 +36,10 @@ import {
 import { VscAzure } from "react-icons/vsc";
 
 const stack = [
-  // Backend
+  // ------------------------- Backend --------------------------
   {
     icon: <FaPython />,
-    name: "Python"
+    name: "Python",
   },
   {
     icon: <SiFlask />,
@@ -65,7 +65,7 @@ const stack = [
     icon: <SiSwagger />,
     name: "Swagger",
   },
-  // Database
+  // ------------------------- Data -------------------------
   {
     icon: <SiPostgresql />,
     name: "PostgreSQL",
@@ -86,15 +86,11 @@ const stack = [
     icon: <BiLogoMongodb />,
     name: "MongoDB",
   },
-  // {
-  //   icon: <SiRedis />,
-  //   name: "Redis",
-  // },
   {
     icon: <BsFiletypeSql />,
     name: "SQL",
   },
-  // Frontend
+  // ------------------------- Frontend --------------------------
   {
     icon: <FaReact />,
     name: "React",
@@ -119,7 +115,7 @@ const stack = [
     icon: <SiTailwindcss />,
     name: "Tailwind",
   },
-  // Cloud Infrastructure and DevOps
+  // ------------------------- Cloud Infrastructure and DevOps --------------------------
   {
     icon: <SiGooglecloud />,
     name: "GCP",
@@ -136,18 +132,10 @@ const stack = [
     icon: <FaDocker />,
     name: "Docker",
   },
-  // {
-  //   icon: <SiKubernetes />,
-  //   name: "Kubernetes",
-  // },
   {
     icon: <SiTerraform />,
     name: "Terraform",
   },
-  // {
-  //   icon: <SiAnsible />,
-  //   name: "Ansible",
-  // },
   {
     icon: <FaGitAlt />,
     name: "Git",
@@ -169,7 +157,7 @@ const stack = [
     name: "Linux",
   },
 
-  // Other
+  // ------------------------- Other --------------------------
   {
     icon: <SiClaude />,
     name: "Claude Code",
