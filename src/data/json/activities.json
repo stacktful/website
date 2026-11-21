@@ -2,7 +2,6 @@
     {
         "title": "Software Engineer (R&D)",
         "institution": "Nippon Electric Company",
-        "location": "Tokyo, JP",
         "city": "Tokyo",
         "country": "JP",
         "url": "https://www.nec.com",
@@ -21,7 +20,7 @@
             "NumPy",
             "Arduino",
             "C++",
-            "SolidWords",
+            "SolidWorks",
             "3D Printing",
             "Circuit Design",
             "Sensors",
@@ -31,10 +30,9 @@
     {
         "title": "President of Executive Board",
         "institution": "Study Association Antoni van Leeuwenhoek (AvL)",
-        "location": "Delft, NL",
         "city": "Delft",
         "country": "NL",
-        "url": "https://www..studyassociationavl.com",
+        "url": "https://www.studyassociationavl.com",
         "start": "Jan 2017",
         "end": "Feb 2018",
         "project": "Study association affiliated with the BioMedical/BioMechanical Engineering (BME/BMD) MSc programs at TU Delft",
@@ -55,7 +53,6 @@
     {
         "title": "Vehicle Dynamics Engineer",
         "institution": "Formula Student Team Delft",
-        "location": "Delft, NL",
         "city": "Delft",
         "country": "NL",
         "url": "https://www.fsteamdelft.nl",
