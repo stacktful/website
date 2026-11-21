@@ -6,11 +6,11 @@ import Experience from "./components/sections/Experience";
 import Hero from "./components/sections/Hero";
 import Services from "./components/sections/Services";
 
-import contacts from "./data/contacts";
-import jobs from "./data/experience";
-import hero from "./data/hero";
-import services, { everydayTools } from "./data/services";
-import stack from "./data/stack";
+import contacts from "./content/contacts";
+import jobs from "./content/experience";
+import hero from "./content/hero";
+import services, { everydayTools } from "./content/services";
+import stack from "./content/stack";
 
 function App() {
   return (
