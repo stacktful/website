@@ -1,6 +1,6 @@
 import Section from "../Section";
 
-import "../../styles/Contact.css";
+import "./Contact.css";
 
 function Contact({ contacts }) {
   return (

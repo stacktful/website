@@ -1,3 +1,5 @@
+import "./Tile.css";
+
 function Tile({ children, ...props }) {
   // const class = `tile ${props.className}`;
   const { className, ...otherProps } = props;

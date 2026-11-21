@@ -1,3 +1,5 @@
+import "./Section.css";
+
 function Section({ children, ...props }) {
   return (
     <>

@@ -1,6 +1,8 @@
 import useTheme from "../hooks/useTheme";
 import { FallbackThemeIcon, themeIcons, themes } from "../themes";
 
+import "./ThemeToggle.css";
+
 function ThemeToggle() {
   const [theme, setTheme] = useTheme();
   const index = themes.indexOf(theme);

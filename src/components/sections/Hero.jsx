@@ -4,7 +4,7 @@ import AudioButton from "../AudioButton";
 
 import portrait from "../../static/img/portrait.png";
 
-import "../../styles/Hero.css";
+import "./Hero.css";
 
 function Hero({ name, role, audioSrc, summary }) {
   return (

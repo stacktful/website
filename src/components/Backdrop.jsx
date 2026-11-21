@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import "../styles/Backdrop.css";
+import "./Backdrop.css";
 
 /* Decorative background behind the whole page:
    - a faint dot grid, strongest near the top of the screen

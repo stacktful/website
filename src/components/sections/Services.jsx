@@ -1,7 +1,7 @@
 import Section from "../Section";
 import Tile from "../Tile";
 
-import "../../styles/Services.css";
+import "./Services.css";
 
 /* Look up tools (icon + name) from stack.jsx by name */
 function resolveTools(names, stack) {

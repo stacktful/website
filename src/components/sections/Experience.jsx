@@ -9,7 +9,7 @@ import JobTitle from "../JobTitle";
 import Tile from "../Tile";
 import Bullet from "../icons/Bullet";
 
-import "../../styles/Experience.css";
+import "./Experience.css";
 
 const countryNamesByCode = {
   NL: "Netherlands",

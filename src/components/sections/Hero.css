@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+    margin-top: var(--space-hero-top);
+    margin-bottom: var(--space-section);
 }
 
 /* soft accent glow behind the name, on top of the page backdrop */

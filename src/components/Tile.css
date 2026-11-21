@@ -1,0 +1,10 @@
+/* translucent "frosted glass" so the backdrop (dot grid, spotlight, grain) shows through */
+.tile {
+  background-image: linear-gradient(to bottom right,
+      color-mix(in srgb, var(--tile-color-1) 70%, transparent),
+      color-mix(in srgb, var(--tile-color-2) 45%, transparent));
+  border: 1px solid color-mix(in srgb, var(--header-line-color) 80%, transparent);
+  border-radius: var(--border-radius);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}

@@ -7,6 +7,8 @@ import ThemeToggle from "./ThemeToggle";
 
 import { navLinks, repositoryUrl } from "../config";
 
+import "./Layout.css";
+
 function Footer() {
   return (
     <footer>
@@ -60,7 +62,7 @@ function NavBar() {
         </ul>
         <div className="nav-actions">
           <ThemeToggle />
-          {/* only visible on small screens, see App.css */}
+          {/* only visible on small screens, see Layout.css */}
           <button
             className="btn-menu"
             onClick={() => setMenuOpen(!menuOpen)}

@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 
+import "./AudioButton.css";
+
 function AudioButton({ src, ariaLabel }) {
   const audioRef = useRef(null);
   const playAudio = () => audioRef.current?.play();

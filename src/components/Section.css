@@ -1,0 +1,40 @@
+section {
+  width: 100%;
+  margin-bottom: var(--space-section);
+}
+
+/* centered title between two lines that fade out towards the edges */
+div.section-header {
+  display: flex;
+  align-items: center;
+  color: var(--tertiary-color);
+  margin-bottom: var(--space-section-title);
+}
+
+div.section-header-line {
+  --line-color: color-mix(in srgb, var(--tertiary-color) 30%, transparent);
+  flex-grow: 1;
+  height: 1.5px;
+  border-radius: 2px;
+  background: var(--line-color);
+}
+
+div.section-header-line:last-child {
+  background: var(--line-color);
+}
+
+h2.section-header-text {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin: 0 1.25rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  counter-increment: section;
+}
+
+h2.section-header-text::before {
+  content: counter(section, decimal-leading-zero) ".";
+  margin-right: 0.4rem;
+  font-family: var(--code-font);
+  color: var(--primary-color);
+}
