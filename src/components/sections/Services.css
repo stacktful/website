@@ -119,6 +119,12 @@
     gap: 0.35rem;
 }
 
+/* flex, so the icon isn't laid out as inline text sitting on the baseline (which offsets it
+   upwards); it is then centered against the name, like the contact links */
+.everyday-tools-list li>span {
+    display: flex;
+}
+
 /* ------------------------ TAGS (shared with Experience) ------------------------ */
 
 .tech-tag-container {
