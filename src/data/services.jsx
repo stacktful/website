@@ -49,6 +49,7 @@ export const everydayTools = [
   "Pytest",
   "Postman",
   "Swagger",
+  "Claude Code",
   "ChatGPT",
   "Copilot",
 ];

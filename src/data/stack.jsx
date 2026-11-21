@@ -15,6 +15,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiOpenaiFill } from "react-icons/ri";
 import {
+  SiClaude,
   SiDjango,
   SiFastapi,
   SiFlask,
@@ -38,7 +39,7 @@ const stack = [
   // Backend
   {
     icon: <FaPython />,
-    name: "Python",
+    name: "Python"
   },
   {
     icon: <SiFlask />,
@@ -169,6 +170,10 @@ const stack = [
   },
 
   // Other
+  {
+    icon: <SiClaude />,
+    name: "Claude Code",
+  },
   {
     icon: <RiOpenaiFill />,
     name: "ChatGPT",
