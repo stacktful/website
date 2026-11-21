@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import AudioButton from "../AudioButton";
 
-import portrait from "../../static/img/portrait.png";
+import headshot from "../../static/img/headshot.png";
 
 import "./Hero.css";
 
@@ -24,7 +24,7 @@ function Hero({ name, role, audioSrc, summary }) {
         </div>
       </div>
       <div className="hero-image">
-        <img src={portrait} alt={`Portrait of ${name}`} />
+        <img src={headshot} alt={`Headshot of ${name}`} />
       </div>
     </header>
   );

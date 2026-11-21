@@ -1,6 +1,6 @@
 /* -------------------------- HERO ------------------------- */
 
-/* text block on the left, portrait on the right, vertically centered */
+/* text block on the left, headshot on the right, vertically centered */
 .hero {
     position: relative;
     display: flex;
@@ -88,7 +88,7 @@
     }
 
     .hero {
-        /* portrait above the text */
+        /* headshot above the text */
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: 1.5rem;
