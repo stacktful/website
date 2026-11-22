@@ -17,6 +17,7 @@ const alliander = (
 );
 
 const hero = {
+  name: "Thibaut",
   greeting: { en: "Hi, I'm", nl: "Hoi, ik ben", fr: "Bonjour, c'est" },
   role: "Freelance Software Engineer",
   audioSrc: "/audio/name.m4a",
