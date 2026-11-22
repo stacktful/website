@@ -4,6 +4,8 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoOpenOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown } from "react-icons/md";
 
+import useLanguage from "../../hooks/useLanguage";
+import { countryName, formatMonth } from "../../i18n/format";
 import Section from "../Section";
 import JobTitle from "../JobTitle";
 import Tile from "../Tile";
@@ -11,12 +13,7 @@ import Bullet from "../icons/Bullet";
 
 import "./Experience.css";
 
-const countryNamesByCode = {
-  NL: "Netherlands",
-  JP: "Japan",
-};
-
-const startYear = (job) => job.start.split(" ").pop();
+const startYear = (job) => job.start.slice(0, 4); // "2026-01" → "2026"
 
 /* Left column: one entry per job, most recent first. Behaves like a tab list:
    click an entry, or use the arrow keys while it has focus. */
@@ -75,8 +72,9 @@ function TimelineRail({ jobs, selected, onSelect }) {
 }
 
 /* Right column: full details of the selected job */
-function JobCard({ job, index, direction }) {
+function JobCard({ job, index, direction, presentLabel }) {
   const [name, description] = job.title.split(" — ");
+  const { language } = useLanguage();
   return (
     <Tile
       // a new key re-mounts the card, which replays the slide-in animation
@@ -89,7 +87,8 @@ function JobCard({ job, index, direction }) {
       <div className="exp-card-header">
         <JobTitle role={job.role} company={job.company} />
         <div className="job-date">
-          {job.start} - {job.end}
+          {formatMonth(job.start, language)} -{" "}
+          {job.end ? formatMonth(job.end, language) : presentLabel}
         </div>
         <p className="job-summary">
           <span className="job-summary-name">{name}</span>
@@ -101,7 +100,7 @@ function JobCard({ job, index, direction }) {
           <div className="job-location">
             <IoLocationSharp />
             <span>
-              {job.city}, {countryNamesByCode[job.country] || job.country}
+              {job.city}, {countryName(job.country, language)}
             </span>
           </div>
           {job.url && (
@@ -131,7 +130,7 @@ function JobCard({ job, index, direction }) {
   );
 }
 
-function Experience({ jobs }) {
+function Experience({ title, presentLabel, previousJobLabel, nextJobLabel, jobs }) {
   const [selected, setSelected] = useState(0); // most recent job first
   const [direction, setDirection] = useState("below");
 
@@ -143,7 +142,7 @@ function Experience({ jobs }) {
   };
 
   return (
-    <Section title="Experience" id="experience">
+    <Section title={title} id="experience">
       <div className="exp-timeline">
         <div className="exp-side">
           <TimelineRail jobs={jobs} selected={selected} onSelect={select} />
@@ -156,7 +155,7 @@ function Experience({ jobs }) {
               className="exp-nav-button"
               onClick={() => select(selected - 1)}
               disabled={selected === 0}
-              aria-label="Previous (more recent) job"
+              aria-label={previousJobLabel}
             >
               <MdOutlineKeyboardArrowUp />
             </button>
@@ -164,13 +163,18 @@ function Experience({ jobs }) {
               className="exp-nav-button"
               onClick={() => select(selected + 1)}
               disabled={selected === jobs.length - 1}
-              aria-label="Next (older) job"
+              aria-label={nextJobLabel}
             >
               <MdOutlineKeyboardArrowDown />
             </button>
           </div>
         </div>
-        <JobCard job={jobs[selected]} index={selected} direction={direction} />
+        <JobCard
+          job={jobs[selected]}
+          index={selected}
+          direction={direction}
+          presentLabel={presentLabel}
+        />
       </div>
     </Section>
   );

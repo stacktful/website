@@ -29,6 +29,10 @@
     min-width: 0;
 }
 
+.hero-name-group {
+    white-space: nowrap;
+}
+
 .hero-name {
     font-weight: bold;
     color: var(--primary-color);

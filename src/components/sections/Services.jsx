@@ -8,7 +8,7 @@ function resolveTools(names, stack) {
   return names
     .map((name) => {
       const tool = stack.find((t) => t.name === name);
-      if (!tool) console.warn(`Unknown tool "${name}": add it to src/data/stack.jsx`);
+      if (!tool) console.warn(`Unknown tool "${name}": add it to src/content/stack.jsx`);
       return tool;
     })
     .filter(Boolean);
@@ -25,10 +25,10 @@ function ToolTag({ tool }) {
   );
 }
 
-function Capability({ icon, title, description, tools, featured, stack }) {
+function Capability({ icon, title, description, tools, featured, coreFocusLabel, stack }) {
   return (
     <Tile className={`capability${featured ? " capability-featured" : ""}`}>
-      {featured && <p className="capability-eyebrow">Core focus</p>}
+      {featured && <p className="capability-eyebrow">{coreFocusLabel}</p>}
       <h3 className="capability-title">
         <span className="capability-icon" aria-hidden="true">
           {icon}
@@ -45,16 +45,28 @@ function Capability({ icon, title, description, tools, featured, stack }) {
   );
 }
 
-function Services({ services, everydayTools, stack }) {
+function Services({
+  title,
+  coreFocusLabel,
+  capabilities,
+  everydayToolsLabel,
+  everydayTools,
+  stack,
+}) {
   return (
-    <Section title="Services" id="services">
+    <Section title={title} id="services">
       <div className="capabilities">
-        {services.map((service) => (
-          <Capability key={service.title} {...service} stack={stack} />
+        {capabilities.map((capability) => (
+          <Capability
+            key={capability.title}
+            {...capability}
+            coreFocusLabel={coreFocusLabel}
+            stack={stack}
+          />
         ))}
       </div>
       <div className="everyday-tools">
-        <span className="everyday-tools-label">Also day-to-day</span>
+        <span className="everyday-tools-label">{everydayToolsLabel}</span>
         <ul className="everyday-tools-list">
           {resolveTools(everydayTools, stack).map((tool) => (
             <li key={tool.name}>

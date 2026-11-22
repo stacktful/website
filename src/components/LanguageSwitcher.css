@@ -1,0 +1,32 @@
+/* pill with one segment per language, styled like the theme toggle next to it */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  margin: 0 0.75rem 0 0;
+  padding: 2px;
+  background-color: var(--tile-color-1);
+  border: 1px solid var(--header-line-color);
+  border-radius: 999px;
+}
+
+.lang-switcher a {
+  display: block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--darkgray);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* override the underline of the other nav links */
+.lang-switcher a:hover {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.lang-switcher a[aria-current="true"] {
+  color: var(--main-background-color);
+  background-color: var(--primary-color);
+}

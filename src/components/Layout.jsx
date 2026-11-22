@@ -3,19 +3,24 @@ import { HiMiniBars3, HiMiniXMark } from "react-icons/hi2";
 
 import Backdrop from "./Backdrop";
 import Logo from "./icons/Logo";
+import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
 
-import { navLinks, repositoryUrl } from "../config";
+import { repositoryUrl } from "../config";
+import useLanguage from "../hooks/useLanguage";
+import { formatMonth } from "../i18n/format";
+import { pathForLanguage } from "../i18n/languages";
 
 import "./Layout.css";
 
 function Footer() {
+  const { language, site } = useLanguage();
   return (
     <footer>
       <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
-        <p>Designed & built by Thibaut van Bergen</p>
+        <p>{site.footer.builtBy}</p>
         {/* eslint-disable-next-line no-undef -- injected by Vite (see vite.config.js) */}
-        <p>Last update: {__BUILD_DATE__}</p>
+        <p>{site.footer.lastUpdate(formatMonth(__BUILD_DATE__, language))}</p>
       </a>
     </footer>
   );
@@ -33,10 +38,12 @@ function useScrolled(threshold = 8) {
   return scrolled;
 }
 
-function NavBar() {
+/* `links`: [{ id, label }] of the sections to link to, in page order */
+function NavBar({ links }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
   const scrolled = useScrolled();
+  const { language, site } = useLanguage();
 
   // transparent at the top of the page, frosted glass once scrolled (or while the mobile menu is open)
   const classes = [menuOpen && "menu-open", (scrolled || menuOpen) && "solid"].filter(Boolean).join(" ");
@@ -46,21 +53,22 @@ function NavBar() {
       {/* lines the logo and links up with the content column */}
       <div className="nav-inner">
         <div className="nav-logo">
-          <a href="/">
+          <a href={pathForLanguage(language)}>
             <Logo />
           </a>
         </div>
         <ul className="nav-links-list" id="nav-links-list">
-          {navLinks.map((item, index) => (
-            <li key={index}>
-              <a href={item.href} onClick={closeMenu}>
+          {links.map(({ id, label }, index) => (
+            <li key={id}>
+              <a href={`#${id}`} onClick={closeMenu}>
                 <span className="nav-item-index">0{index + 1}.</span>
-                {item.name}
+                {label}
               </a>
             </li>
           ))}
         </ul>
         <div className="nav-actions">
+          <LanguageSwitcher />
           <ThemeToggle />
           {/* only visible on small screens, see Layout.css */}
           <button
@@ -68,7 +76,7 @@ function NavBar() {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-expanded={menuOpen}
             aria-controls="nav-links-list"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-label={menuOpen ? site.nav.closeMenu : site.nav.openMenu}
           >
             {menuOpen ? <HiMiniXMark /> : <HiMiniBars3 />}
           </button>
@@ -78,11 +86,11 @@ function NavBar() {
   );
 }
 
-function Layout({ children }) {
+function Layout({ navLinks, children }) {
   return (
     <>
       <Backdrop />
-      <NavBar />
+      <NavBar links={navLinks} />
       <main>{children}</main>
       <Footer />
     </>

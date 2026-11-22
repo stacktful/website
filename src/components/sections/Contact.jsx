@@ -2,18 +2,15 @@ import Section from "../Section";
 
 import "./Contact.css";
 
-function Contact({ contacts }) {
+function Contact({ title, heading, intro, links }) {
   return (
-    <Section title="Contact" id="contact">
+    <Section title={title} id="contact">
       <div className="contact-cta">
-        <h2>Let's connect!</h2>
-        <p>
-          Whether you have an exciting opportunity, a question, or just want to connect, I'd love to
-          hear from you.
-        </p>
+        <h2>{heading}</h2>
+        <p>{intro}</p>
       </div>
       <div className="contact-list">
-        {contacts.map((contact, index) => (
+        {links.map((contact, index) => (
           <a key={index} className="contact-item" href={contact.link} target="_blank" rel="noopener noreferrer">
             {contact.icon}
             {contact.text}
