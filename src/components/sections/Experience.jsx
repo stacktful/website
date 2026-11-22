@@ -9,7 +9,6 @@ import { countryName, formatMonth } from "../../i18n/format";
 import Section from "../Section";
 import JobTitle from "../JobTitle";
 import Tile from "../Tile";
-import Bullet from "../icons/Bullet";
 
 import "./Experience.css";
 
@@ -110,14 +109,7 @@ function JobCard({ job, index, direction, presentLabel }) {
             </a>
           )}
         </div>
-        <ul className="job-contributions">
-          {job.contributions.map((contribution, i) => (
-            <li key={i} className="job-contribution">
-              <Bullet />
-              <div className="job-contribution-text">{contribution}</div>
-            </li>
-          ))}
-        </ul>
+        <p className="job-highlight">{job.highlight}</p>
         <div className="tech-tag-container">
           {job.stack.map((tech, i) => (
             <div key={i} className="tech-tag">
