@@ -361,3 +361,12 @@ button.exp-nav-button:disabled {
         gap: 0.5rem 2rem;
     }
 }
+
+/* entrance (see .reveal-item in App.css): the timeline, then the card */
+.exp-side {
+    --reveal-delay: 0.15s;
+}
+
+.exp-card {
+    --reveal-delay: 0.27s;
+}

@@ -105,3 +105,40 @@ button:not(:hover) {
   color: var(--primary-color);
   background-color: transparent;
 }
+
+/* ------------------------ ENTRANCE ANIMATIONS ------------------------ */
+
+/* An element with .reveal-item starts slightly lower and transparent, and rises in
+   once its section gets .is-visible (see useReveal). Set --reveal-delay to delay it.
+   The children of a .reveal-stagger container do the same, one after another.
+   Applied to the tiles themselves rather than a wrapper: a translucent ancestor
+   would switch off the tiles' backdrop blur until the fade ends. */
+.reveal .reveal-item,
+.reveal .reveal-stagger>* {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease-out var(--reveal-delay, 0s),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0s);
+}
+
+.reveal.is-visible .reveal-item,
+.reveal.is-visible .reveal-stagger>* {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-stagger>* { --reveal-delay: 0.15s; }
+.reveal-stagger>:nth-child(2) { --reveal-delay: 0.27s; }
+.reveal-stagger>:nth-child(3) { --reveal-delay: 0.39s; }
+.reveal-stagger>:nth-child(4) { --reveal-delay: 0.51s; }
+.reveal-stagger>:nth-child(n+5) { --reveal-delay: 0.63s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal .reveal-item,
+  .reveal .reveal-stagger>* {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

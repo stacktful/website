@@ -58,3 +58,12 @@ a.contact-item:not(:hover) {
         gap: 1rem 1.75rem;
     }
 }
+
+/* entrance (see .reveal-item in App.css): the heading, then the links */
+.contact-cta {
+    --reveal-delay: 0.15s;
+}
+
+.contact-list {
+    --reveal-delay: 0.27s;
+}

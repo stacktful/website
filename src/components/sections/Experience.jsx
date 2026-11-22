@@ -78,7 +78,7 @@ function JobCard({ job, index, direction, presentLabel }) {
     <Tile
       // a new key re-mounts the card, which replays the slide-in animation
       key={index}
-      className={`exp-card exp-card-from-${direction}`}
+      className={`exp-card exp-card-from-${direction} reveal-item`}
       role="tabpanel"
       id="exp-panel"
       aria-labelledby={`exp-tab-${index}`}
@@ -136,7 +136,7 @@ function Experience({ title, presentLabel, previousJobLabel, nextJobLabel, jobs 
   return (
     <Section title={title} id="experience">
       <div className="exp-timeline">
-        <div className="exp-side">
+        <div className="exp-side reveal-item">
           <TimelineRail jobs={jobs} selected={selected} onSelect={select} />
           {/* below the rail, so the buttons stay in place whatever the card height */}
           <div className="exp-nav">

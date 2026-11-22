@@ -55,7 +55,7 @@ function Services({
 }) {
   return (
     <Section title={title} id="services">
-      <div className="capabilities">
+      <div className="capabilities reveal-stagger">
         {capabilities.map((capability) => (
           <Capability
             key={capability.title}
@@ -65,7 +65,7 @@ function Services({
           />
         ))}
       </div>
-      <div className="everyday-tools">
+      <div className="everyday-tools reveal-item">
         <span className="everyday-tools-label">{everydayToolsLabel}</span>
         <ul className="everyday-tools-list">
           {resolveTools(everydayTools, stack).map((tool) => (

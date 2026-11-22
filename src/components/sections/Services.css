@@ -162,3 +162,8 @@
         font-size: 1.4rem;
     }
 }
+
+/* entrance (see .reveal-item in App.css): after the capability tiles */
+.everyday-tools {
+    --reveal-delay: 0.5s;
+}
