@@ -1,7 +1,6 @@
 /* Hero: the introduction at the top of the page.
    Texts are written as { en, nl, fr } (see src/i18n/localize.js). */
 
-const name = "Thibaut";
 const startDate = new Date(2018, 5, 1);
 
 function yearsSince(date) {
@@ -19,7 +18,6 @@ const alliander = (
 
 const hero = {
   greeting: { en: "Hi, I'm", nl: "Hoi, ik ben", fr: "Bonjour, c'est" },
-  name: name,
   role: "Freelance Software Engineer",
   audioSrc: "/audio/name.m4a",
   pronunciationLabel: {
@@ -28,9 +26,9 @@ const hero = {
     fr: "Écouter la prononciation",
   },
   headshotAlt: {
-    en: `Headshot of ${name}`,
-    nl: `Portretfoto van ${name}`,
-    fr: `Portrait de ${name}`,
+    en: "Headshot",
+    nl: "Portretfoto",
+    fr: "Portrait",
   },
   summary: {
     en: (
